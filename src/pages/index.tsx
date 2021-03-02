@@ -1,10 +1,70 @@
-function HomePage() {
+import { motion } from "framer-motion";
+import { useState } from "react";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+
+const wave1Variant = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 0,
+      duration: 0,
+    },
+  },
+};
+
+const wave2Variant = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 1,
+      duration: 2,
+    },
+  },
+};
+
+export default function HomePage() {
+  const [navOpen, setNavOpen] = useState(false);
+
   return (
     <div>
-      <svg id="wave"  viewBox="0 0 1440 490" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(0, 153, 255, 1)" offset="0%"></stop><stop stop-color="rgba(162, 217, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,0L30,65.3C60,131,120,261,180,302.2C240,343,300,294,360,236.8C420,180,480,114,540,73.5C600,33,660,16,720,65.3C780,114,840,229,900,236.8C960,245,1020,147,1080,130.7C1140,114,1200,180,1260,204.2C1320,229,1380,212,1440,187.8C1500,163,1560,131,1620,163.3C1680,196,1740,294,1800,294C1860,294,1920,196,1980,147C2040,98,2100,98,2160,155.2C2220,212,2280,327,2340,343C2400,359,2460,278,2520,228.7C2580,180,2640,163,2700,155.2C2760,147,2820,147,2880,122.5C2940,98,3000,49,3060,98C3120,147,3180,294,3240,351.2C3300,408,3360,376,3420,367.5C3480,359,3540,376,3600,359.3C3660,343,3720,294,3780,277.7C3840,261,3900,278,3960,253.2C4020,229,4080,163,4140,187.8C4200,212,4260,327,4290,383.8L4320,441L4320,490L4290,490C4260,490,4200,490,4140,490C4080,490,4020,490,3960,490C3900,490,3840,490,3780,490C3720,490,3660,490,3600,490C3540,490,3480,490,3420,490C3360,490,3300,490,3240,490C3180,490,3120,490,3060,490C3000,490,2940,490,2880,490C2820,490,2760,490,2700,490C2640,490,2580,490,2520,490C2460,490,2400,490,2340,490C2280,490,2220,490,2160,490C2100,490,2040,490,1980,490C1920,490,1860,490,1800,490C1740,490,1680,490,1620,490C1560,490,1500,490,1440,490C1380,490,1320,490,1260,490C1200,490,1140,490,1080,490C1020,490,960,490,900,490C840,490,780,490,720,490C660,490,600,490,540,490C480,490,420,490,360,490C300,490,240,490,180,490C120,490,60,490,30,490L0,490Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(0, 153, 255, 1)" offset="0%"></stop><stop stop-color="rgba(162, 217, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,49L30,98C60,147,120,245,180,310.3C240,376,300,408,360,375.7C420,343,480,245,540,196C600,147,660,147,720,179.7C780,212,840,278,900,302.2C960,327,1020,310,1080,310.3C1140,310,1200,327,1260,326.7C1320,327,1380,310,1440,302.2C1500,294,1560,294,1620,261.3C1680,229,1740,163,1800,155.2C1860,147,1920,196,1980,187.8C2040,180,2100,114,2160,98C2220,82,2280,114,2340,130.7C2400,147,2460,147,2520,147C2580,147,2640,147,2700,196C2760,245,2820,343,2880,318.5C2940,294,3000,147,3060,73.5C3120,0,3180,0,3240,16.3C3300,33,3360,65,3420,106.2C3480,147,3540,196,3600,196C3660,196,3720,147,3780,179.7C3840,212,3900,327,3960,318.5C4020,310,4080,180,4140,179.7C4200,180,4260,310,4290,375.7L4320,441L4320,490L4290,490C4260,490,4200,490,4140,490C4080,490,4020,490,3960,490C3900,490,3840,490,3780,490C3720,490,3660,490,3600,490C3540,490,3480,490,3420,490C3360,490,3300,490,3240,490C3180,490,3120,490,3060,490C3000,490,2940,490,2880,490C2820,490,2760,490,2700,490C2640,490,2580,490,2520,490C2460,490,2400,490,2340,490C2280,490,2220,490,2160,490C2100,490,2040,490,1980,490C1920,490,1860,490,1800,490C1740,490,1680,490,1620,490C1560,490,1500,490,1440,490C1380,490,1320,490,1260,490C1200,490,1140,490,1080,490C1020,490,960,490,900,490C840,490,780,490,720,490C660,490,600,490,540,490C480,490,420,490,360,490C300,490,240,490,180,490C120,490,60,490,30,490L0,490Z"></path></svg>
+      <div className="bg-blue-600">
+        <div className="p-3 flex justify-between">
+          <img src="http://placehold.jp/150x50.png" />
+          <button className="block" onClick={() => console.log("cool")}>
+            {navOpen ? (
+              <FontAwesomeIcon
+                icon={faTimes}
+                className="text-3xl texthovereffect"
+              />
+            ) : (
+              <FontAwesomeIcon
+                icon={faBars}
+                className="text-3xl texthovereffect"
+              />
+            )}
+          </button>
+        </div>
+        <div className="p-12 text-white space-y">
+          <h3 className="text-2xl font-bold">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit
+          </h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus
+            laboriosam aperiam vero quasi cupiditate eum corporis cum et magnam.
+          </p>
+          <button className="px-8 py-3 text-black bg-white rounded-sm font-bold uppercase text-xs">
+            Lorem ipsum
+          </button>
+        </div>
+      </div>
     </div>
-  )
-  //style={{"transform:rotate(180deg), transition: 0.3s"}}
+  );
 }
-
-export default HomePage
