@@ -7,6 +7,10 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 // own components
 import NewSection from "../components/NewSection";
+import InfoSection from "../components/InfoSection";
+
+// data
+import { bulletPointData } from "../pageContent/bulletPointData";
 
 export default function HomePage() {
   const [navOpen, setNavOpen] = useState(false);
@@ -47,62 +51,42 @@ export default function HomePage() {
           alt=""
         />
       </div>
-
       {/* New section */}
       <div className="flex flex-col p-16">
-        {/* <div className="flex justify-center uppercase font-bold text-3xl">
-          <h3 className="text-blue-400">What&nbsp;</h3>
-          <h3>we do</h3>
-        </div>
-        <div className="flex space-x-4 justify-center">
-          <div className="text-blue-400 font-extralight text-xs">
-            ----------
-          </div>
-          <img
-            src="https://d33wubrfki0l68.cloudfront.net/29048d9efe89252399122cd2487f253dcbe9bcc4/cf8a5/images/code.svg"
-            alt=""
-            className="w-7"
-          />
-          <div className="text-blue-400 font-extralight text-xs">
-            ----------
-          </div>
-        </div> */}
-
         <NewSection
           blueText="What"
-          greyText="we do"
+          blackText="we do"
           img="https://d33wubrfki0l68.cloudfront.net/29048d9efe89252399122cd2487f253dcbe9bcc4/cf8a5/images/code.svg"
-        />
-        <p className="flex justify-center text-lg text-gray-500">
-          We specialize in small business web design and development for clients
-          anywhere in the US. Every line of code is written by hand to ensure
-          the best performance, which helps bring in more customers to your site
-          and bring more revenue to your business.
-        </p>
-        <a
-          href=""
-          className="flex justify-center uppercase text-xl text-blue-400 font-light"
         >
-          LEARN MORE
-        </a>
+          <p className="flex justify-center text-lg text-gray-500">
+            We specialize in small business web design and development for
+            clients anywhere in the US. Every line of code is written by hand to
+            ensure the best performance, which helps bring in more customers to
+            your site and bring more revenue to your business.
+          </p>
+          <a
+            href=""
+            className="flex justify-center uppercase text-xl text-blue-400 font-light"
+          >
+            LEARN MORE
+          </a>
+        </NewSection>
       </div>
 
-      {/* Three items, make reusable */}
-      <div>
-        <div className="space-y-3 p-20">
-          <div className="w-14 h-14 bg-red-600"></div>
-          <h4 className="text-lg font-bold flex justify-center">
-            Mobile-First design
-          </h4>
-          <p className="text-gray-500 flecx justify-center">
-            We start building your site for mobile devices first, then we add on
-            to it to make tablet and desktop.
-          </p>
-        </div>
-      </div>
+      {bulletPointData.map((bulletPoint) => {
+        return (
+          <InfoSection
+            headerText={bulletPoint.header}
+            infoText={bulletPoint.content}
+          />
+        );
+      })}
 
       <div className="space-y-3 p-8 text-lg">
-        <div className="h-60 bg-red-600"></div>
+        <img
+          src="https://d33wubrfki0l68.cloudfront.net/1a6a7635d723bd43ad01eb8e14ca555ade9200d9/e643b/images/savings.svg"
+          alt=""
+        />
         <div className="font-bold text-2xl">
           <div className="flex">
             <h4 className="text-blue-400">0,-&nbsp;</h4>
@@ -135,68 +119,54 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-
-      <div className="flex justify-center uppercase font-bold text-3xl">
-        <h3 className="text-blue-400">Our&nbsp;</h3>
-        <h3>Portfolio</h3>
-      </div>
-      <div className="flex space-x-4 justify-center">
-        <div className="text-blue-400 font-extralight text-xs">----------</div>
-        <span>🖥</span>
-        <div className="text-blue-400 font-extralight text-xs">----------</div>
-      </div>
-
-      {/* Three of these cards */}
-      <div className="bg-white p-4 m-8 border-b-2 border-blue-500 space-y-5">
-        <img
-          src="http://placehold.jp/298x163.png"
-          alt=""
-          className="flex justify-center"
-        />
-        <div>
-          <h4 className="font-bold text-lg">Burger</h4>
-          <h6 className="text-md text-gray-400">Billingstad, Asker</h6>
+      <NewSection
+        blueText="Our"
+        blackText="portfolio"
+        img="https://d33wubrfki0l68.cloudfront.net/e9d9895c8751f62725f1b49e32d0f3f62682d195/c6364/images/portfolio.svg"
+      >
+        {/* Three of these cards */}
+        <div className="bg-white p-4 m-8 border-b-2 border-blue-500 space-y-5">
+          <img
+            src="http://placehold.jp/298x163.png"
+            alt=""
+            className="flex justify-center"
+          />
+          <div>
+            <h4 className="font-bold text-lg">Burger</h4>
+            <h6 className="text-md text-gray-400">Billingstad, Asker</h6>
+          </div>
+          <p className="text-md text-gray-400">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            corrupti ipsum odio praesentium a molestiae deserunt.
+          </p>
+          <a
+            href="https://waerpendevelopment.com"
+            target="_blank"
+            className="px-8 py-3 text-white bg-blue-400 rounded-sm font-bold uppercase text-xs"
+          >
+            Visit burger
+          </a>
         </div>
-        <p className="text-md text-gray-400">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-          corrupti ipsum odio praesentium a molestiae deserunt.
-        </p>
-        <a
-          href="https://waerpendevelopment.com"
-          target="_blank"
-          className="px-8 py-3 text-white bg-blue-400 rounded-sm font-bold uppercase text-xs"
-        >
-          Visit burger
-        </a>
-      </div>
-
+      </NewSection>
       <div className="flex flex-col p-16">
-        <div className="flex justify-center uppercase font-bold text-3xl">
-          <h3 className="text-blue-400">Who&nbsp;</h3>
-          <h3>we are</h3>
-        </div>
-        <div className="flex space-x-4 justify-center">
-          <div className="text-blue-400 font-extralight text-xs">
-            ----------
-          </div>
-          <span className="text-2xl">🦧</span>
-          <div className="text-blue-400 font-extralight text-xs">
-            ----------
-          </div>
-        </div>
-
-        <p className="flex justify-center text-lg text-gray-500">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi magni
-          repellat ad ipsum blanditiis obcaecati atque nam incidunt et
-          distinctio porro ratione mollitia non doloribus maxime, odio dolores
-          esse aliquid?
-        </p>
-        <a
-          href=""
-          className="flex justify-center uppercase text-xl text-blue-400 font-light"
+        <NewSection
+          blueText="Who"
+          blackText="we are"
+          img="https://d33wubrfki0l68.cloudfront.net/009bfb53714af3ae071037fef68318d40b30fb41/4ae45/images/profile.svg"
         >
-          LEARN MORE
-        </a>
+          <p className="flex justify-center text-lg text-gray-500">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi
+            magni repellat ad ipsum blanditiis obcaecati atque nam incidunt et
+            distinctio porro ratione mollitia non doloribus maxime, odio dolores
+            esse aliquid?
+          </p>
+          <a
+            href=""
+            className="flex justify-center uppercase text-xl text-blue-400 font-light"
+          >
+            LEARN MORE
+          </a>
+        </NewSection>
 
         <img src="http://placehold.jp/290x299.png" alt="" className="mb-12" />
         <div className="flex flex-col justify-center">
@@ -206,7 +176,6 @@ export default function HomePage() {
           </h4>
         </div>
       </div>
-
       {/* Some more of these cards - pricing */}
       <div className="bg-white m-8 border-2 border-blue-200 rounded-md overflow-hidden">
         <h5 className="font-bold text-md flex justify-center bg-blue-100 border-b-2 border-blue-200">
@@ -239,7 +208,6 @@ export default function HomePage() {
           </a>
         </div>
       </div>
-
       <div className="bg-blue-600 text-white space-y-12 px-8 pb-12">
         <img src="http://placehold.jp/150x50.png" />
         <div className="text-white text-md space-y-4">
