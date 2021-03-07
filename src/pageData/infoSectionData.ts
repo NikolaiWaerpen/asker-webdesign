@@ -1,4 +1,4 @@
-export const bulletPointData = [
+export const infoSectionData = [
   {
     svg: null,
     header: "Mobile-First Design",

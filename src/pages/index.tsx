@@ -10,7 +10,9 @@ import NewSection from "../components/NewSection";
 import InfoSection from "../components/InfoSection";
 
 // data
-import { bulletPointData } from "../pageContent/bulletPointData";
+import { infoSectionData } from "../pageData/infoSectionData";
+import { bulletPointData } from "../pageData/bulletPointData";
+import BulletPoint from "../components/BulletPoint";
 
 export default function HomePage() {
   const [navOpen, setNavOpen] = useState(false);
@@ -73,11 +75,11 @@ export default function HomePage() {
         </NewSection>
       </div>
 
-      {bulletPointData.map((bulletPoint) => {
+      {infoSectionData.map((infoSection) => {
         return (
           <InfoSection
-            headerText={bulletPoint.header}
-            infoText={bulletPoint.content}
+            headerText={infoSection.header}
+            infoText={infoSection.content}
           />
         );
       })}
@@ -107,8 +109,7 @@ export default function HomePage() {
         </p>
 
         {/* 6 of these */}
-        <div>
-          <div className="flex">
+        {/* <div className="flex">
             <div className="bg-red-600 w-8 h-8"></div>
             <div className="ml-2">
               <h4 className=" font-bold text-lg">Hosting Fees Included</h4>
@@ -116,8 +117,15 @@ export default function HomePage() {
                 Hosting fees are built right into the monthly payment.
               </p>
             </div>
-          </div>
-        </div>
+          </div> */}
+        {bulletPointData.map((bulletPoint) => {
+          return (
+            <BulletPoint
+              header={bulletPoint.header}
+              content={bulletPoint.content}
+            />
+          );
+        })}
       </div>
       <NewSection
         blueText="Our"
