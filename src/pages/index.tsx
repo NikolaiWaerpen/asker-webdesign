@@ -1,8 +1,12 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 
+// icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+
+// own components
+import NewSection from "../components/NewSection";
 
 export default function HomePage() {
   const [navOpen, setNavOpen] = useState(false);
@@ -27,22 +31,26 @@ export default function HomePage() {
           </button>
         </div>
         <div className="p-12 text-white space-y-9">
-          <h3 className="text-2xl font-bold">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit
-          </h3>
+          <h2 className="text-2xl font-bold">
+            Small Business Web Design + Development
+          </h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus
-            laboriosam aperiam vero quasi cupiditate eum corporis.
+            No page builders or WordPress - We offer 100% hand-coded websites
+            with superior results starting at kr 1500/mo.
           </p>
           <button className="px-8 py-3 text-black bg-white rounded-sm font-bold uppercase text-xs">
-            Lorem ipsum
+            Get in touch!
           </button>
         </div>
+        <img
+          src="https://d33wubrfki0l68.cloudfront.net/25e94eabb1cdec2613bd265d645dc15324bacfe8/86f45/images/landing-swoosh.svg"
+          alt=""
+        />
       </div>
 
       {/* New section */}
       <div className="flex flex-col p-16">
-        <div className="flex justify-center uppercase font-bold text-3xl">
+        {/* <div className="flex justify-center uppercase font-bold text-3xl">
           <h3 className="text-blue-400">What&nbsp;</h3>
           <h3>we do</h3>
         </div>
@@ -50,16 +58,26 @@ export default function HomePage() {
           <div className="text-blue-400 font-extralight text-xs">
             ----------
           </div>
-          <span>📱</span>
+          <img
+            src="https://d33wubrfki0l68.cloudfront.net/29048d9efe89252399122cd2487f253dcbe9bcc4/cf8a5/images/code.svg"
+            alt=""
+            className="w-7"
+          />
           <div className="text-blue-400 font-extralight text-xs">
             ----------
           </div>
-        </div>
+        </div> */}
+
+        <NewSection
+          blueText="What"
+          greyText="we do"
+          img="https://d33wubrfki0l68.cloudfront.net/29048d9efe89252399122cd2487f253dcbe9bcc4/cf8a5/images/code.svg"
+        />
         <p className="flex justify-center text-lg text-gray-500">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi magni
-          repellat ad ipsum blanditiis obcaecati atque nam incidunt et
-          distinctio porro ratione mollitia non doloribus maxime, odio dolores
-          esse aliquid?
+          We specialize in small business web design and development for clients
+          anywhere in the US. Every line of code is written by hand to ensure
+          the best performance, which helps bring in more customers to your site
+          and bring more revenue to your business.
         </p>
         <a
           href=""
