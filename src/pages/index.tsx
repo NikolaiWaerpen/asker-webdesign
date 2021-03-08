@@ -13,6 +13,8 @@ import InfoSection from "../components/InfoSection";
 import { infoSectionData } from "../pageData/infoSectionData";
 import { bulletPointData } from "../pageData/bulletPointData";
 import BulletPoint from "../components/BulletPoint";
+import PricingBox from "../components/PricingBox";
+import { pricingBoxData } from "../pageData/pricingBoxData";
 
 export default function HomePage() {
   const [navOpen, setNavOpen] = useState(false);
@@ -108,16 +110,6 @@ export default function HomePage() {
           with no fees or hassle.
         </p>
 
-        {/* 6 of these */}
-        {/* <div className="flex">
-            <div className="bg-red-600 w-8 h-8"></div>
-            <div className="ml-2">
-              <h4 className=" font-bold text-lg">Hosting Fees Included</h4>
-              <p className="text-gray-500">
-                Hosting fees are built right into the monthly payment.
-              </p>
-            </div>
-          </div> */}
         {bulletPointData.map((bulletPoint) => {
           return (
             <BulletPoint
@@ -148,7 +140,7 @@ export default function HomePage() {
             corrupti ipsum odio praesentium a molestiae deserunt.
           </p>
           <a
-            href="https://waerpendevelopment.com"
+            href="https://burger-mauve.vercel.app"
             target="_blank"
             className="px-8 py-3 text-white bg-blue-400 rounded-sm font-bold uppercase text-xs"
           >
@@ -185,7 +177,7 @@ export default function HomePage() {
         </div>
       </div>
       {/* Some more of these cards - pricing */}
-      <div className="bg-white m-8 border-2 border-blue-200 rounded-md overflow-hidden">
+      {/* <div className="bg-white m-8 border-2 border-blue-200 rounded-md overflow-hidden">
         <h5 className="font-bold text-md flex justify-center bg-blue-100 border-b-2 border-blue-200">
           Standard
         </h5>
@@ -199,7 +191,6 @@ export default function HomePage() {
             <h5 className="uppercase text-xl mt-7">/mo</h5>
           </div>
 
-          {/* Make 4 more of these */}
           <div className="flex mb-20">
             <img src="http://placehold.jp/15x15.png" alt="" className="mt-1" />
             <h4 className="text-gray-500 text-md ml-1">
@@ -215,7 +206,19 @@ export default function HomePage() {
             Contact us
           </a>
         </div>
-      </div>
+      </div> */}
+      {pricingBoxData.map((pricingBox) => {
+        return (
+          <PricingBox
+            header={pricingBox.header}
+            subHeader={pricingBox.subHeader}
+            price={pricingBox.price}
+            bulletPoints={pricingBox.bulletPoints}
+            extraContent={pricingBox.extraContent}
+          />
+        );
+      })}
+
       <div className="bg-blue-600 text-white space-y-12 px-8 pb-12">
         <img src="http://placehold.jp/150x50.png" />
         <div className="text-white text-md space-y-4">
