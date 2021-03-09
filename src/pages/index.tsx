@@ -176,37 +176,6 @@ export default function HomePage() {
           </h4>
         </div>
       </div>
-      {/* Some more of these cards - pricing */}
-      {/* <div className="bg-white m-8 border-2 border-blue-200 rounded-md overflow-hidden">
-        <h5 className="font-bold text-md flex justify-center bg-blue-100 border-b-2 border-blue-200">
-          Standard
-        </h5>
-        <div className="p-4 space-y-5">
-          <span className="text-gray-400 text-md flex justify-center">
-            5 pages
-          </span>
-          <div className="flex text-blue-400 justify-center">
-            <h5 className="text-2xl mt-1 mr-1">kr</h5>
-            <h2 className="text-6xl">1500</h2>
-            <h5 className="uppercase text-xl mt-7">/mo</h5>
-          </div>
-
-          <div className="flex mb-20">
-            <img src="http://placehold.jp/15x15.png" alt="" className="mt-1" />
-            <h4 className="text-gray-500 text-md ml-1">
-              Hosting Fees Included
-            </h4>
-          </div>
-
-          <a
-            href="https://waerpendevelopment.com"
-            target="_blank"
-            className="flex justify-center w-32 h-10 text-white bg-blue-400 rounded-sm font-bold uppercase text-xs"
-          >
-            Contact us
-          </a>
-        </div>
-      </div> */}
       {pricingBoxData.map((pricingBox) => {
         return (
           <PricingBox
@@ -219,41 +188,49 @@ export default function HomePage() {
         );
       })}
 
-      <div className="bg-blue-600 text-white space-y-12 px-8 pb-12">
-        <img src="http://placehold.jp/150x50.png" />
-        <div className="text-white text-md space-y-4">
-          <h5>contact@waerpendevelopment.com</h5>
-          <h5>(+47) 452 93 539</h5>
-        </div>
-        <div>
-          <h3 className="text-2xl font-bold">Navigation</h3>
-          <br />
-          <div className="bg-blue-400 w-40 h-0.5" />
-          <br />
-          <h5>Home</h5>
-          <h5>About</h5>
-          <h5>Services</h5>
-          <h5>Portfolio</h5>
-          <h5>Contact</h5>
-        </div>
+      <div className="bg-blue-600">
+        <img
+          src="https://d33wubrfki0l68.cloudfront.net/c272e13f11fec5e8a82b6342bc194b3eb74b5b72/7cf10/images/footer-swoosh.svg"
+          alt=""
+          className="mb-10"
+        />
 
-        <div>
-          <h3 className="text-2xl font-bold">Services</h3>
-          <br />
-          <div className="bg-blue-400 w-40 h-0.5" />
-          <br />
-          <h5>Web Design</h5>
-          <h5>Website Maintenance</h5>
-          <h5>SEO Services</h5>
-          <h5>Content Creation</h5>
-          <h5>Logo design</h5>
+        <div className="text-white space-y-12 px-8 pb-12">
+          <img src="http://placehold.jp/150x50.png" />
+          <div className="text-white text-md space-y-4">
+            <h5>contact@waerpendevelopment.com</h5>
+            <h5>(+47) 452 93 539</h5>
+          </div>
+          <div>
+            <h3 className="text-2xl font-bold">Navigation</h3>
+            <br />
+            <div className="bg-blue-400 w-40 h-0.5" />
+            <br />
+            <h5>Home</h5>
+            <h5>About</h5>
+            <h5>Services</h5>
+            <h5>Portfolio</h5>
+            <h5>Contact</h5>
+          </div>
+
+          <div>
+            <h3 className="text-2xl font-bold">Services</h3>
+            <br />
+            <div className="bg-blue-400 w-40 h-0.5" />
+            <br />
+            <h5>Web Design</h5>
+            <h5>Website Maintenance</h5>
+            <h5>SEO Services</h5>
+            <h5>Content Creation</h5>
+            <h5>Logo design</h5>
+          </div>
         </div>
-      </div>
-      <div className="text-white bg-blue-500 py-8">
-        <h3 className="flex justify-center">
-          Copyright © 2021 | Waerpen Development
-        </h3>
-        <h3 className="flex justify-center">All Rights Reserved</h3>
+        <div className="text-white bg-blue-500 py-8">
+          <h3 className="flex justify-center">
+            Copyright © 2021 | Waerpen Development
+          </h3>
+          <h3 className="flex justify-center">All Rights Reserved</h3>
+        </div>
       </div>
     </div>
   );
