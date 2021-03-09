@@ -15,6 +15,21 @@ import { bulletPointData } from "../pageData/bulletPointData";
 import BulletPoint from "../components/BulletPoint";
 import PricingBox from "../components/PricingBox";
 import { pricingBoxData } from "../pageData/pricingBoxData";
+import PortfolioBox from "../components/PortfolioBox";
+import { portfolioBoxData } from "../pageData/portfolioBoxData";
+
+// TODO LIST:
+// * Standardize colors
+// * Standardize fonts
+// * Standardize spacing
+// * Fix icons in NewSection
+// * Implement SVG's
+//     - PricingBox bulletpoint
+//     - BulletPoint
+//     - InfoSection
+// * Put in an image of yourself knobhead
+// * Make Portfolio box reusable and nice
+// * Give mapped child components keys
 
 export default function HomePage() {
   const [navOpen, setNavOpen] = useState(false);
@@ -112,42 +127,27 @@ export default function HomePage() {
           with no fees or hassle.
         </p>
 
-        {bulletPointData.map((bulletPoint) => {
-          return (
-            <BulletPoint
-              header={bulletPoint.header}
-              content={bulletPoint.content}
-            />
-          );
-        })}
+        {bulletPointData.map(({ header, content }) => (
+          <BulletPoint header={header} content={content} />
+        ))}
       </div>
       <NewSection
         blueText="Our"
         blackText="portfolio"
         img="https://d33wubrfki0l68.cloudfront.net/e9d9895c8751f62725f1b49e32d0f3f62682d195/c6364/images/portfolio.svg"
       >
-        {/* Three of these cards */}
-        <div className="bg-white p-4 m-8 border-b-2 border-blue-500 space-y-5">
-          <img
-            src="http://placehold.jp/298x163.png"
-            alt=""
-            className="flex justify-center"
-          />
-          <div>
-            <h4 className="font-bold text-lg">Burger</h4>
-            <h6 className="text-md text-gray-400">Billingstad, Asker</h6>
-          </div>
-          <p className="text-md text-gray-400">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-            corrupti ipsum odio praesentium a molestiae deserunt.
-          </p>
-          <a
-            href="https://burger-mauve.vercel.app"
-            target="_blank"
-            className="px-8 py-3 text-white bg-blue-400 rounded-sm font-bold uppercase text-xs"
-          >
-            Visit burger
-          </a>
+        <div className="space-y-16">
+          {portfolioBoxData.map(
+            ({ image, title, location, description, link }) => (
+              <PortfolioBox
+                image={image}
+                title={title}
+                location={location}
+                description={description}
+                link={link}
+              />
+            )
+          )}
         </div>
       </NewSection>
       <div className="flex flex-col p-16">
@@ -178,17 +178,17 @@ export default function HomePage() {
           </h4>
         </div>
       </div>
-      {pricingBoxData.map((pricingBox) => {
-        return (
+      {pricingBoxData.map(
+        ({ header, subHeader, price, bulletPoints, extraContent }) => (
           <PricingBox
-            header={pricingBox.header}
-            subHeader={pricingBox.subHeader}
-            price={pricingBox.price}
-            bulletPoints={pricingBox.bulletPoints}
-            extraContent={pricingBox.extraContent}
+            header={header}
+            subHeader={subHeader}
+            price={price}
+            bulletPoints={bulletPoints}
+            extraContent={extraContent}
           />
-        );
-      })}
+        )
+      )}
 
       <div className="h-16 bg-white"></div>
 
