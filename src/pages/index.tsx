@@ -21,28 +21,29 @@ export default function HomePage() {
 
   return (
     <div>
-      <div className="bg-blue-600">
-        <div className="p-3 flex justify-between">
-          <img src="http://placehold.jp/150x50.png" />
-          <button className="block" onClick={() => console.log("cool")}>
+      <div className="bg-gradient-to-tl from-blue-500 to-blue-800">
+        <div className="px-4 pt-2 flex justify-between">
+          <img
+            // src="http://placehold.jp/150x50.png"
+            src="logo150.png"
+            className="mt-3"
+          />
+          <button
+            className="block text-white text-3xl"
+            onClick={() => console.log("cool")}
+          >
             {navOpen ? (
-              <FontAwesomeIcon
-                icon={faTimes}
-                className="text-3xl texthovereffect"
-              />
+              <FontAwesomeIcon icon={faTimes} />
             ) : (
-              <FontAwesomeIcon
-                icon={faBars}
-                className="text-3xl texthovereffect"
-              />
+              <FontAwesomeIcon icon={faBars} />
             )}
           </button>
         </div>
         <div className="p-12 text-white space-y-9">
-          <h2 className="text-2xl font-bold">
+          <h2 className="text-25xl font-extrabold">
             Small Business Web Design + Development
           </h2>
-          <p>
+          <p className="font-light">
             No page builders or WordPress - We offer 100% hand-coded websites
             with superior results starting at kr 1500/mo.
           </p>
@@ -53,6 +54,7 @@ export default function HomePage() {
         <img
           src="https://d33wubrfki0l68.cloudfront.net/25e94eabb1cdec2613bd265d645dc15324bacfe8/86f45/images/landing-swoosh.svg"
           alt=""
+          className=""
         />
       </div>
       {/* New section */}
@@ -188,15 +190,21 @@ export default function HomePage() {
         );
       })}
 
-      <div className="bg-blue-600">
+      <div className="h-16 bg-white"></div>
+
+      <div className="bg-gradient-to-tl from-blue-500 to-blue-800">
         <img
           src="https://d33wubrfki0l68.cloudfront.net/c272e13f11fec5e8a82b6342bc194b3eb74b5b72/7cf10/images/footer-swoosh.svg"
           alt=""
-          className="mb-10"
+          className="mb-8 mt-0.5"
         />
 
         <div className="text-white space-y-12 px-8 pb-12">
-          <img src="http://placehold.jp/150x50.png" />
+          <img
+            // src="http://placehold.jp/150x50.png"
+            src="logo200.png"
+            className="mt-3"
+          />
           <div className="text-white text-md space-y-4">
             <h5>contact@waerpendevelopment.com</h5>
             <h5>(+47) 452 93 539</h5>
@@ -225,11 +233,14 @@ export default function HomePage() {
             <h5>Logo design</h5>
           </div>
         </div>
-        <div className="text-white bg-blue-500 py-8">
-          <h3 className="flex justify-center">
-            Copyright © 2021 | Waerpen Development
+        <div className="text-white py-8 bg-gradient-to-tl from-blue-500 to-blue-800">
+          <div className="flex justify-center">
+            <h3 className=" text-gray-200">Copyright © 2021 |&nbsp;</h3>
+            <h3 className="font-medium">Waerpen Development</h3>
+          </div>
+          <h3 className="flex justify-center text-gray-200">
+            All Rights Reserved
           </h3>
-          <h3 className="flex justify-center">All Rights Reserved</h3>
         </div>
       </div>
     </div>
