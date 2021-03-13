@@ -96,8 +96,8 @@ export default function HomePage() {
         </NewSection>
       </div>
 
-      {infoSectionData.map(({ header, content, svg }) => {
-        return <InfoSection headerText={header} infoText={content} svg={svg} />;
+      {infoSectionData.map(({ header, content }) => {
+        return <InfoSection headerText={header} infoText={content} />;
       })}
 
       <div className="space-y-3 p-8 text-lg">

@@ -11,8 +11,7 @@ const SVG = ({ headerText }) => {
   );
 };
 
-export default function InfoSection({ headerText, infoText, svg }) {
-  console.log(svg);
+export default function InfoSection({ headerText, infoText }) {
   return (
     <div>
       <div className="space-y-3 p-10">
