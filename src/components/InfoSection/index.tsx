@@ -1,11 +1,26 @@
-export default function InfoSection({ headerText, infoText }) {
+import { MobileSVG, ResponsiveSVG, OptimizationSVG } from "./svgs";
+import { infoSectionData } from "../../data/infoSectionData";
+
+const SVG = ({ headerText }) => {
+  return (
+    <div className="flex justify-center">
+      {headerText === infoSectionData[0].header && <MobileSVG />}
+      {headerText === infoSectionData[1].header && <ResponsiveSVG />}
+      {headerText === infoSectionData[2].header && <OptimizationSVG />}
+    </div>
+  );
+};
+
+export default function InfoSection({ headerText, infoText, svg }) {
+  console.log(svg);
   return (
     <div>
       <div className="space-y-3 p-10">
-        <div className="bg-red-600 w-10 h-10 flex justify-center" />
-        {/* <div className="w-10 h-10">{children}</div> */}
+        <SVG headerText={headerText} />
         <h4 className="text-lg font-bold flex justify-center">{headerText}</h4>
-        <p className="text-gray-500 flecx justify-center">{infoText}</p>
+        <p className="text-gray-600 flex justify-center text-center font-light text-md">
+          {infoText}
+        </p>
       </div>
     </div>
   );

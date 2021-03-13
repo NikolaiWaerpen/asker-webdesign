@@ -1,11 +1,10 @@
+import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const BulletPoint = ({ bulletPoint }) => {
   return (
     <div className="flex space-x-3">
-      <img
-        src="https://d33wubrfki0l68.cloudfront.net/608a680adbcdbdfc5b0db51ce6104719aaf2b24b/7080e/images/tick.svg"
-        alt=""
-        className="w-3.5"
-      />
+      <FontAwesomeIcon icon={faCheckCircle} className="text-blue-400" />
       <h4 className="text-gray-500 text-md font-light ml-1">{bulletPoint}</h4>
     </div>
   );

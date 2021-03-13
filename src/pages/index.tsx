@@ -3,20 +3,26 @@ import { useState } from "react";
 
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faTimes,
+  faMobileAlt,
+  faDesktop,
+  faUserAlt,
+} from "@fortawesome/free-solid-svg-icons";
 
 // own components
 import NewSection from "../components/NewSection";
 import InfoSection from "../components/InfoSection";
 
 // data
-import { infoSectionData } from "../pageData/infoSectionData";
-import { bulletPointData } from "../pageData/bulletPointData";
+import { infoSectionData } from "../data/infoSectionData";
+import { bulletPointData } from "../data/bulletPointData";
 import BulletPoint from "../components/BulletPoint";
 import PricingBox from "../components/PricingBox";
-import { pricingBoxData } from "../pageData/pricingBoxData";
+import { pricingBoxData } from "../data/pricingBoxData";
 import PortfolioBox from "../components/PortfolioBox";
-import { portfolioBoxData } from "../pageData/portfolioBoxData";
+import { portfolioBoxData } from "../data/portfolioBoxData";
 
 // TODO LIST:
 // * Standardize colors
@@ -40,7 +46,7 @@ export default function HomePage() {
         <div className="px-4 pt-2 flex justify-between">
           <img
             // src="http://placehold.jp/150x50.png"
-            src="logo150.png"
+            src="images/logo150.png"
             className="mt-3"
           />
           <button
@@ -54,15 +60,15 @@ export default function HomePage() {
             )}
           </button>
         </div>
-        <div className="p-12 text-white space-y-9">
+        <div className="px-3 pt-20 pb-12 text-white space-y-9">
           <h2 className="text-25xl font-extrabold">
-            Small Business Web Design + Development
+            Small Business Web Development + Design
           </h2>
           <p className="font-light">
             No page builders or WordPress - We offer 100% hand-coded websites
             with superior results starting at kr 1500/mo.
           </p>
-          <button className="px-8 py-3 text-black bg-white rounded-sm font-bold uppercase text-xs">
+          <button className="px-8 py-3.5 text-black bg-white rounded-sm font-bold uppercase text-xs">
             Get in touch!
           </button>
         </div>
@@ -73,34 +79,25 @@ export default function HomePage() {
         />
       </div>
       {/* New section */}
-      <div className="flex flex-col p-16">
-        <NewSection
-          blueText="What"
-          blackText="we do"
-          img="https://d33wubrfki0l68.cloudfront.net/29048d9efe89252399122cd2487f253dcbe9bcc4/cf8a5/images/code.svg"
-        >
-          <p className="flex justify-center text-lg text-gray-500">
+      <div className="flex flex-col p-3">
+        <NewSection blueText="What" blackText="we do" icon={faUserAlt}>
+          <p className="flex justify-center text-lg text-gray-500 text-center font-light">
             We specialize in small business web design and development for
-            clients anywhere in the US. Every line of code is written by hand to
+            clients anywhere in Norway. Every line of code is written by hand to
             ensure the best performance, which helps bring in more customers to
             your site and bring more revenue to your business.
           </p>
           <a
             href=""
-            className="flex justify-center uppercase text-xl text-blue-400 font-light"
+            className="flex justify-center uppercase text-lg text-blue-400 font-light"
           >
             LEARN MORE
           </a>
         </NewSection>
       </div>
 
-      {infoSectionData.map((infoSection) => {
-        return (
-          <InfoSection
-            headerText={infoSection.header}
-            infoText={infoSection.content}
-          />
-        );
+      {infoSectionData.map(({ header, content, svg }) => {
+        return <InfoSection headerText={header} infoText={content} svg={svg} />;
       })}
 
       <div className="space-y-3 p-8 text-lg">
@@ -131,11 +128,7 @@ export default function HomePage() {
           <BulletPoint header={header} content={content} />
         ))}
       </div>
-      <NewSection
-        blueText="Our"
-        blackText="portfolio"
-        img="https://d33wubrfki0l68.cloudfront.net/e9d9895c8751f62725f1b49e32d0f3f62682d195/c6364/images/portfolio.svg"
-      >
+      <NewSection blueText="Our" blackText="portfolio" icon={faDesktop}>
         <div className="space-y-16">
           {portfolioBoxData.map(
             ({ image, title, location, description, link }) => (
@@ -151,11 +144,7 @@ export default function HomePage() {
         </div>
       </NewSection>
       <div className="flex flex-col p-16">
-        <NewSection
-          blueText="Who"
-          blackText="we are"
-          img="https://d33wubrfki0l68.cloudfront.net/009bfb53714af3ae071037fef68318d40b30fb41/4ae45/images/profile.svg"
-        >
+        <NewSection blueText="Who" blackText="we are" icon={faUserAlt}>
           <p className="flex justify-center text-lg text-gray-500">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi
             magni repellat ad ipsum blanditiis obcaecati atque nam incidunt et
@@ -202,7 +191,7 @@ export default function HomePage() {
         <div className="text-white space-y-12 px-8 pb-12">
           <img
             // src="http://placehold.jp/150x50.png"
-            src="logo200.png"
+            src="images/logo200.png"
             className="mt-3"
           />
           <div className="text-white text-md space-y-4">

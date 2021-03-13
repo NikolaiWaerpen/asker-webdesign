@@ -1,4 +1,6 @@
-export default function NewSection({ blueText, blackText, img, children }) {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+export default function NewSection({ blueText, blackText, children, icon }) {
   return (
     <div>
       <div>
@@ -10,13 +12,14 @@ export default function NewSection({ blueText, blackText, img, children }) {
           <div className="text-blue-400 font-extralight text-xs">
             ----------
           </div>
-          <img src={img} alt="icon" className="w-7" />
+          <div className="text-2xl">
+            <FontAwesomeIcon icon={icon} className="text-blue-400 text-xl" />
+          </div>
           <div className="text-blue-400 font-extralight text-xs">
             ----------
           </div>
         </div>
       </div>
-
       <div>{children}</div>
     </div>
   );
