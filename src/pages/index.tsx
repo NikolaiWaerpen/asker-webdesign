@@ -21,7 +21,9 @@ export default function HomePage() {
         <Header />
       </div>
 
-      <WhatWeDoSection />
+      <div id="whatWeDo">
+        <WhatWeDoSection />
+      </div>
 
       <InfoSection />
 
@@ -31,7 +33,9 @@ export default function HomePage() {
         <PortfolioSection />
       </div>
 
-      <WhoWeAreSection />
+      <div id="whoWeAre">
+        <WhoWeAreSection />
+      </div>
 
       <PricingSection />
 

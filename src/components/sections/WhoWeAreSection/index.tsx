@@ -23,7 +23,7 @@ export default function WhoWeAreSection() {
       <div className="flex flex-col justify-center">
         <h3 className="flex justify-center text-xl">Nikolai Wærpen</h3>
         <h4 className="flex justify-center text-gray-500 text-lg">
-          Owner / Developer
+          Owner & Developer
         </h4>
       </div>
     </div>
