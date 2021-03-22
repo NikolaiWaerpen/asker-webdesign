@@ -5,7 +5,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 
 const SCROLL_DURATION = 1000;
@@ -123,11 +123,15 @@ export default function Navigation() {
     } else setScreenLarge(false);
   };
 
+  useEffect(() => {
+    if (window.innerWidth > 1023) setScreenLarge(true);
+  }, []);
+
   if (typeof window !== "undefined")
     window.addEventListener("resize", isScreenLarge);
 
   return (
-    <div className="lg:mx-32">
+    <div className="lg:mx-10 xl:mx-60">
       {screenLarge ? (
         <LargeTopOfNav />
       ) : navOpen ? (

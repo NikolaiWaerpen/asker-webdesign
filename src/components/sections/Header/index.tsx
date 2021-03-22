@@ -1,9 +1,9 @@
 export default function Header() {
   return (
     <div className="bg-gradient-to-tl from-blue-500 to-blue-800">
-      <div className="mx-3 pt-40 pb-12 text-white space-y-9 lg:mx-36 lg:w-6/12">
-        <h2 className="text-25xl font-extrabold lg:text-5xl">
-          Small Business Web Development + Design
+      <div className="mx-3 pt-40 pb-12 text-white space-y-9 md:w-2/3 lg:mx-12 lg:w-2/5 xl:mx-64 xl:w-1/3">
+        <h2 className="text-25xl font-extrabold md:text-5xl">
+          Small Business Web Development & Design
         </h2>
         <p className="font-light">
           No page builders or WordPress - We offer 100% hand-coded websites with
@@ -15,7 +15,7 @@ export default function Header() {
         <img
           src="https://d33wubrfki0l68.cloudfront.net/81ff3b9ad31c44ae1e5d3af2f0d6364d60edee85/2f15f/images/mock-up-replace.png"
           alt=""
-          className="w-80 absolute bottom-32 right-0 lg:right-28 lg:w-1/2 lg:bottom-24"
+          className="w-80 absolute bottom-32 right-0 md:right-8 md:w-3/4 md:bottom-24 lg:w-2/3 lg:right-16 xl:right-56 xl:w-6/12"
         />
       </div>
       <img
