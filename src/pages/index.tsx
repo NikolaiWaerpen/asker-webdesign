@@ -20,6 +20,8 @@ import Footer from "../components/sections/Footer";
 // 1024px (lg)
 // >1600 (xl)
 
+// mt-28 standard
+
 export default function HomePage() {
   return (
     <div>

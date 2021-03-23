@@ -1,5 +1,18 @@
 export const pricingBoxData = [
   {
+    header: "STANDARD + BLOGGING",
+    subHeader: "STARTING AT",
+    price: 3000,
+    bulletPoints: [
+      "1000 Word Post",
+      "Keyword Analysis",
+      "Written By an SEO Specialist",
+      "Helps Boost SEO",
+    ],
+    extraContent:
+      "*If you choose to write your own blog content, the rate drops to kr 2500 /mo.",
+  },
+  {
     header: "STANDARD",
     subHeader: "5 PAGES",
     price: 1500,
@@ -12,27 +25,14 @@ export const pricingBoxData = [
     extraContent: null,
   },
   {
-    header: "STANDARD + BLOGGING",
-    subHeader: "STARTING AT",
-    price: 2750,
-    bulletPoints: [
-      "1000 Word Post",
-      "Keyword Analysis",
-      "Written By an SEO Specialist",
-      "Helps Boost SEO",
-    ],
-    extraContent:
-      "*If you choose to write your own blog content, the rate drops to $175/mo.",
-  },
-  {
     header: "LOGOS & GRAPHIC DESIGN",
-    subHeader: "STARTING AT",
-    price: 3500,
+    subHeader: "INCLUDED!",
+    price: 0,
     bulletPoints: [
       "2 revisions",
       "All File Formats",
-      "Light & Dark Versions",
-      "Horizontal & Vertical",
+      "Ready to use",
+      "FREE w/ Subscription",
     ],
     extraContent: null,
   },

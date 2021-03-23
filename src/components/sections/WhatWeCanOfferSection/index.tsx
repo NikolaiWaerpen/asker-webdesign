@@ -4,8 +4,8 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 const BulletPoint = ({ header, content }) => {
   return (
-    <div className="flex">
-      <FontAwesomeIcon icon={faCheck} className="text-blue-400" />
+    <div className="flex mt-8">
+      <FontAwesomeIcon icon={faCheck} className="text-blue-400 mt-1.5" />
       <div className="ml-2">
         <h4 className=" font-bold text-lg">{header}</h4>
         <p className="text-gray-500">{content}</p>
@@ -16,12 +16,12 @@ const BulletPoint = ({ header, content }) => {
 
 export default function WhatWeCanOfferSection() {
   return (
-    <div className="space-y-3 mx-5 text-lg">
+    <div className="space-y-3 mx-5 text-lg mt-28 md:mx-32 xl:mx-96">
       <img
         src="https://d33wubrfki0l68.cloudfront.net/1a6a7635d723bd43ad01eb8e14ca555ade9200d9/e643b/images/savings.svg"
         alt=""
       />
-      <div className="font-bold text-xl">
+      <div className="font-bold text-xl md:text-4xl">
         <div className="flex">
           <h4 className="text-blue-400">0,-&nbsp;</h4>
           <h4>Down,&nbsp;</h4>
@@ -40,9 +40,11 @@ export default function WhatWeCanOfferSection() {
         no fees or hassle.
       </p>
 
-      {bulletPointData.map(({ header, content }) => (
-        <BulletPoint key={header} header={header} content={content} />
-      ))}
+      <div className="md:grid md:grid-cols-2">
+        {bulletPointData.map(({ header, content }) => (
+          <BulletPoint key={header} header={header} content={content} />
+        ))}
+      </div>
     </div>
   );
 }

@@ -5,7 +5,7 @@ import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 const BulletPoint = ({ bulletPoint }) => {
   return (
     <div className="flex space-x-3">
-      <FontAwesomeIcon icon={faCheckCircle} className="text-blue-400" />
+      <FontAwesomeIcon icon={faCheckCircle} className="text-blue-400 mt-1" />
       <h4 className="text-gray-500 text-md font-light ml-1">{bulletPoint}</h4>
     </div>
   );
@@ -13,17 +13,24 @@ const BulletPoint = ({ bulletPoint }) => {
 
 export default function PricingSection() {
   return (
-    <div>
+    <div className="mt-28 md:mx-40 lg:mx-0 lg:flex lg:space-x-12">
       {pricingBoxData.map(
         ({ header, subHeader, price, bulletPoints, extraContent }) => (
           <div
             key={header}
-            className="bg-white m-8 border-2 border-blue-200 rounded-md overflow-hidden shadow-sm"
+            className="bg-white border-2 border-blue-200 rounded-md overflow-hidden shadow-sm"
           >
-            <h5 className="font-semibold text-md flex justify-center bg-blue-100 border-b-2 border-blue-200 py-3">
+            <h5
+              className={`${
+                header === pricingBoxData[1].header
+                  ? "bg-green-300"
+                  : "bg-blue-100"
+              }
+            font-semibold text-md flex justify-center border-b-2 border-blue-200 py-3`}
+            >
               {header}
             </h5>
-            <div className="p-4 space-y-8">
+            <div className="">
               <div>
                 <span className="text-gray-500 text-md font-light flex justify-center">
                   {subHeader}
@@ -31,11 +38,13 @@ export default function PricingSection() {
                 <div className="flex text-blue-400 justify-center">
                   <h5 className="text-2xl mt-1 mr-1">kr</h5>
                   <h2 className="text-6xl">{price}</h2>
-                  <h5 className="uppercase text-xl mt-7">/mo</h5>
+                  {price === pricingBoxData[2].price ? null : (
+                    <h5 className="uppercase text-xl mt-7">/mo</h5>
+                  )}
                 </div>
               </div>
 
-              <div className="flex flex-col pl-16 space-y-2">
+              <div className="flex flex-col ml-12 space-y-2">
                 {bulletPoints.map((bulletPoint) => {
                   return (
                     <BulletPoint key={bulletPoint} bulletPoint={bulletPoint} />

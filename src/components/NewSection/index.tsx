@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function NewSection({ blueText, blackText, children, icon }) {
   return (
     <div>
-      <div className="flex justify-center uppercase font-bold text-3xl">
+      <div className="flex justify-center uppercase font-bold text-3xl lg:text-4xl">
         <h3 className="text-blue-400">{blueText}&nbsp;</h3>
         <h3>{blackText}</h3>
       </div>

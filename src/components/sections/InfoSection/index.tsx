@@ -13,7 +13,7 @@ const SVG = ({ headerText }) => {
 
 export default function InfoSection() {
   return (
-    <div>
+    <div className="mt-12 md:mx-52 lg:mx-12 lg:flex">
       {infoSectionData.map(({ header, content }) => {
         return (
           <div key={header}>
