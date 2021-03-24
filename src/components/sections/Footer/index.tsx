@@ -1,11 +1,19 @@
 export default function Footer() {
   return (
     <div className="bg-gradient-to-tl from-blue-500 to-blue-800 mt-80 md:mt-0">
-      <img
-        src="https://d33wubrfki0l68.cloudfront.net/c272e13f11fec5e8a82b6342bc194b3eb74b5b72/7cf10/images/footer-swoosh.svg"
-        alt=""
-        className="mb-8 mt-0.5"
-      />
+      <svg
+        version="1.1"
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        x="0px"
+        y="0px"
+        viewBox="0 0 1505 438.9"
+      >
+        <path
+          style={{ fill: "#FFFFFF" }}
+          d="M0,195.1c37.1,41,99.5,98.4,197.1,156.9c176.1,105.5,323.8,115.5,534.8,27.1S1225.6,146.9,1505,0H0V195.1z"
+        />
+      </svg>
 
       <div className="text-white space-y-12 px-8 pb-12">
         <img

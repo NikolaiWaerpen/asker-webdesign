@@ -13,16 +13,21 @@ export default function Header() {
           Get in touch!
         </button>
         <img
-          src="images/header1.png"
+          src="images/header3.png"
           alt=""
-          className="w-10/12 absolute bottom-60 right-0 md:right-8 md:w-11/12 md:bottom-40 lg:w-2/3 lg:right-16 xl:right-56 xl:w-6/12"
+          className="w-9/12 absolute bottom-44 right-0 md:right-8 md:w-9/12 md:bottom-20 lg:w-2/3 lg:right-16 xl:right-56 xl:w-6/12"
         />
       </div>
-      <img
-        src="https://d33wubrfki0l68.cloudfront.net/25e94eabb1cdec2613bd265d645dc15324bacfe8/86f45/images/landing-swoosh.svg"
-        alt=""
-        className=""
-      />
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1505 800">
+        <g id="Layer_2" data-name="Layer 2">
+          <g id="Layer_1-2" data-name="Layer 1">
+            <path
+              style={{ fill: " #fff" }}
+              d="M1307.89,352c97.61-58.49,160-115.9,197.11-156.93V800H0V0C279.45,146.85,562.08,290.71,773.09,379.11S1131.81,457.52,1307.89,352Z"
+            />
+          </g>
+        </g>
+      </svg>
     </div>
   );
 }
