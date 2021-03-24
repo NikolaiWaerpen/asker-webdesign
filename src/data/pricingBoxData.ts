@@ -9,8 +9,6 @@ export const pricingBoxData = [
       "Written By an SEO Specialist",
       "Helps Boost SEO",
     ],
-    extraContent:
-      "*If you choose to write your own blog content, the rate drops to kr 2500 /mo.",
   },
   {
     header: "STANDARD",
@@ -22,7 +20,6 @@ export const pricingBoxData = [
       "24/7 Customer Service",
       "Lifetime Updates",
     ],
-    extraContent: null,
   },
   {
     header: "LOGOS & GRAPHIC DESIGN",
@@ -34,6 +31,5 @@ export const pricingBoxData = [
       "Ready to use",
       "FREE w/ Subscription",
     ],
-    extraContent: null,
   },
 ];

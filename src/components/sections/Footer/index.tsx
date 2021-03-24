@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="bg-gradient-to-tl from-blue-500 to-blue-800">
+    <div className="bg-gradient-to-tl from-blue-500 to-blue-800 mt-80 md:mt-0">
       <img
         src="https://d33wubrfki0l68.cloudfront.net/c272e13f11fec5e8a82b6342bc194b3eb74b5b72/7cf10/images/footer-swoosh.svg"
         alt=""

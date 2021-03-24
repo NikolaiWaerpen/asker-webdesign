@@ -13,9 +13,9 @@ export default function Header() {
           Get in touch!
         </button>
         <img
-          src="https://d33wubrfki0l68.cloudfront.net/81ff3b9ad31c44ae1e5d3af2f0d6364d60edee85/2f15f/images/mock-up-replace.png"
+          src="images/header1.png"
           alt=""
-          className="w-80 absolute bottom-32 right-0 md:right-8 md:w-3/4 md:bottom-24 lg:w-2/3 lg:right-16 xl:right-56 xl:w-6/12"
+          className="w-10/12 absolute bottom-60 right-0 md:right-8 md:w-11/12 md:bottom-40 lg:w-2/3 lg:right-16 xl:right-56 xl:w-6/12"
         />
       </div>
       <img

@@ -1,6 +1,6 @@
 export const portfolioBoxData = [
   {
-    image: "http://placehold.jp/298x163.png",
+    image: "images/burger2cropped.png",
     title: "Burger",
     location: "Nesbru, Asker",
     description:
@@ -8,7 +8,7 @@ export const portfolioBoxData = [
     link: "https://burger-mauve.vercel.app/",
   },
   {
-    image: "http://placehold.jp/298x163.png",
+    image: "images/nikolai3.png",
     title: "Intro",
     location: "Non-mediocrity land",
     description:
