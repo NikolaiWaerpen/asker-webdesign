@@ -15,7 +15,7 @@ export default function Header() {
         <img
           src="images/header3.png"
           alt=""
-          className="w-9/12 absolute bottom-44 right-0 md:right-8 md:w-9/12 md:bottom-20 lg:w-2/3 lg:right-16 xl:right-56 xl:w-6/12"
+          className="w-9/12 absolute bottom-1/30 right-1/20 md:right-2 md:w-9/12 md:bottom-20 lg:w-2/3 lg:right-8 xl:right-56 xl:w-6/12"
         />
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1505 800">

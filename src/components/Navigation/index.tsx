@@ -72,7 +72,7 @@ const LargeTopOfNav = () => {
         src="images/logo150.png"
         className="mt-3 w-60"
       />
-      <ul className="flex space-x-10 text-white text-lg mt-6">
+      <ul className="flex space-x-10 text-white text-lg mt-6 font-light">
         {dropDownOptions.map((dropDownOption) => {
           return (
             <Link
