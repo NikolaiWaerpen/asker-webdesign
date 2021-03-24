@@ -8,7 +8,7 @@ export const portfolioBoxData = [
     link: "https://burger-mauve.vercel.app/",
   },
   {
-    image: "images/nikolai3scaled.png",
+    image: "images/nikolai3.png",
     title: "Intro",
     location: "Non-mediocrity land",
     description:

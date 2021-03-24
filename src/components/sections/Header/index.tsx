@@ -15,10 +15,14 @@ export default function Header() {
         <img
           src="images/header3.png"
           alt=""
-          className="w-9/12 absolute bottom-1/20 right-1/20 md:right-2 md:w-9/12 md:bottom-20 lg:w-2/3 lg:right-8 xl:right-56 xl:w-6/12"
+          className="w-9/12 absolute z-40 bottom-1/20 right-1/20 md:right-2 md:w-9/12 md:bottom-20 lg:w-2/3 lg:right-8 xl:right-56 xl:w-6/12"
         />
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1505 800">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1505 800"
+        className="absolute z-0 bottom-0 bg-gray-300"
+      >
         <g id="Layer_2" data-name="Layer 2">
           <g id="Layer_1-2" data-name="Layer 1">
             <path
