@@ -13,8 +13,12 @@ export default function PortfolioSection() {
                 key={title}
                 className="bg-white p-6 border-b-4 border-blue-500 space-y-6 shadow-2xl rounded-md lg:mx-8"
               >
-                <div className="flex justify-center object-contain">
-                  <img src={image} alt="" className="flex justify-center" />
+                <div className="flex justify-center">
+                  <img
+                    src={image}
+                    alt=""
+                    className="flex justify-center object-contain h-52 md:h-80"
+                  />
                 </div>
 
                 <div>
