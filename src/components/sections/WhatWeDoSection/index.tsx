@@ -3,7 +3,7 @@ import NewSection from "../../NewSection";
 
 export default function WhatWeDoSection() {
   return (
-    <div className="flex flex-col mx-3 mt-14 md:mt-14 md:mx-24 lg:mt-0 lg:mx-56 xl:mx-96">
+    <div className="flex flex-col mx-3 mt-40 md:mt-14 md:mx-24 lg:mt-0 lg:mx-56 xl:mx-96">
       <NewSection blueText="What" blackText="we do" icon={faMobileAlt}>
         <p className="flex justify-center text-lg text-gray-500 text-center font-light">
           We specialize in small business web design and development for clients
