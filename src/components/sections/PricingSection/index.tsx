@@ -13,7 +13,7 @@ const BulletPoint = ({ bulletPoint }) => {
 
 export default function PricingSection() {
   return (
-    <div className="mt-28 mx-4 space-y-12 md:space-y-0 md:mx-40 lg:mx-0 lg:flex lg:space-x-12">
+    <div className="mt-28 mx-4 mb-48 space-y-12 lg:space-y-0 md:mx-40 lg:mx-0 lg:flex lg:space-x-12">
       {pricingBoxData.map(({ header, subHeader, price, bulletPoints }) => (
         <div
           key={header}

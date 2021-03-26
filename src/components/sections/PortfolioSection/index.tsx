@@ -28,7 +28,7 @@ export default function PortfolioSection() {
                   </h6>
                 </div>
 
-                <p className="text-md text-gray-500 font-light">
+                <p className="text-md text-gray-500 font-light lg:h-32">
                   {description}
                 </p>
 
