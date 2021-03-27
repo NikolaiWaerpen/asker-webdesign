@@ -125,6 +125,12 @@ export default function Navigation() {
 
   useEffect(() => {
     if (window.innerWidth > 1023) setScreenLarge(true);
+
+    const screenWithChecker = setTimeout(() => {
+      if (window.innerWidth > 1023) setScreenLarge(true);
+    }, 2000);
+
+    return () => clearTimeout(screenWithChecker);
   }, []);
 
   if (typeof window !== "undefined")

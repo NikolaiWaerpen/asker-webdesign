@@ -23,7 +23,7 @@ export default function Header() {
           <img
             src="images/header3.png"
             alt=""
-            className="absolute z-0 top-90/10 md:top-72 md:left-45/10 lg:left-96 lg:w"
+            className="absolute z-0 top-90/10 md:top-72 md:left-45/10 lg:left-96"
           />
           {/* <div className="absolute bg-red-400 w-36 h-36 bottom-0"></div> */}
         </div>
