@@ -131,7 +131,7 @@ export default function Navigation() {
     window.addEventListener("resize", isScreenLarge);
 
   return (
-    <div className="lg:mx-10 xl:mx-60">
+    <div className="lg:mx-10 xl:mx-60 relative z-50">
       {screenLarge ? (
         <LargeTopOfNav />
       ) : navOpen ? (
