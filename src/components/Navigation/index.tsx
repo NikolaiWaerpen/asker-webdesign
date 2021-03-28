@@ -1,9 +1,8 @@
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-scroll";
-
-const SCROLL_DURATION = 1000;
+import { DROPDOWN_OPTIONS, SCROLL_DURATION } from "../../data/consts";
 
 const SmallTopOfNav = ({ closeNav, navOpen }) => {
   return (
@@ -22,35 +21,12 @@ const SmallTopOfNav = ({ closeNav, navOpen }) => {
   );
 };
 
-const dropDownOptions = [
-  {
-    title: "What we do",
-    linkLocation: "whatWeDo",
-  },
-  // {
-  //   title: "What we can offer",
-  //   linkLocation: "",
-  // },
-  {
-    title: "Portfolio",
-    linkLocation: "portfolio",
-  },
-  {
-    title: "Who we are",
-    linkLocation: "whoWeAre",
-  },
-  // {
-  //   title: "Prices",
-  //   linkLocation: "",
-  // },
-];
-
 const LargeTopOfNav = () => {
   return (
     <div className="px-4 pt-2 flex justify-between">
       <img src="images/logo150.png" className="mt-3 w-60" />
       <ul className="flex space-x-10 text-white text-lg mt-6 font-light">
-        {dropDownOptions.map((dropDownOption) => {
+        {DROPDOWN_OPTIONS.map((dropDownOption) => {
           return (
             <Link
               to={dropDownOption.linkLocation}
@@ -106,7 +82,7 @@ export default function Navigation({ screenLarge }) {
                 flex text-white  justify-end pr-5`}
           >
             <ul>
-              {dropDownOptions.map(({ linkLocation, title }) => (
+              {DROPDOWN_OPTIONS.map(({ linkLocation, title }) => (
                 <DropDownElement
                   linkLocation={linkLocation}
                   closeNav={closeNav}

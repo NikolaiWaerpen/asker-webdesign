@@ -4,7 +4,7 @@ import NewSection from "../../NewSection";
 export default function WhoWeAreSection() {
   return (
     <div className="flex flex-col mt-28">
-      <NewSection blueText="Who" blackText="we are" icon={faUser}>
+      <NewSection blueText="Hvem" blackText="vi er" icon={faUser}>
         <div className="mx-4 md:mx-12 lg:mx-40 xl:mx-96">
           <p className="flex justify-center text-lg text-gray-500 text-center font-light">
             (midlertidig tekst) Det er så fantastisk å tenke på alle mulighetene
@@ -13,12 +13,12 @@ export default function WhoWeAreSection() {
             film er vakkert, litteratur er vakkert, naturen er vakker. Det er
             vakker kunst. Det er ingen regler for flinke og ressurssterke folk.
           </p>
-          <a
+          {/* <a
             href=""
             className="flex justify-center uppercase text-xl text-blue-400 font-light"
           >
             LEARN MORE
-          </a>
+          </a> */}
 
           <div className="mt-12 md:mx-52 flex flex-col justify-center">
             <img
@@ -31,7 +31,7 @@ export default function WhoWeAreSection() {
                 Nikolai Wærpen
               </h3>
               <h4 className="flex justify-center text-gray-500 text-lg font-light">
-                Developer & CEO
+                Utvikler & adm. direktør
               </h4>
             </div>
           </div>

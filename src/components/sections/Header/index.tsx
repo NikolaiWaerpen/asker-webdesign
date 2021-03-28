@@ -1,4 +1,4 @@
-import { MAILTO } from "../../../data/consts";
+import { MAIL_TO } from "../../../data/consts";
 
 export default function Header({ screenLarge }) {
   return (
@@ -10,10 +10,10 @@ export default function Header({ screenLarge }) {
           </h2>
           <p className="font-light">
             Ingen sidebyggere eller WordPress - Vi tilbyr 100% håndkodede
-            nettsteder med overlegne resultater fra kr 1500 / mo.
+            nettsteder som gir overlegne resultater fra kr 1500 pr. måned
           </p>
           <button className="px-8 py-3.5 text-black bg-white rounded-sm font-bold uppercase text-xs">
-            <a href={MAILTO}>Ta kontakt!</a>
+            <a href={MAIL_TO}>Ta kontakt!</a>
           </button>
           {/* <img
           src="images/header3.png"

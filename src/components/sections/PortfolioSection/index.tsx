@@ -5,7 +5,7 @@ import NewSection from "../../NewSection";
 export default function PortfolioSection() {
   return (
     <div className="mt-28">
-      <NewSection blueText="Our" blackText="portfolio" icon={faDesktop}>
+      <NewSection blueText="Vår" blackText="portefølje" icon={faDesktop}>
         <div className="mx-4 space-y-16 md:mx-36 lg:mx-14 lg:space-y-0 lg:grid lg:grid-cols-2">
           {portfolioBoxData.map(
             ({ image, title, location, description, link }) => (

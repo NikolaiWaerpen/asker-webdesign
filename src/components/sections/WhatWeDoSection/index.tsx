@@ -11,12 +11,12 @@ export default function WhatWeDoSection() {
           den beste ytelsen, som hjelper med å få flere kunder til nettstedet
           ditt og gi mer inntekter til virksomheten din.
         </p>
-        <a
+        {/* <a
           href=""
           className="flex justify-center uppercase text-lg text-blue-400 font-light"
         >
           Les mer
-        </a>
+        </a> */}
       </NewSection>
     </div>
   );

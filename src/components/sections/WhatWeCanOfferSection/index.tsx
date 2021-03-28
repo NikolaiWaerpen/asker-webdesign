@@ -4,7 +4,7 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 const BulletPoint = ({ header, content }) => {
   return (
-    <div className="flex mt-8">
+    <div className="flex mt-8 font-light">
       <FontAwesomeIcon icon={faCheck} className="text-blue-400 mt-1.5" />
       <div className="ml-2">
         <h4 className=" font-bold text-lg">{header}</h4>
@@ -24,20 +24,20 @@ export default function WhatWeCanOfferSection() {
       <div className="font-bold text-xl md:text-4xl">
         <div className="flex">
           <h4 className="text-blue-400">0,-&nbsp;</h4>
-          <h4>Down,&nbsp;</h4>
+          <h4>depositum,&nbsp;</h4>
           <h4 className="text-blue-400">1500,-&nbsp;</h4>
-          <h4 className="">Per Month,</h4>
+          <h4 className="">hver måned,</h4>
         </div>
-        <h4>No Minimum Contract</h4>
+        <h4>Ingen bindingstid</h4>
       </div>
-      <p className="text-gray-500 flecx justify-center">
-        $0 down for a standard 5 page small business website. If you need more
-        than that then we have to do custom pricing based on the scope of work,
-        number of additional pages, and time involved.
+      <p className="text-gray-500 font-light">
+        0,- depositum for en standard nettside for små bedrifter på 5 sider.
+        Hvis dere har et større behov, tilpasser vi priser basert på omfanget av
+        arbeidet
         <br />
         <br />
-        You own your domain, content, listing, and profiles. Cancel anytime with
-        no fees or hassle.
+        Du eier domenet, innholdet, oppføringen og profilene dine. Avbryt når
+        som helst uten avgifter eller problemer
       </p>
 
       <div className="md:grid md:grid-cols-2">

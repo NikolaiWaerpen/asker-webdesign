@@ -1,30 +1,29 @@
 export const bulletPointData = [
   {
-    header: "Hosting Fees Included",
-    content: "Hosting fees are built right into the monthly payment.",
+    header: "Hostinggebyrer inkludert ",
+    content: "Hostinggebyrer er innebygd rett inn i den månedlige betalingen ",
   },
   {
-    header: "Unlimited Edits",
+    header: "Ubegrensede redigeringer",
+    content: "Endre det du vil når som helst, og det vil bli utført samme dag",
+  },
+  {
+    header: "24/7 kundeservice ",
     content:
-      "Change anything you want at anytime and it will be done that day.",
+      "Ring direkte når som helst dag eller natt, ingen automatiserte svar",
   },
   {
-    header: "24/7 Customer Service",
+    header: "Nettdesign og utvikling",
+    content: "Inkluderer over 80 timer med design, utvikling og testing",
+  },
+  {
+    header: "Sitater og oppføringer ",
     content:
-      "Call direct anytime day or night, no phone trees or automated responses.",
-  },
-  {
-    header: "Web Design & Development",
-    content: "Includes over 40 hours of design, development, and testing.",
-  },
-  {
-    header: "Citations And Listings",
-    content:
-      "It's important to have your website linked from other websites, like directories.",
+      "Det er viktig å ha nettstedet ditt koblet fra andre nettsteder, som Gulesider eller Tripadvisor",
   },
   {
     header: "Google Analytics",
     content:
-      "We install Analytics for free to monitor traffic and where it comes from.",
+      "Vi installerer Google Analytics gratis for å overvåke trafikken og hvor den kommer fra",
   },
 ];

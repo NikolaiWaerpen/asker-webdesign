@@ -1,17 +1,17 @@
 export const infoSectionData = [
   {
-    header: "Mobile-First Design",
+    header: "Mobil webdesign",
     content:
-      "We start building your site for mobile devices first, then we add on to it to make tablet and desktop.",
+      "Vi begynner å bygge nettsiden ditt for mobile enheter først, så gjør vi det pent på både nettbrett og vanlig skrivebords skjermer",
   },
   {
-    header: "Fully Responsive",
+    header: "Responsiv nettside",
     content:
-      "Your website will fit all mobile screens sizes, tablets, and desktop sizes so new clients can access your site from anywhere.",
+      "Nettsiden din vil se bra ut på alle mobiler, nettbrett og datamaskiner, uansett skjermstørrelse! Dette tillater alle nye brukere tilgang til nettsiden din på alle enheter",
   },
   {
-    header: "Optimization",
+    header: "Optimalisering",
     content:
-      "60% of all internet traffic is on mobile devices, so we optimize your mobile to perform their best in search engines.",
+      "60% av all internettrafikk går via mobile enheter, så vi optimaliserer nettsiden din for mobile enheter slik at den yter i søkemotorer",
   },
 ];
