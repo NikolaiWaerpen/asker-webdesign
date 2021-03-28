@@ -22,11 +22,11 @@ import Footer from "../components/sections/Footer";
 
 // mt-28 standard
 
-export default function HomePage() {
+export default function HomePage({ screenLarge }) {
   return (
     <div>
       <div id="header">
-        <Header />
+        <Header screenLarge={screenLarge} />
       </div>
 
       <div id="whatWeDo">

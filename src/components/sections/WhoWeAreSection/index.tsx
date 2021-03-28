@@ -21,7 +21,11 @@ export default function WhoWeAreSection() {
           </a>
 
           <div className="mt-12 md:mx-52 flex flex-col justify-center">
-            <img src="/images/idiot.png" alt="" className="mx-8" />
+            <img
+              src="/images/whoweareimage1cropped.jpg"
+              alt=""
+              className="mx-8 rounded-full"
+            />
             <div className="flex flex-col justify-center mt-12">
               <h3 className="flex justify-center text-xl font-bold">
                 Nikolai Wærpen

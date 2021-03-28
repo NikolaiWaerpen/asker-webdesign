@@ -1,10 +1,5 @@
-import {
-  faBars,
-  faFolderOpen,
-  faTimes,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 
@@ -13,22 +8,8 @@ const SCROLL_DURATION = 1000;
 const SmallTopOfNav = ({ closeNav, navOpen }) => {
   return (
     <div className="px-4 pt-2 flex justify-between">
-      <img
-        // src="http://placehold.jp/150x50.png"
-        src="images/logo150.png"
-        className="mt-3"
-      />
-      <div className="flex text-white text-3xl w-20 justify-between">
-        <Link
-          to="portfolio"
-          smooth={true}
-          duration={SCROLL_DURATION}
-          className="mt-2"
-        >
-          <a>
-            <FontAwesomeIcon icon={faFolderOpen} />
-          </a>
-        </Link>
+      <img src="images/logo150.png" className="mt-3" />
+      <div className="text-white text-3xl mt-2.5">
         <button onClick={() => closeNav()}>
           {navOpen ? (
             <FontAwesomeIcon icon={faTimes} />
@@ -67,11 +48,7 @@ const dropDownOptions = [
 const LargeTopOfNav = () => {
   return (
     <div className="px-4 pt-2 flex justify-between">
-      <img
-        // src="http://placehold.jp/150x50.png"
-        src="images/logo150.png"
-        className="mt-3 w-60"
-      />
+      <img src="images/logo150.png" className="mt-3 w-60" />
       <ul className="flex space-x-10 text-white text-lg mt-6 font-light">
         {dropDownOptions.map((dropDownOption) => {
           return (
@@ -109,32 +86,12 @@ const DropDownElement = ({ linkLocation, closeNav, title }) => {
   );
 };
 
-export default function Navigation() {
+export default function Navigation({ screenLarge }) {
   const [navOpen, setNavOpen] = useState(false);
-  const [screenLarge, setScreenLarge] = useState(false);
 
   const closeNav = () => {
     setNavOpen((current) => !current);
   };
-
-  const isScreenLarge = () => {
-    if (window.innerWidth > 1023) {
-      setScreenLarge(true);
-    } else setScreenLarge(false);
-  };
-
-  useEffect(() => {
-    if (window.innerWidth > 1023) setScreenLarge(true);
-
-    const screenWithChecker = setTimeout(() => {
-      if (window.innerWidth > 1023) setScreenLarge(true);
-    }, 2000);
-
-    return () => clearTimeout(screenWithChecker);
-  }, []);
-
-  if (typeof window !== "undefined")
-    window.addEventListener("resize", isScreenLarge);
 
   return (
     <div className="lg:mx-10 xl:mx-60 relative z-50">

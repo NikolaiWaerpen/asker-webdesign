@@ -4,20 +4,26 @@ import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
 const BulletPoint = ({ bulletPoint }) => {
   return (
-    <div className="flex space-x-3">
-      <FontAwesomeIcon icon={faCheckCircle} className="text-blue-400 mt-1" />
-      <h4 className="text-gray-500 text-md font-light ml-1">{bulletPoint}</h4>
+    // <div className="flex ">
+    // </div>
+    <div className="flex space-x-1">
+      <div className="flex flex-grow-1 flex-row-reverse">
+        <FontAwesomeIcon icon={faCheckCircle} className="text-blue-400 mt-1" />
+      </div>
+      <div className="flex flex-grow-3 w-28">
+        <h4 className="text-gray-500 text-md font-light ml-1">{bulletPoint}</h4>
+      </div>
     </div>
   );
 };
 
 export default function PricingSection() {
   return (
-    <div className="mt-28 mx-4 mb-48 space-y-12 lg:space-y-0 md:mx-40 lg:mx-0 lg:flex lg:space-x-12">
+    <div className="mt-28 mx-4 mb-12 space-y-12 lg:space-y-0 md:mx-40 lg:mx-0 lg:flex lg:justify-center lg:space-x-12">
       {pricingBoxData.map(({ header, subHeader, price, bulletPoints }) => (
         <div
           key={header}
-          className="bg-white border-2 border-blue-200 rounded-md overflow-hidden shadow-md"
+          className="bg-white border-2 border-blue-200 rounded-md overflow-hidden shadow-md lg:w-72 xl:w-96"
         >
           <h5
             className={`${
@@ -43,7 +49,7 @@ export default function PricingSection() {
               </div>
             </div>
 
-            <div className="flex flex-col justify-center ml-12 space-y-2 mt-3">
+            <div className="flex flex-col justify-center space-y-2 mt-3">
               {bulletPoints.map((bulletPoint) => {
                 return (
                   <BulletPoint key={bulletPoint} bulletPoint={bulletPoint} />

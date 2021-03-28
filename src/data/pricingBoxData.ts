@@ -1,13 +1,13 @@
 export const pricingBoxData = [
   {
-    header: "STANDARD + BLOGGING",
+    header: "PREMIUM",
     subHeader: "STARTING AT",
     price: 3000,
     bulletPoints: [
-      "1000 Word Post",
       "Keyword Analysis",
       "Written By an SEO Specialist",
       "Helps Boost SEO",
+      "... everything in Standard",
     ],
   },
   {
