@@ -1,18 +1,18 @@
 export const portfolioBoxData = [
   {
     image: "images/burger2cropped.png",
-    title: "Burger",
+    title: "Kebab",
     location: "Nesbru, Asker",
     description:
-      "I made this for Nesbru Kebab for free, but then they decided 'screw this kid, we already got a website in the making' AND THIS IS WHAT THEY CAME UP WITH http://nesbrukebab.no",
+      "SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. ",
     link: "https://burger-mauve.vercel.app/",
   },
   {
     image: "images/nikolai3.png",
     title: "Intro",
-    location: "Non-mediocrity land",
+    location: "SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER.",
     description:
-      "Some project I did when I was bored. Felt cute, might delete later, idk",
+      "SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. ",
     link: "https://nikolaithecreator.com",
   },
 ];
