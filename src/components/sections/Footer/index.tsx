@@ -1,3 +1,5 @@
+import { MAILTO } from "../../../data/consts";
+
 export default function Footer() {
   return (
     <div className="bg-gradient-to-tl from-blue-500 to-blue-800 mt-80 md:mt-0">
@@ -16,13 +18,9 @@ export default function Footer() {
       </svg>
 
       <div className="text-white space-y-12 px-8 pb-12">
-        <img
-          // src="http://placehold.jp/150x50.png"
-          src="images/logo200.png"
-          className="mt-3"
-        />
+        <img src="images/logo200.png" className="mt-3" />
         <div className="text-white text-md space-y-4">
-          <h5>contact@waerpendevelopment.com</h5>
+          <a href={MAILTO}>hello@waerpendevelopment.com</a>
           <h5>(+47) 452 93 539</h5>
         </div>
         <div>
@@ -52,7 +50,9 @@ export default function Footer() {
       <div className="text-white py-8 bg-gradient-to-tl from-blue-500 to-blue-800">
         <div className="flex justify-center">
           <h3 className=" text-gray-200">Copyright © 2021 |&nbsp;</h3>
-          <h3 className="font-medium">Waerpen Development</h3>
+          <a href="/" className="font-medium">
+            Waerpen Development
+          </a>
         </div>
         <h3 className="flex justify-center text-gray-200">
           All Rights Reserved

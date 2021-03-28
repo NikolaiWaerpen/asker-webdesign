@@ -1,3 +1,5 @@
+import { MAILTO } from "../../../data/consts";
+
 export default function Header({ screenLarge }) {
   return (
     <div className="bg-gradient-to-tl from-blue-500 to-blue-800">
@@ -7,11 +9,11 @@ export default function Header({ screenLarge }) {
             Webutvikling og design for småbedrifter
           </h2>
           <p className="font-light">
-            Ingen sidebygger eller WordPress - Vi tilbyr 100% håndkodede
+            Ingen sidebyggere eller WordPress - Vi tilbyr 100% håndkodede
             nettsteder med overlegne resultater fra kr 1500 / mo.
           </p>
           <button className="px-8 py-3.5 text-black bg-white rounded-sm font-bold uppercase text-xs">
-            Ta kontakt!
+            <a href={MAILTO}>Ta kontakt!</a>
           </button>
           {/* <img
           src="images/header3.png"

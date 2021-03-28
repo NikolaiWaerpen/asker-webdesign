@@ -1,6 +1,7 @@
 import { pricingBoxData } from "../../../data/pricingBoxData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import { MAILTO } from "../../../data/consts";
 
 const BulletPoint = ({ bulletPoint }) => {
   return (
@@ -58,13 +59,11 @@ export default function PricingSection() {
             </div>
 
             <div className="flex justify-center pb-5 mt-8 mb-4">
-              <a
-                href="https://waerpendevelopment.com"
-                target="_blank"
-                className="flex justify-center w-32 h-10 text-white bg-gradient-to-l from-blue-400 to-blue-500 rounded-sm font-bold uppercase text-xs"
-              >
-                <span className="flex mt-3">Contact us</span>
-              </a>
+              <button className="flex justify-center w-32 h-10 text-white bg-gradient-to-l from-blue-400 to-blue-500 rounded-sm font-bold uppercase text-xs">
+                <a href={MAILTO} className="mt-3">
+                  Contact us
+                </a>
+              </button>
             </div>
           </div>
         </div>
