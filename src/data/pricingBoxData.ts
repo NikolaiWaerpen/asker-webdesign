@@ -7,7 +7,10 @@ export const pricingBoxData = [
       "Søkeordanalyse",
       "Skrevet av en SEO-spesialist",
       "Hjelper med å øke SEO ",
-      "...alt inkludert i Standard",
+      "Ubegrensede redigeringer ",
+      "Inkluderer hosting",
+      "24/7 kundeservice",
+      "Kontinuerlige oppdateringer",
     ],
   },
   {
