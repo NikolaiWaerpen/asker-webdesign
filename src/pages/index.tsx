@@ -6,6 +6,7 @@ import WhoWeAreSection from "../components/sections/WhoWeAreSection";
 import WhatWeCanOfferSection from "../components/sections/WhatWeCanOfferSection";
 import PricingSection from "../components/sections/PricingSection";
 import Footer from "../components/sections/Footer";
+import ContactUs from "../components/sections/ContactUs";
 
 // TODO LIST:
 // * Standardize colors
@@ -46,6 +47,8 @@ export default function HomePage({ screenLarge }) {
       </div>
 
       <PricingSection />
+
+      <ContactUs />
 
       <Footer />
     </div>

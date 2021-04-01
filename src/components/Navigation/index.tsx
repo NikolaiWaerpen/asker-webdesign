@@ -24,7 +24,7 @@ const SmallTopOfNav = ({ closeNav, navOpen }) => {
 const LargeTopOfNav = () => {
   return (
     <div className="px-4 pt-2 flex justify-between">
-      <img src="images/logo150.png" className="mt-3 w-60" />
+      <img src="images/logo.png" className="mt-3 w-60" />
       <ul className="flex space-x-10 text-white text-lg mt-6 font-light">
         {DROPDOWN_OPTIONS.map((dropDownOption) => {
           return (

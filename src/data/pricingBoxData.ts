@@ -12,6 +12,7 @@ export const pricingBoxData = [
       "24/7 kundeservice",
       "Kontinuerlige oppdateringer",
     ],
+    extraContent: null,
   },
   {
     header: "STANDARD",
@@ -23,16 +24,18 @@ export const pricingBoxData = [
       "24/7 kundeservice",
       "Kontinuerlige oppdateringer",
     ],
+    extraComment: null,
   },
   {
     header: "LOGOER & GRAFISK DESIGN",
-    subHeader: "INKLUDERT!",
-    price: 0,
+    subHeader: "",
+    price: 1000,
     bulletPoints: [
       "2 revisjoner",
       "Alle filformater",
       "Klar til bruk",
       "GRATIS m/ abonnement",
     ],
+    extraComment: "* Inkludert i standard",
   },
 ];
