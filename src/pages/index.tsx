@@ -36,19 +36,25 @@ export default function HomePage({ screenLarge }) {
 
       <InfoSection />
 
-      <WhatWeCanOfferSection />
+      <div className="mt-28">
+        <WhatWeCanOfferSection />
+      </div>
 
-      <div id="portfolio">
+      <div id="portfolio" className="pt-4 mt-28">
         <PortfolioSection />
       </div>
 
-      <div id="whoWeAre">
+      <div id="whoWeAre" className="pt-4 mt-28">
         <WhoWeAreSection />
       </div>
 
-      <PricingSection />
+      <div className="mt-28">
+        <PricingSection />
+      </div>
 
-      <ContactUs />
+      <div id="contactUs" className="pt-4 mt-28">
+        <ContactUs />
+      </div>
 
       <Footer />
     </div>

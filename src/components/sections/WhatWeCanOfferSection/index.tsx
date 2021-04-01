@@ -16,7 +16,7 @@ const BulletPoint = ({ header, content }) => {
 
 export default function WhatWeCanOfferSection() {
   return (
-    <div className="space-y-3 mx-5 text-lg mt-28 md:mx-32 xl:mx-96">
+    <div className="space-y-3 mx-5 text-lg md:mx-32 xl:mx-96">
       <img
         src="https://d33wubrfki0l68.cloudfront.net/1a6a7635d723bd43ad01eb8e14ca555ade9200d9/e643b/images/savings.svg"
         alt=""

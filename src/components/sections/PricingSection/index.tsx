@@ -1,7 +1,8 @@
 import { pricingBoxData } from "../../../data/pricingBoxData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
-import { MAIL_TO } from "../../../data/consts";
+import { Link } from "react-scroll";
+import { SCROLL_DURATION } from "../../../data/consts";
 
 const BulletPoint = ({ bulletPoint }) => {
   return (
@@ -20,11 +21,11 @@ const BulletPoint = ({ bulletPoint }) => {
 
 export default function PricingSection() {
   return (
-    <div className="mt-28 mx-4 mb-12 space-y-12 lg:space-y-0 md:mx-40 lg:mx-0 lg:flex lg:justify-center lg:space-x-12">
+    <div className="mx-4 mb-12 space-y-12 lg:space-y-0 md:mx-40 lg:mx-0 lg:flex lg:justify-center lg:space-x-12">
       {pricingBoxData.map(({ header, subHeader, price, bulletPoints }) => (
         <div
           key={header}
-          className="bg-white border-2 border-blue-200 rounded-md overflow-hidden shadow-md lg:w-72 xl:w-96"
+          className="bg-white border border-blue-200 rounded-md overflow-hidden shadow-md lg:w-72 xl:w-96"
         >
           <h5
             className={`${
@@ -32,7 +33,7 @@ export default function PricingSection() {
                 ? "bg-green-300"
                 : "bg-blue-100"
             }
-            font-semibold text-md flex justify-center border-b-2 border-blue-200 py-3`}
+            font-semibold text-md flex justify-center border-b border-blue-200 py-3`}
           >
             {header}
           </h5>
@@ -59,11 +60,11 @@ export default function PricingSection() {
             </div>
 
             <div className="flex justify-center pb-5 mt-8 mb-4">
-              <button className="flex justify-center w-32 h-10 text-white bg-gradient-to-l from-blue-400 to-blue-500 rounded-sm font-bold uppercase text-xs">
-                <a href={MAIL_TO} className="mt-3">
+              <Link to="contactUs" smooth={true} duration={SCROLL_DURATION}>
+                <button className="w-32 h-10 text-white bg-gradient-to-l from-blue-400 to-blue-500 rounded-sm font-bold uppercase text-xs">
                   Kontakt oss
-                </a>
-              </button>
+                </button>
+              </Link>
             </div>
           </div>
         </div>

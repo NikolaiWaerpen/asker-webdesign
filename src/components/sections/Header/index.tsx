@@ -1,4 +1,5 @@
-import { MAIL_TO } from "../../../data/consts";
+import { Link } from "react-scroll";
+import { SCROLL_DURATION } from "../../../data/consts";
 
 export default function Header({ screenLarge }) {
   return (
@@ -12,14 +13,13 @@ export default function Header({ screenLarge }) {
             Ingen sidebyggere eller WordPress - Vi tilbyr 100% håndkodede
             nettsteder som gir overlegne resultater fra kr 1500 pr. måned
           </p>
-          <button className="px-8 py-3.5 text-black bg-white rounded-sm font-bold uppercase text-xs">
-            <a href={MAIL_TO}>Ta kontakt!</a>
-          </button>
-          {/* <img
-          src="images/header3.png"
-          alt=""
-          className="w-9/12 absolute z-40 bottom-1/20 right-1/20 md:right-2 md:w-9/12 md:bottom-20 lg:w-2/3 lg:right-8 xl:right-56 xl:w-6/12"
-        /> */}
+          <div>
+            <Link to="contactUs" smooth={true} duration={SCROLL_DURATION}>
+              <button className="px-8 py-3.5 text-black bg-white rounded-sm font-bold uppercase text-xs">
+                Ta kontakt!
+              </button>
+            </Link>
+          </div>
         </div>
 
         {!screenLarge && (

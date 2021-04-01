@@ -3,7 +3,7 @@ import NewSection from "../../NewSection";
 
 export default function WhoWeAreSection() {
   return (
-    <div className="flex flex-col mt-28">
+    <div className="flex flex-col">
       <NewSection blueText="Hvem" blackText="vi er" icon={faUser}>
         <div className="mx-4 md:mx-12 lg:mx-40 xl:mx-96">
           <p className="flex justify-center text-lg text-gray-500 text-center font-light">
