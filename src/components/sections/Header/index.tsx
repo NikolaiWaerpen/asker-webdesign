@@ -4,21 +4,23 @@ import { SCROLL_DURATION } from "../../../data/consts";
 export default function Header({ screenLarge }) {
   return (
     <div className="bg-gradient-to-tl from-blue-500 to-blue-800">
-      <div className="mx-3 pt-40 relative text-white  md:w-2/3 lg:mx-12 lg:w-2/5 xl:mx-64 xl:w-1/3 flex flex-col md:flex-row">
+      <div className="mx-3 pt-40 relative text-white  md:w-2/3 lg:mx-12 lg:w-2/5 xl:mx-32 xl:w-2/5 flex flex-col md:flex-row ">
         <div className="space-y-9 relative z-20">
           <h2 className="text-25xl font-extrabold md:text-5xl">
             Webutvikling og design for småbedrifter
           </h2>
-          <p className="font-light">
-            Ingen sidebyggere eller WordPress - Vi tilbyr 100% håndkodede
-            nettsteder som gir overlegne resultater fra kr 1500 pr. måned
-          </p>
-          <div>
-            <Link to="contactUs" smooth={true} duration={SCROLL_DURATION}>
-              <button className="px-8 py-3.5 text-black bg-white rounded-sm font-bold uppercase text-xs">
-                Ta kontakt!
-              </button>
-            </Link>
+          <div className="xl:w-2/3 space-y-9">
+            <p className="font-light">
+              Ingen sidebyggere eller WordPress - Vi tilbyr 100% håndkodede
+              nettsteder som gir overlegne resultater fra kr 1500 pr. måned
+            </p>
+            <div>
+              <Link to="contactUs" smooth={true} duration={SCROLL_DURATION}>
+                <button className="px-8 py-3.5 text-black bg-white rounded-sm font-bold uppercase text-xs">
+                  Ta kontakt!
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
 
@@ -34,7 +36,7 @@ export default function Header({ screenLarge }) {
         <img
           src="images/header3.png"
           alt=""
-          className="absolute z-0 w-4/6 right-8 top-32 xl:w-1/2 xl:right-60"
+          className="absolute z-0 w-4/6 right-8 top-32 xl:top-36 2xl:top-14 xl:w-7/12 xl:right-32"
         />
       )}
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1505 800">
