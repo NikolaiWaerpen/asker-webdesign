@@ -27,45 +27,48 @@ export default function PricingSection() {
           key={header}
           className="bg-white border border-blue-200 rounded-md overflow-hidden shadow-md lg:w-72 xl:w-96"
         >
-          <h5
-            className={`${
-              header === pricingBoxData[1].header
-                ? "bg-green-300"
-                : "bg-blue-100"
-            }
+          <div className="lg:h-96">
+            <div className="lg:flex lg:flex-col">
+              <h5
+                className={`${
+                  header === pricingBoxData[1].header
+                    ? "bg-green-300"
+                    : "bg-blue-100"
+                }
             font-semibold text-md flex justify-center border-b border-blue-200 py-3`}
-          >
-            {header}
-          </h5>
-          <div className="mt-3">
-            <div>
-              <span className="text-gray-500 text-md font-light flex justify-center">
-                {subHeader}
-              </span>
-              <div className="flex text-blue-400 justify-center">
-                <h5 className="text-2xl mt-1 mr-1">kr</h5>
-                <h2 className="text-6xl">{price}</h2>
-                {price === pricingBoxData[2].price ? null : (
-                  <h5 className=" uppercase text-xl mt-7">/ mnd</h5>
-                )}
+              >
+                {header}
+              </h5>
+              <div className="mt-3">
+                <div>
+                  <span className="text-gray-500 text-md font-light flex justify-center">
+                    {subHeader}
+                  </span>
+                  <div className="flex text-blue-400 justify-center">
+                    <h5 className="text-2xl mt-1 mr-1">kr</h5>
+                    <h2 className="text-6xl">{price}</h2>
+                    {price === pricingBoxData[2].price ? null : (
+                      <h5 className=" uppercase text-xl mt-7">/ mnd</h5>
+                    )}
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col justify-center space-y-2 mt-3">
+                {bulletPoints.map((bulletPoint) => {
+                  return (
+                    <BulletPoint key={bulletPoint} bulletPoint={bulletPoint} />
+                  );
+                })}
               </div>
             </div>
-
-            <div className="flex flex-col justify-center space-y-2 mt-3">
-              {bulletPoints.map((bulletPoint) => {
-                return (
-                  <BulletPoint key={bulletPoint} bulletPoint={bulletPoint} />
-                );
-              })}
-            </div>
-
-            <div className="flex justify-center pb-5 mt-8 mb-4">
-              <Link to="contactUs" smooth={true} duration={SCROLL_DURATION}>
-                <button className="w-32 h-10 text-white bg-gradient-to-l from-blue-400 to-blue-500 rounded-sm font-bold uppercase text-xs">
-                  Kontakt oss
-                </button>
-              </Link>
-            </div>
+          </div>
+          <div className="flex justify-center pb-5 mt-8 mb-4">
+            <Link to="contactUs" smooth={true} duration={SCROLL_DURATION}>
+              <button className="w-32 h-10 text-white bg-gradient-to-l from-blue-400 to-blue-500 rounded-sm font-bold uppercase text-xs">
+                Kontakt oss
+              </button>
+            </Link>
           </div>
         </div>
       ))}
