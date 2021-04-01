@@ -29,30 +29,30 @@ export default function HomePage({ screenLarge }) {
         <Header screenLarge={screenLarge} />
       </div>
 
-      <div id="whatWeDo">
-        <WhatWeDoSection />
-      </div>
+      <div className="space-y-28 lg:space-y-48 2xl:space-y-72">
+        <div id="whatWeDo">
+          <WhatWeDoSection />
+        </div>
+        <div className="">
+          <WhatWeCanOfferSection />
+        </div>
 
-      <div className="mt-28 lg:mt-72">
-        <WhatWeCanOfferSection />
-      </div>
+        <div id="portfolio" className="pt-4 ">
+          <PortfolioSection />
+        </div>
 
-      <div id="portfolio" className="pt-4 mt-28 lg:mt-72">
-        <PortfolioSection />
-      </div>
+        <div id="whoWeAre" className="pt-4 ">
+          <WhoWeAreSection />
+        </div>
 
-      <div id="whoWeAre" className="pt-4 mt-28 lg:mt-72">
-        <WhoWeAreSection />
-      </div>
+        <div className="">
+          <PricingSection />
+        </div>
 
-      <div className="mt-28 lg:mt-72">
-        <PricingSection />
+        <div id="contactUs" className="pt-4 ">
+          <ContactUs />
+        </div>
       </div>
-
-      <div id="contactUs" className="pt-4 mt-28 lg:mt-72">
-        <ContactUs />
-      </div>
-
       <Footer />
     </div>
   );

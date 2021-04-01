@@ -16,7 +16,7 @@ const SVG = ({ headerText }) => {
 export default function WhatWeDoSection() {
   return (
     <div>
-      <div className="flex flex-col mx-3 mt-40 md:mt-14 md:mx-24 lg:mt-0 lg:mx-56 xl:mx-96">
+      <div className="flex flex-col mx-3 mt-40 md:mt-14 md:mx-24 lg:mt-0 lg:mx-28 xl:mx-56 2xl:mx-96">
         <NewSection blueText="Hva" blackText="vi gjør" icon={faMobileAlt}>
           <p className="flex justify-center text-lg text-gray-500 text-center font-light">
             Vi er spesialister på småbedrifter webdesign og utvikling for kunder
@@ -27,7 +27,7 @@ export default function WhatWeDoSection() {
         </NewSection>
       </div>
 
-      <div className="mt-12 md:mx-52 lg:mx-12 lg:flex">
+      <div className="mt-12 md:mx-52 lg:mx-28 xl:mx-44 2xl:mx-80 lg:flex">
         {infoSectionData.map(({ header, content }) => {
           return (
             <div key={header}>
