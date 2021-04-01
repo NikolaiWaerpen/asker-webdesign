@@ -1,4 +1,3 @@
-import InfoSection from "../components/sections/InfoSection";
 import Header from "../components/sections/Header";
 import WhatWeDoSection from "../components/sections/WhatWeDoSection";
 import PortfolioSection from "../components/sections/PortfolioSection";
@@ -33,8 +32,6 @@ export default function HomePage({ screenLarge }) {
       <div id="whatWeDo">
         <WhatWeDoSection />
       </div>
-
-      <InfoSection />
 
       <div className="mt-28 lg:mt-72">
         <WhatWeCanOfferSection />
