@@ -22,7 +22,8 @@ export default function ContactUs() {
           <h3 className="text-gray-600">(+47) 452 93 539</h3>
         </div>
       </div>
-      <div className="bg-white p-6 space-y-6 shadow-2xl rounded-md lg:mx-8">
+
+      <div className="bg-white p-6 space-y-6 shadow-2xl rounded-md lg:mx-8 border border-gray-100 border-opacity-95">
         <div className="flex uppercase font-bold text-3xl lg:text-4xl">
           <h3 className="text-blue-400 font-normal">Kontakt&nbsp;</h3>
           <h3>Oss</h3>
