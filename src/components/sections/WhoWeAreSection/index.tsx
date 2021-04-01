@@ -13,14 +13,8 @@ export default function WhoWeAreSection() {
             OG FINN PÅ NOE Å SMART Å SKRIVE HER.SKJERP DEG OG FINN PÅ NOE Å
             SMART Å SKRIVE HER.
           </p>
-          {/* <a
-            href=""
-            className="flex justify-center uppercase text-xl text-green-400 font-light"
-          >
-            LEARN MORE
-          </a> */}
 
-          <div className="mt-12 md:mx-52 flex flex-col justify-center">
+          <div className="mt-12 md:mx-20 flex flex-col justify-center">
             <div className="flex justify-center">
               <div className="w-48 lg:w-56 mx-8 rounded-full overflow-hidden ring-2 ring-green-400  ring-offset-2">
                 <img

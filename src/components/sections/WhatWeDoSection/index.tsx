@@ -1,14 +1,14 @@
 import { faMobileAlt } from "@fortawesome/free-solid-svg-icons";
 import NewSection from "../../NewSection";
 import { MobileSVG, ResponsiveSVG, OptimizationSVG } from "./svgs";
-import { infoSectionData } from "../../../data/infoSectionData";
+import { whatWeDoData } from "./whatWeDoData";
 
 const SVG = ({ headerText }) => {
   return (
     <div className="flex justify-center">
-      {headerText === infoSectionData[0].header && <MobileSVG />}
-      {headerText === infoSectionData[1].header && <ResponsiveSVG />}
-      {headerText === infoSectionData[2].header && <OptimizationSVG />}
+      {headerText === whatWeDoData[0].header && <MobileSVG />}
+      {headerText === whatWeDoData[1].header && <ResponsiveSVG />}
+      {headerText === whatWeDoData[2].header && <OptimizationSVG />}
     </div>
   );
 };
@@ -28,7 +28,7 @@ export default function WhatWeDoSection() {
       </div>
 
       <div className="mt-12 md:mx-52 lg:mx-28 xl:mx-44 2xl:mx-80 lg:flex">
-        {infoSectionData.map(({ header, content }) => {
+        {whatWeDoData.map(({ header, content }) => {
           return (
             <div key={header}>
               <div className="space-y-3 p-10">

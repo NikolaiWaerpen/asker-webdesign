@@ -1,6 +1,6 @@
 import { useForm, ValidationError } from "@formspree/react";
 import { MAIL_TO } from "../../../data/consts";
-import { contactUsData } from "../../../data/contactUsData";
+import { contactUsData } from "./contactUsData";
 
 export default function ContactUs() {
   const [state, handleSubmit] = useForm("xjvjvbdb");

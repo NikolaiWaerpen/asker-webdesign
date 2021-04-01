@@ -1,4 +1,4 @@
-import { pricingBoxData } from "../../../data/pricingBoxData";
+import { pricingData } from "./pricingData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-scroll";
@@ -6,8 +6,6 @@ import { SCROLL_DURATION } from "../../../data/consts";
 
 const BulletPoint = ({ bulletPoint }) => {
   return (
-    // <div className="flex ">
-    // </div>
     <div className="flex space-x-1">
       <div className="flex flex-grow-1 flex-row-reverse">
         <FontAwesomeIcon icon={faCheckCircle} className="text-green-400 mt-1" />
@@ -22,7 +20,7 @@ const BulletPoint = ({ bulletPoint }) => {
 export default function PricingSection() {
   return (
     <div className="mx-4 mb-12 space-y-12 lg:space-y-0 md:mx-40 lg:mx-24 lg:flex lg:justify-center lg:space-x-12">
-      {pricingBoxData.map(({ header, subHeader, price, bulletPoints }) => (
+      {pricingData.map(({ header, subHeader, price, bulletPoints }) => (
         <div
           key={header}
           className="bg-white border border-green-200 rounded-md overflow-hidden shadow-md lg:w-80 xl:w-96"
@@ -31,7 +29,7 @@ export default function PricingSection() {
             <div className="lg:flex lg:flex-col">
               <h5
                 className={`${
-                  header === pricingBoxData[1].header
+                  header === pricingData[1].header
                     ? "bg-green-300"
                     : "bg-green-100"
                 }
@@ -47,7 +45,7 @@ export default function PricingSection() {
                   <div className="flex text-green-400 justify-center">
                     <h5 className="text-2xl mt-1 mr-1">kr</h5>
                     <h2 className="text-6xl">{price}</h2>
-                    {price === pricingBoxData[2].price ? null : (
+                    {price === pricingData[2].price ? null : (
                       <h5 className=" uppercase text-xl mt-7">/ mnd</h5>
                     )}
                   </div>

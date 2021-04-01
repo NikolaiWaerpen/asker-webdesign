@@ -1,4 +1,4 @@
-export const infoSectionData = [
+export const whatWeDoData = [
   {
     header: "Mobil webdesign",
     content:

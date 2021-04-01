@@ -1,4 +1,4 @@
-export const portfolioBoxData = [
+export const portfolioData = [
   {
     image: "images/burger2cropped.png",
     title: "Kebab",

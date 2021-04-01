@@ -1,4 +1,4 @@
-import { bulletPointData } from "../../../data/bulletPointData";
+import { whatWeCanOfferData } from "./whatWeCanOffcerData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
@@ -45,7 +45,7 @@ export default function WhatWeCanOfferSection() {
         </p>
 
         <div className="md:grid md:grid-cols-2">
-          {bulletPointData.map(({ header, content }) => (
+          {whatWeCanOfferData.map(({ header, content }) => (
             <BulletPoint key={header} header={header} content={content} />
           ))}
         </div>

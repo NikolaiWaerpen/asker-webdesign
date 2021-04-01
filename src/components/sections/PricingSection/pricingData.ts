@@ -1,4 +1,4 @@
-export const pricingBoxData = [
+export const pricingData = [
   {
     header: "PREMIUM",
     subHeader: "STARTING AT",
@@ -30,12 +30,7 @@ export const pricingBoxData = [
     header: "LOGOER & GRAFISK DESIGN",
     subHeader: "",
     price: 1000,
-    bulletPoints: [
-      "2 revisjoner",
-      "Alle filformater",
-      "Klar til bruk",
-      "GRATIS m/ abonnement",
-    ],
-    extraComment: "* Inkludert i standard",
+    bulletPoints: ["2 revisjoner", "Alle filformater", "Klar til bruk"],
+    extraComment: "* Inkludert i standard pakke",
   },
 ];

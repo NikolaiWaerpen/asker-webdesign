@@ -1,4 +1,4 @@
-export const bulletPointData = [
+export const whatWeCanOfferData = [
   {
     header: "Hostinggebyrer inkludert ",
     content: "Hostinggebyrer er innebygd rett inn i den månedlige betalingen ",
