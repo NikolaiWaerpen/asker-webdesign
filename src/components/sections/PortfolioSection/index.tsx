@@ -20,14 +20,14 @@ export default function PortfolioSection() {
                 />
               </div>
 
-              <div>
+              <div className="lg:h-20">
                 <h4 className="font-bold text-lg">{title}</h4>
                 <h6 className="text-md font-extralight text-gray-400">
                   {location}
                 </h6>
               </div>
 
-              <p className="text-md text-gray-500 font-light lg:h-32">
+              <p className="text-md text-gray-500 font-light lg:h-52 xl:h-32">
                 {description}
               </p>
 
