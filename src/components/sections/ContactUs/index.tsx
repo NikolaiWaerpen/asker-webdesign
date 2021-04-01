@@ -10,7 +10,7 @@ export default function ContactUs() {
 
   return (
     <div className="mx-4 md:mx-8 md:mb-20 md:flex flex-row-reverse justify-center">
-      <div className="space-y-4 mb-8 ml-14">
+      <div className="space-y-4 mb-8 md:ml-14">
         <div className="border-l-4 pl-4 border-green-400 text-lg">
           <h2 className="font-extrabold">E-post:</h2>
           <h3 className="text-gray-600">
@@ -23,7 +23,7 @@ export default function ContactUs() {
         </div>
       </div>
 
-      <div className="bg-white p-6 space-y-6 shadow-2xl rounded-md border border-gray-100 border-opacity-95 md:w-3/5 lg:2/4 xl:w-1/3">
+      <div className="bg-white p-6 space-y-6 shadow-2xl rounded-md border border-gray-100 border-opacity-95 md:w-3/5 lg:1/2 xl:w-1/3">
         <div className="flex uppercase font-bold text-3xl lg:text-4xl">
           <h3 className="text-green-400 font-normal">Kontakt&nbsp;</h3>
           <h3>Oss</h3>
@@ -38,14 +38,14 @@ export default function ContactUs() {
                     id={name}
                     type={type}
                     name={name}
-                    className="border border-gray-200 rounded-sm h-12 text-xs p-4"
+                    className="border border-gray-200 rounded-sm h-12 text-md p-4"
                   />
                 ) : (
                   <textarea
                     placeholder={placeholder}
                     id={name}
                     name={name}
-                    className="border border-gray-200 rounded-sm h-48 resize-none text-xs p-4"
+                    className="border border-gray-200 rounded-sm h-48 resize-none text-md p-4"
                   />
                 )}
                 <ValidationError
