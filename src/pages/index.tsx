@@ -36,23 +36,23 @@ export default function HomePage({ screenLarge }) {
 
       <InfoSection />
 
-      <div className="mt-28">
+      <div className="mt-28 lg:mt-72">
         <WhatWeCanOfferSection />
       </div>
 
-      <div id="portfolio" className="pt-4 mt-28">
+      <div id="portfolio" className="pt-4 mt-28 lg:mt-72">
         <PortfolioSection />
       </div>
 
-      <div id="whoWeAre" className="pt-4 mt-28">
+      <div id="whoWeAre" className="pt-4 mt-28 lg:mt-72">
         <WhoWeAreSection />
       </div>
 
-      <div className="mt-28">
+      <div className="mt-28 lg:mt-72">
         <PricingSection />
       </div>
 
-      <div id="contactUs" className="pt-4 mt-28">
+      <div id="contactUs" className="pt-4 mt-28 lg:mt-72">
         <ContactUs />
       </div>
 
