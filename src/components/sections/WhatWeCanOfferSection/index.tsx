@@ -5,7 +5,7 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 const BulletPoint = ({ header, content }) => {
   return (
     <div className="flex mt-8 font-light">
-      <FontAwesomeIcon icon={faCheck} className="text-blue-400 mt-1.5" />
+      <FontAwesomeIcon icon={faCheck} className="text-green-400 mt-1.5" />
       <div className="ml-2">
         <h4 className=" font-bold text-lg">{header}</h4>
         <p className="text-gray-500">{content}</p>
@@ -27,9 +27,9 @@ export default function WhatWeCanOfferSection() {
       <div>
         <div className="font-bold text-lg md:text-2xl">
           <div className="flex">
-            <h4 className="text-blue-400">0,-&nbsp;</h4>
+            <h4 className="text-green-400">0,-&nbsp;</h4>
             <h4>depositum,&nbsp;</h4>
-            <h4 className="text-blue-400">1500,-&nbsp;</h4>
+            <h4 className="text-green-400">1500,-&nbsp;</h4>
             <h4 className="">hver måned,</h4>
           </div>
           <h4>Ingen bindingstid</h4>

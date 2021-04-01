@@ -7,7 +7,7 @@ import { Link } from "react-scroll";
 
 export default function Footer() {
   return (
-    <div className="bg-gradient-to-tl from-blue-500 to-blue-800 mt-80 md:mt-0">
+    <div className="bg-gradient-to-tl from-green-500 to-green-800 mt-80 md:mt-0">
       <svg
         version="1.1"
         id="Layer_1"
@@ -33,7 +33,7 @@ export default function Footer() {
 
         <div className="lg:flex lg:space-x-12">
           <div>
-            <div className="w-40 border-b border-blue-500">
+            <div className="w-40 border-b border-green-500">
               <h3 className="text-2xl font-bold">Navigasjon</h3>
               <br />
             </div>
@@ -53,7 +53,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <div className="w-40 border-b border-blue-500">
+            <div className="w-40 border-b border-green-500">
               <h3 className="text-2xl font-bold">Tjenester</h3>
               <br />
             </div>
@@ -67,7 +67,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="text-white py-8 bg-gradient-to-tl from-blue-500 to-blue-800">
+      <div className="text-white py-8 bg-gradient-to-tl from-green-500 to-green-800">
         <div className="flex justify-center">
           <h3 className=" text-gray-200">Copyright © 2021 |&nbsp;</h3>
           <a href="/" className="font-medium">

@@ -10,7 +10,7 @@ const BulletPoint = ({ bulletPoint }) => {
     // </div>
     <div className="flex space-x-1">
       <div className="flex flex-grow-1 flex-row-reverse">
-        <FontAwesomeIcon icon={faCheckCircle} className="text-blue-400 mt-1" />
+        <FontAwesomeIcon icon={faCheckCircle} className="text-green-400 mt-1" />
       </div>
       <div className="flex flex-grow-3 w-28">
         <h4 className="text-gray-500 text-md font-light ml-1">{bulletPoint}</h4>
@@ -25,7 +25,7 @@ export default function PricingSection() {
       {pricingBoxData.map(({ header, subHeader, price, bulletPoints }) => (
         <div
           key={header}
-          className="bg-white border border-blue-200 rounded-md overflow-hidden shadow-md lg:w-80 xl:w-96"
+          className="bg-white border border-green-200 rounded-md overflow-hidden shadow-md lg:w-80 xl:w-96"
         >
           <div className="lg:h-96">
             <div className="lg:flex lg:flex-col">
@@ -33,9 +33,9 @@ export default function PricingSection() {
                 className={`${
                   header === pricingBoxData[1].header
                     ? "bg-green-300"
-                    : "bg-blue-100"
+                    : "bg-green-100"
                 }
-            font-semibold text-md flex justify-center border-b border-blue-200 py-3`}
+            font-semibold text-md flex justify-center border-b border-green-200 py-3`}
               >
                 {header}
               </h5>
@@ -44,7 +44,7 @@ export default function PricingSection() {
                   <span className="text-gray-500 text-md font-light flex justify-center">
                     {subHeader}
                   </span>
-                  <div className="flex text-blue-400 justify-center">
+                  <div className="flex text-green-400 justify-center">
                     <h5 className="text-2xl mt-1 mr-1">kr</h5>
                     <h2 className="text-6xl">{price}</h2>
                     {price === pricingBoxData[2].price ? null : (
@@ -65,7 +65,7 @@ export default function PricingSection() {
           </div>
           <div className="flex justify-center pb-5 mt-8 mb-4">
             <Link to="contactUs" smooth={true} duration={SCROLL_DURATION}>
-              <button className="w-32 h-10 text-white bg-gradient-to-l from-blue-400 to-blue-500 rounded-sm font-bold uppercase text-xs">
+              <button className="w-32 h-10 text-white bg-gradient-to-l from-green-400 to-green-500 rounded-sm font-bold uppercase text-xs">
                 Kontakt oss
               </button>
             </Link>

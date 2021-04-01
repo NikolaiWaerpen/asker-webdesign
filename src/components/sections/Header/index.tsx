@@ -3,7 +3,7 @@ import { SCROLL_DURATION } from "../../../data/consts";
 
 export default function Header({ screenLarge }) {
   return (
-    <div className="bg-gradient-to-tl from-blue-500 to-blue-800">
+    <div className="bg-gradient-to-tl from-green-500 to-green-800">
       <div className="mx-3 pt-40 relative text-white  md:w-2/3 lg:mx-12 lg:w-2/5 xl:mx-32 xl:w-2/5 flex flex-col md:flex-row ">
         <div className="space-y-9 relative z-20">
           <h2 className="text-25xl font-extrabold md:text-5xl">

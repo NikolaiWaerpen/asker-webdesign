@@ -38,7 +38,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <Component {...pageProps} screenLarge={screenLarge} />
       </div>
 
-      <div className="rounded-full flex justify-center fixed px-1.5 bg-blue-500 bottom-10 right-10 text-white text-3xl">
+      <div className="rounded-full flex justify-center fixed px-1.5 bg-green-500 bottom-10 right-10 text-white text-3xl">
         <Link to="header" smooth={true} duration={1000}>
           <FontAwesomeIcon icon={faArrowUp} />
         </Link>
