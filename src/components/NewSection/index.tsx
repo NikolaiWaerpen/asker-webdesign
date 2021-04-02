@@ -9,15 +9,11 @@ export default function NewSection({ blueText, blackText, children, icon }) {
       </div>
 
       <div className="flex space-x-4 justify-center mt-3">
-        <div className="text-green-500 font-extralight text-xs mt-0.5">
-          ----------
-        </div>
+        <div className="border-t mt-2.5 w-14 border-dashed border-green-500" />
         <div>
           <FontAwesomeIcon icon={icon} className="text-green-500 text-2xl" />
         </div>
-        <div className="text-green-500 font-extralight text-xs mt-0.5">
-          ----------
-        </div>
+        <div className="border-t mt-2.5 w-14 border-dashed border-green-500" />
       </div>
       <div className="mt-8">{children}</div>
     </div>
