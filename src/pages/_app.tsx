@@ -18,11 +18,11 @@ export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     if (window.innerWidth > 1023) setScreenLarge(true);
 
-    const screenWithChecker = setTimeout(() => {
+    const screenWidthChecker = setTimeout(() => {
       if (window.innerWidth > 1023) setScreenLarge(true);
     }, 2000);
 
-    return () => clearTimeout(screenWithChecker);
+    return () => clearTimeout(screenWidthChecker);
   }, []);
 
   if (typeof window !== "undefined")
@@ -38,11 +38,18 @@ export default function App({ Component, pageProps }: AppProps) {
         <Component {...pageProps} screenLarge={screenLarge} />
       </div>
 
-      <div className="rounded-full flex justify-center fixed px-1.5 bg-green-500 bottom-10 right-10 text-white text-3xl">
-        <Link to="header" smooth={true} duration={1000}>
-          <FontAwesomeIcon icon={faArrowUp} />
-        </Link>
-      </div>
+      {!screenLarge && (
+        <div className="rounded-full flex justify-center fixed px-2 py-1.5 bg-green-500 bottom-10 right-10 text-white text-3xl">
+          <Link
+            to="header"
+            smooth={true}
+            duration={1000}
+            className="flex justify-center"
+          >
+            <FontAwesomeIcon icon={faArrowUp} />
+          </Link>
+        </div>
+      )}
     </div>
   );
 }

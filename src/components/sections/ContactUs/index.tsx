@@ -9,17 +9,25 @@ export default function ContactUs() {
   }
 
   return (
-    <div className="mx-4 md:mx-8 md:mb-20 md:flex flex-row-reverse justify-center">
-      <div className="space-y-4 mb-8 md:ml-14">
-        <div className="border-l-4 pl-4 border-green-400 text-lg">
-          <h2 className="font-extrabold">E-post:</h2>
-          <h3 className="text-gray-600">
-            <a href={MAIL_TO}>hello@waerpendevelopment.com</a>
-          </h3>
-        </div>
-        <div className="border-l-4 pl-4 border-green-400 text-lg">
-          <h2 className="font-extrabold">Mobilnummer:</h2>
-          <h3 className="text-gray-600">(+47) 452 93 539</h3>
+    <div className="mx-4 md:mx-8 md:mb-20 md:flex flex-row-reverse justify-center space-y-8">
+      <div className="md:ml-14 space-y-8">
+        <img
+          src="https://d33wubrfki0l68.cloudfront.net/1a6a7635d723bd43ad01eb8e14ca555ade9200d9/e643b/images/savings.svg"
+          alt=""
+          className="w-96"
+        />
+
+        <div className="space-y-4">
+          <div className="border-l-4 pl-4 border-green-400 text-lg">
+            <h2 className="font-extrabold">E-post:</h2>
+            <h3 className="text-gray-600">
+              <a href={MAIL_TO}>hello@waerpendevelopment.com</a>
+            </h3>
+          </div>
+          <div className="border-l-4 pl-4 border-green-400 text-lg">
+            <h2 className="font-extrabold">Mobilnummer:</h2>
+            <h3 className="text-gray-600">(+47) 452 93 539</h3>
+          </div>
         </div>
       </div>
 

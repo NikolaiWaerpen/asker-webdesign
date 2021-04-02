@@ -31,7 +31,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="lg:flex lg:space-x-12">
+        <div className="space-y-8 lg:space-y-0 lg:flex lg:space-x-12">
           <div>
             <div className="w-40 border-b border-green-500">
               <h3 className="text-2xl font-bold">Navigasjon</h3>
