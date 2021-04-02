@@ -1,7 +1,7 @@
 export const pricingData = [
   {
     header: "PREMIUM",
-    subHeader: "STARTER FRA",
+    subHeader: "FRA",
     price: 3000,
     bulletPoints: [
       "Søkeordanalyse",
