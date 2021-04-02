@@ -24,7 +24,7 @@ export default function WhoWeAreSection() {
                   className="object-contain"
                 />
               </div>
-              <div className="absolute z-0 -top-4 lg:-top-6 text-green-400">
+              <div className="absolute z-0 -top-4 lg:-top-8 2xl:-top-10 text-green-400">
                 <HeadshotSVG />
               </div>
             </div>
