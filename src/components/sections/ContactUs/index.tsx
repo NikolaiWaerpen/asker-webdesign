@@ -35,18 +35,18 @@ export default function ContactUs() {
         <div className="relative bg-white p-6 space-y-6 shadow-2xl rounded-md border border-gray-100 border-opacity-95 md:w-3/5 lg:1/2 xl:w-1/3">
           <div className="absolute left-1/2 top-1/3 z-10">
             <div className="relative -left-1/2 -top-1/3">
-              <div className="flex flex-col ">
+              <div className="flex flex-col  shadow-2xl bg-white border-b-4 pb-3 px-2 border-green-400 rounded-md">
                 <div className="flex justify-center">
                   <FontAwesomeIcon
                     icon={faCheck}
                     className="text-green-500 text-9xl"
                   />
                 </div>
-                <div className="bg-white border-l-4 py-2 px-2 border-green-500 rounded-sm text-center text-md">
+                <div className=" text-center text-md">
                   <span>
                     Vi vil&nbsp;
                     <span className="text-green-600">kontakte deg&nbsp;</span>
-                    innen en dag
+                    innen 45 timer!
                   </span>
                 </div>
               </div>
