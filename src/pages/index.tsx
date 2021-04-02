@@ -49,7 +49,7 @@ export default function HomePage({ screenLarge }) {
           <PricingSection />
         </div>
 
-        <div className="pt-4 ">
+        <div id="contactUs" className="pt-4 ">
           <ContactUs />
         </div>
       </div>

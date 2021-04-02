@@ -30,10 +30,7 @@ export default function ContactUs() {
             </div>
           </div>
         </div>
-        <div
-          id="contactUs"
-          className="relative bg-white p-6 space-y-6 shadow-2xl rounded-md border border-gray-100 border-opacity-95 md:w-3/5 lg:1/2 xl:w-1/3"
-        >
+        <div className="relative bg-white p-6 space-y-6 shadow-2xl rounded-md border border-gray-100 border-opacity-95 md:w-3/5 lg:1/2 xl:w-1/3">
           <div className="absolute left-1/2 top-1/3 z-10">
             <div className="relative -left-1/2 -top-1/3">
               <div className="flex flex-col ">
@@ -121,10 +118,7 @@ export default function ContactUs() {
         </div>
       </div>
 
-      <div
-        id="contactUs"
-        className="bg-white p-6 space-y-6 shadow-2xl rounded-md border border-gray-100 border-opacity-95 md:w-3/5 lg:1/2 xl:w-1/3"
-      >
+      <div className="bg-white p-6 space-y-6 shadow-2xl rounded-md border border-gray-100 border-opacity-95 md:w-3/5 lg:1/2 xl:w-1/3">
         <div className="flex uppercase font-bold text-3xl lg:text-4xl">
           <h3 className="text-green-400 font-normal">Kontakt&nbsp;</h3>
           <h3>Oss</h3>
