@@ -19,13 +19,13 @@ export default function ContactUs() {
 
           <div className="space-y-4">
             <div className="border-l-4 pl-4 border-green-400 text-lg">
-              <h2 className="font-extrabold">E-post:</h2>
+              <h2 className="font-extrabold text-gray-700">E-post:</h2>
               <h3 className="text-gray-600">
                 <a href={MAIL_TO}>hello@waerpendevelopment.com</a>
               </h3>
             </div>
             <div className="border-l-4 pl-4 border-green-400 text-lg">
-              <h2 className="font-extrabold">Mobilnummer:</h2>
+              <h2 className="font-extrabold text-gray-700">Mobilnummer</h2>
               <h3 className="text-gray-600">(+47) 452 93 539</h3>
             </div>
           </div>
@@ -106,13 +106,13 @@ export default function ContactUs() {
 
         <div className="space-y-4">
           <div className="border-l-4 pl-4 border-green-400 text-lg">
-            <h2 className="font-extrabold">E-post:</h2>
+            <h2 className="font-extrabold text-gray-700">E-post:</h2>
             <h3 className="text-gray-600">
               <a href={MAIL_TO}>hello@waerpendevelopment.com</a>
             </h3>
           </div>
           <div className="border-l-4 pl-4 border-green-400 text-lg">
-            <h2 className="font-extrabold">Mobilnummer:</h2>
+            <h2 className="font-extrabold text-gray-700">Mobilnummer:</h2>
             <h3 className="text-gray-600">(+47) 452 93 539</h3>
           </div>
         </div>
@@ -120,7 +120,7 @@ export default function ContactUs() {
 
       <div className="bg-white p-6 space-y-6 shadow-2xl rounded-md border border-gray-100 border-opacity-95 md:w-3/5 lg:1/2 xl:w-1/3">
         <div className="flex uppercase font-bold text-3xl lg:text-4xl">
-          <h3 className="text-green-400 font-normal">Kontakt&nbsp;</h3>
+          <h3 className="text-green-500 font-normal">Kontakt&nbsp;</h3>
           <h3>Oss</h3>
         </div>
         <form onSubmit={handleSubmit} className="space-y-4">
