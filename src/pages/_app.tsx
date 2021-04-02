@@ -8,6 +8,12 @@ import { useEffect, useState } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
   const [screenLarge, setScreenLarge] = useState(false);
+  const [scrolledDown, setScrolledDown] = useState(false);
+
+  const isScrolledDown = () => {
+    if (window.scrollY >= 250) setScrolledDown(true);
+    else setScrolledDown(false);
+  };
 
   const isScreenLarge = () => {
     if (window.innerWidth > 1023) {
@@ -25,8 +31,10 @@ export default function App({ Component, pageProps }: AppProps) {
     return () => clearTimeout(screenWidthChecker);
   }, []);
 
-  if (typeof window !== "undefined")
+  if (typeof window !== "undefined") {
+    window.addEventListener("scroll", isScrolledDown);
     window.addEventListener("resize", isScreenLarge);
+  }
 
   return (
     <div className="static">
@@ -38,17 +46,17 @@ export default function App({ Component, pageProps }: AppProps) {
         <Component {...pageProps} screenLarge={screenLarge} />
       </div>
 
-      {!screenLarge && (
-        <div className="rounded-full flex justify-center fixed px-2 py-1.5 bg-green-500 bottom-10 right-10 text-white text-3xl">
-          <Link
-            to="header"
-            smooth={true}
-            duration={1000}
-            className="flex justify-center"
-          >
+      {!screenLarge && scrolledDown && (
+        <Link
+          to="header"
+          smooth={true}
+          duration={1000}
+          className="flex justify-center"
+        >
+          <div className="rounded-full flex justify-center fixed px-2 py-1.5 bg-green-500 bottom-10 right-10 text-white text-3xl">
             <FontAwesomeIcon icon={faArrowUp} />
-          </Link>
-        </div>
+          </div>
+        </Link>
       )}
     </div>
   );
