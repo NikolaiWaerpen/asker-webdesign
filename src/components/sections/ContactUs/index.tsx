@@ -21,7 +21,9 @@ export default function ContactUs() {
             <div className="border-l-4 pl-4 border-green-400 text-lg">
               <h2 className="font-extrabold text-gray-700">E-post:</h2>
               <h3 className="text-gray-600">
-                <a href={MAIL_TO}>hello@waerpendevelopment.com</a>
+                <a href={MAIL_TO} className="hover-underline-effect">
+                  hello@waerpendevelopment.com
+                </a>
               </h3>
             </div>
             <div className="border-l-4 pl-4 border-green-400 text-lg">
@@ -108,7 +110,9 @@ export default function ContactUs() {
           <div className="border-l-4 pl-4 border-green-400 text-lg">
             <h2 className="font-extrabold text-gray-700">E-post:</h2>
             <h3 className="text-gray-600">
-              <a href={MAIL_TO}>hello@waerpendevelopment.com</a>
+              <a href={MAIL_TO} className="hover-underline-effect">
+                hello@waerpendevelopment.com
+              </a>
             </h3>
           </div>
           <div className="border-l-4 pl-4 border-green-400 text-lg">

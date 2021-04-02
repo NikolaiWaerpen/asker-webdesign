@@ -32,11 +32,13 @@ export default function Footer() {
           >
             <img
               src="images/logos/logosmall.png"
-              className="mt-3 w-40 md:w-64 hover-effect"
+              className="mt-3 w-40 md:w-64 transform transition duration-500 hover:scale-110"
             />
           </Link>
           <div className="text-white text-md space-y-4">
-            <a href={MAIL_TO}>hello@waerpendevelopment.com</a>
+            <a href={MAIL_TO} className="hover-underline-effect">
+              hello@waerpendevelopment.com
+            </a>
             <h5>(+47) 452 93 539</h5>
           </div>
         </div>
@@ -56,7 +58,9 @@ export default function Footer() {
                   duration={SCROLL_DURATION}
                   key={dropdownOption.title}
                 >
-                  <h5>{dropdownOption.title}</h5>
+                  <button className="block hover-underline-effect">
+                    {dropdownOption.title}
+                  </button>
                 </Link>
               );
             })}

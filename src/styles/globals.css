@@ -13,3 +13,7 @@ button:focus {
 .hover-effect {
   @apply transform transition duration-300 hover:scale-110;
 }
+
+.hover-underline-effect {
+  @apply border-b-2 border-transparent hover:border-green-500 duration-300;
+}

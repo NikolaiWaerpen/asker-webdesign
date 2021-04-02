@@ -29,7 +29,7 @@ const LargeTopOfNav = () => {
       <a href="/">
         <img
           src="images/logos/logobig.png"
-          className="mt-3 w-60 hover-effect"
+          className="mt-3 w-60 transform transition duration-500 hover:scale-110"
         />
       </a>
       <ul className="flex space-x-10 text-white text-lg mt-6 font-light">
@@ -42,7 +42,7 @@ const LargeTopOfNav = () => {
               key={dropDownOption.title}
             >
               <li>
-                <button className="font-bold border-b-2 border-transparent hover:border-green-500 duration-300">
+                <button className="font-bold hover-underline-effect">
                   {dropDownOption.title}
                 </button>
               </li>
