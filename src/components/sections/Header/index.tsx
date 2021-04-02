@@ -28,7 +28,7 @@ export default function Header({ screenLarge }) {
           <img
             src="images/header3.png"
             alt=""
-            className="absolute z-0 top-90/10 md:top-72 md:left-45/10"
+            className="absolute z-0 top-90/10 md:top-80 md:left-45/10"
           />
         )}
       </div>
