@@ -19,7 +19,7 @@ export const whatWeCanOfferData = [
   {
     header: "Sitater og oppføringer ",
     content:
-      "Det er viktig å ha nettstedet ditt koblet fra andre nettsteder, som Gulesider eller Tripadvisor",
+      "Det er viktig å ha nettstedet ditt koblet til andre nettsteder, som Gulesider eller Tripadvisor",
   },
   {
     header: "Google Analytics",

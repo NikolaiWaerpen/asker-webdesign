@@ -1,7 +1,7 @@
 export const pricingData = [
   {
     header: "PREMIUM",
-    subHeader: "STARTING AT",
+    subHeader: "STARTER FRA",
     price: 3000,
     bulletPoints: [
       "Søkeordanalyse",
@@ -16,7 +16,7 @@ export const pricingData = [
   },
   {
     header: "STANDARD",
-    subHeader: "5 PAGES",
+    subHeader: "5 SIDER",
     price: 1500,
     bulletPoints: [
       "Ubegrensede redigeringer ",
@@ -31,6 +31,6 @@ export const pricingData = [
     subHeader: "",
     price: 1000,
     bulletPoints: ["2 revisjoner", "Alle filformater", "Klar til bruk"],
-    extraComment: "Inkludert i standard & premium",
+    extraComment: "Inkludert i STANDARD & PREMIUM",
   },
 ];

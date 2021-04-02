@@ -8,7 +8,7 @@ const BulletPoint = ({ bulletPoint }) => {
   return (
     <div className="flex space-x-1">
       <div className="flex flex-grow-1 flex-row-reverse">
-        <FontAwesomeIcon icon={faCheckCircle} className="text-green-400 mt-1" />
+        <FontAwesomeIcon icon={faCheckCircle} className="text-green-500 mt-1" />
       </div>
       <div className="flex flex-grow-3 w-28">
         <h4 className="text-gray-600 text-md font-light ml-1">{bulletPoint}</h4>
@@ -24,17 +24,17 @@ export default function PricingSection() {
         ({ header, subHeader, price, bulletPoints, extraComment }) => (
           <div
             key={header}
-            className="bg-white border border-green-200 rounded-md overflow-hidden shadow-md lg:w-80 xl:w-96"
+            className="bg-white border border-green-400 rounded-md overflow-hidden shadow-md lg:w-80 xl:w-96"
           >
             <div className="lg:h-96">
               <div className="lg:flex lg:flex-col">
                 <h5
                   className={`${
                     header === pricingData[1].header
-                      ? "bg-green-300"
-                      : "bg-green-100"
+                      ? "bg-green-500"
+                      : "bg-green-300"
                   }
-            font-semibold text-md flex justify-center border-b border-green-200 py-3`}
+            font-semibold text-md flex justify-center border-b border-green-400 py-3`}
                 >
                   {header}
                 </h5>
@@ -43,7 +43,7 @@ export default function PricingSection() {
                     <span className="text-gray-500 text-md font-light flex justify-center">
                       {subHeader}
                     </span>
-                    <div className="flex text-green-400 justify-center">
+                    <div className="flex text-green-500 justify-center">
                       <h5 className="text-2xl mt-1 mr-1">kr</h5>
                       <h2 className="text-6xl">{price}</h2>
                       {price === pricingData[2].price ? null : (
@@ -51,7 +51,7 @@ export default function PricingSection() {
                       )}
                     </div>
                     {extraComment && (
-                      <div className="flex justify-center text-extralight text-xs text-gray-500 uppercase">
+                      <div className="flex justify-center text-extralight text-sm text-gray-500">
                         {extraComment}
                       </div>
                     )}
