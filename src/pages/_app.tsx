@@ -53,7 +53,7 @@ export default function App({ Component, pageProps }: AppProps) {
           duration={1000}
           className="flex justify-center"
         >
-          <div className="rounded-full flex justify-center fixed px-2 py-1.5 bg-green-500 bottom-10 right-10 text-white text-3xl">
+          <div className="rounded-full flex justify-center fixed px-2 py-1.5 bg-green-500 bottom-10 right-10 text-white text-3xl z-50">
             <FontAwesomeIcon icon={faArrowUp} />
           </div>
         </Link>

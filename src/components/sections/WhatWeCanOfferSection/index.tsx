@@ -1,6 +1,7 @@
 import { whatWeCanOfferData } from "./whatWeCanOffcerData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { SavingsSVG } from "./SavingsSVG";
 
 const BulletPoint = ({ header, content }) => {
   return (
@@ -17,12 +18,10 @@ const BulletPoint = ({ header, content }) => {
 export default function WhatWeCanOfferSection() {
   return (
     <div className="space-y-3 mx-5 text-lg md:mx-32 xl:space-y-0 xl:mx-36 xl:flex">
-      <div className="flex justify-center ">
-        <img
-          src="https://d33wubrfki0l68.cloudfront.net/1a6a7635d723bd43ad01eb8e14ca555ade9200d9/e643b/images/savings.svg"
-          alt=""
-          className="lg:w-9/12 xl:w-11/12"
-        />
+      <div className="flex justify-center">
+        <div className="w-full lg:w-9/12 xl:w-96 xl:mt-36 xl:mr-8">
+          <SavingsSVG />
+        </div>
       </div>
       <div>
         <div className="font-bold text-lg md:text-2xl">
