@@ -40,6 +40,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <div className="static">
       <head>
         <title>Waerpen Development | Webutvikling for småbedrifer</title>
+        {/* // TODO: add real icon here once the logo is "finished" */}
         <link rel="icon" href="./static/colors.ico"></link>
       </head>
 

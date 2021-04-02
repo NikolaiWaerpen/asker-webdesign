@@ -19,7 +19,7 @@ export default function WhatWeCanOfferSection() {
   return (
     <div className="space-y-3 mx-5 text-lg md:mx-32 xl:space-y-0 xl:mx-36 xl:flex">
       <div className="flex justify-center">
-        <div className="w-full lg:w-9/12 xl:w-96 xl:mt-36 xl:mr-8">
+        <div className="w-11/12 lg:w-9/12 xl:w-96 xl:mt-36 xl:mr-8">
           <SavingsSVG />
         </div>
       </div>

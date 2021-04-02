@@ -13,7 +13,9 @@ export default function ContactUs() {
     <div className="mx-4 md:mx-8 md:mb-20 md:flex flex-row-reverse justify-center space-y-8 md:space-y-0">
       <div className="md:ml-14 space-y-8">
         <div className="flex justify-center">
-          <EmailSVG />
+          <div className="w-11/12 md:w-full">
+            <EmailSVG />
+          </div>
         </div>
 
         <div className="space-y-4">

@@ -40,8 +40,8 @@ export const SavingsSVG = () => {
           transform="translate(-41 -48.59028)"
           fill="none"
           stroke="#535461"
-          stroke-miterlimit="10"
-          stroke-width="2"
+          strokeMiterlimit="10"
+          strokeWidth="2"
         />
 
         <path
@@ -133,8 +133,8 @@ export const SavingsSVG = () => {
           transform="translate(-41 -48.59028)"
           fill="none"
           stroke="#535461"
-          stroke-miterlimit="10"
-          stroke-width="2"
+          strokeMiterlimit="10"
+          strokeWidth="2"
         />
 
         <path
