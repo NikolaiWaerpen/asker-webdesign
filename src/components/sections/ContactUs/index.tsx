@@ -159,7 +159,7 @@ export default function ContactUs() {
                 state.submitting
                   ? "bg-gradient-to-l from-gray-200 to-gray-300 cursor-not-allowed"
                   : "bg-gradient-to-l from-green-400 to-green-500"
-              } w-32 h-10 text-white rounded-sm font-bold uppercase text-xs`}
+              } w-32 h-10 text-white rounded-sm font-bold uppercase text-xs hover-effect`}
             >
               Submit
             </button>

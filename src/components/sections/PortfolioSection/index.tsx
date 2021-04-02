@@ -9,7 +9,7 @@ export default function PortfolioSection() {
         {portfolioData.map(({ image, title, location, description, link }) => (
           <div
             key={title}
-            className="bg-white p-6 border-b-4 border-green-500 space-y-6 shadow-2xl rounded-md lg:mx-8"
+            className="bg-white p-6 border-b-4 border-green-400 space-y-6 shadow-2xl rounded-md lg:mx-8"
           >
             <div className="flex justify-center">
               <img
@@ -34,7 +34,7 @@ export default function PortfolioSection() {
               <a
                 href={link}
                 // target="_blank"
-                className="flex justify-center w-32 h-10 text-white bg-gradient-to-l from-green-400 to-green-500 rounded-sm font-bold uppercase text-xs"
+                className="flex justify-center w-32 h-10 text-white bg-gradient-to-l from-green-400 to-green-500 rounded-sm font-bold uppercase text-xs transform transition duration-500 hover:scale-110"
               >
                 <span className="flex mt-3">Visit {title}</span>
               </a>

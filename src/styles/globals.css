@@ -9,3 +9,7 @@ button:focus {
 }
 
 @tailwind utilities;
+
+.hover-effect {
+  @apply transform transition duration-300 hover:scale-110;
+}

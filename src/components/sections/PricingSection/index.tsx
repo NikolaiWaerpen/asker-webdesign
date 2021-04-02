@@ -73,7 +73,7 @@ export default function PricingSection() {
 
             <div className="flex justify-center pb-5 mt-8 mb-4">
               <Link to="contactUs" smooth={true} duration={SCROLL_DURATION}>
-                <button className="w-32 h-10 text-white bg-gradient-to-l from-green-400 to-green-500 rounded-sm font-bold uppercase text-xs">
+                <button className="w-32 h-10 text-white bg-gradient-to-l from-green-400 to-green-500 rounded-sm font-bold uppercase text-xs hover-effect">
                   Kontakt oss
                 </button>
               </Link>

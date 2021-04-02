@@ -24,10 +24,17 @@ export default function Footer() {
 
       <div className="text-white space-y-12 px-8 pb-16 pt-12 lg:space-y-10 lg:pt-20 xl:pt-28 md:pb-28 lg:flex lg:justify-between lg:mx-14 xl:mx-48 2xl:mx-96">
         <div className="space-y-12">
-          <img
-            src="images/logos/logosmall.png"
-            className="mt-3 w-40 md:w-56 lg:w-72"
-          />
+          <Link
+            to="header"
+            smooth={true}
+            duration={1000}
+            className="cursor-pointer"
+          >
+            <img
+              src="images/logos/logosmall.png"
+              className="mt-3 w-40 md:w-64 hover-effect"
+            />
+          </Link>
           <div className="text-white text-md space-y-4">
             <a href={MAIL_TO}>hello@waerpendevelopment.com</a>
             <h5>(+47) 452 93 539</h5>

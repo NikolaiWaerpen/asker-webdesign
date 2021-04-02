@@ -7,7 +7,9 @@ import { DROPDOWN_OPTIONS, SCROLL_DURATION } from "../../data/consts";
 const SmallTopOfNav = ({ closeNav, navOpen }) => {
   return (
     <div className="px-4 pt-2 flex justify-between">
-      <img src="images/logos/logosmall.png" className="mt-3 w-2/5 md:w-1/4" />
+      <a href="/">
+        <img src="images/logos/logosmall.png" className="mt-3 w-2/5 " />
+      </a>
       <div className="text-white text-3xl mt-2.5">
         <button onClick={() => closeNav()}>
           {navOpen ? (
@@ -23,8 +25,13 @@ const SmallTopOfNav = ({ closeNav, navOpen }) => {
 
 const LargeTopOfNav = () => {
   return (
-    <div className="px-4 pt-2 flex justify-between">
-      <img src="images/logos/logobig.png" className="mt-3 w-60" />
+    <div className="mr-4 pt-2 flex justify-between">
+      <a href="/">
+        <img
+          src="images/logos/logobig.png"
+          className="mt-3 w-60 hover-effect"
+        />
+      </a>
       <ul className="flex space-x-10 text-white text-lg mt-6 font-light">
         {DROPDOWN_OPTIONS.map((dropDownOption) => {
           return (
@@ -35,7 +42,9 @@ const LargeTopOfNav = () => {
               key={dropDownOption.title}
             >
               <li>
-                <a className="font-bold">{dropDownOption.title}</a>
+                <button className="font-bold border-b-2 border-transparent hover:border-green-500 duration-300">
+                  {dropDownOption.title}
+                </button>
               </li>
             </Link>
           );
