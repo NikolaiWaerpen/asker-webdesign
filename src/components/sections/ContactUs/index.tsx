@@ -9,7 +9,7 @@ export default function ContactUs() {
   }
 
   return (
-    <div className="mx-4 md:mx-8 md:mb-20 md:flex flex-row-reverse justify-center space-y-8">
+    <div className="mx-4 md:mx-8 md:mb-20 md:flex flex-row-reverse justify-center space-y-8 md:space-y-0">
       <div className="md:ml-14 space-y-8">
         <img
           src="https://d33wubrfki0l68.cloudfront.net/1a6a7635d723bd43ad01eb8e14ca555ade9200d9/e643b/images/savings.svg"
