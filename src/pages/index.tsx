@@ -29,7 +29,7 @@ export default function HomePage({ screenLarge }) {
         <Header screenLarge={screenLarge} />
       </div>
 
-      <div className="space-y-28 md:space-y-40 lg:space-y-48 2xl:space-y-72">
+      <div className="space-y-36 md:space-y-40 lg:space-y-48 2xl:space-y-72">
         <div id="whatWeDo">
           <WhatWeDoSection />
         </div>

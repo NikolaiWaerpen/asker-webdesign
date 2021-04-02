@@ -38,6 +38,11 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <div className="static">
+      <head>
+        <title>Waerpen Development | Webutvikling for småbedrifer</title>
+        <link rel="icon" href="./static/colors.ico"></link>
+      </head>
+
       <div className="absolute w-full">
         <Navigation screenLarge={screenLarge} />
       </div>

@@ -33,7 +33,7 @@ export default function PortfolioSection() {
             <div className="flex pb-8">
               <a
                 href={link}
-                target="_blank"
+                // target="_blank"
                 className="flex justify-center w-32 h-10 text-white bg-gradient-to-l from-green-400 to-green-500 rounded-sm font-bold uppercase text-xs"
               >
                 <span className="flex mt-3">Visit {title}</span>
