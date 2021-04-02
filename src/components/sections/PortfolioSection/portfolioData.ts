@@ -5,7 +5,7 @@ export const portfolioData = [
     location: "Nesbru, Asker",
     description:
       "SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. ",
-    link: "https://burger-mauve.vercel.app/",
+    link: "https://www.waerpen.com/",
   },
   {
     image: "images/nikolai3.png",
