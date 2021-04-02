@@ -40,7 +40,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <div className="static">
       <head>
         <title>Waerpen Development | Webutvikling for småbedrifer</title>
-        <link rel="icon" href="images/icon.png"></link>
+        <link rel="icon" href="images/logos/icon.png"></link>
       </head>
 
       <div className="absolute w-full">

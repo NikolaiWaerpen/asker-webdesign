@@ -17,9 +17,9 @@ export default function WhoWeAreSection() {
 
           <div className="mt-12 md:mx-20 flex flex-col justify-center">
             <div className="relative flex justify-center">
-              <div className="w-72 lg:w-64 mx-8 rounded-full overflow-hidden ring-2 ring-green-400  z-10">
+              <div className="w-60 lg:w-64 mx-8 rounded-full overflow-hidden ring-2 ring-green-400  z-10">
                 <img
-                  src="/images/whoweareimage1cropped.jpg"
+                  src="/images/idiot.png"
                   alt=""
                   className="object-contain"
                 />

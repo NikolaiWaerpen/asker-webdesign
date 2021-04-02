@@ -1,6 +1,6 @@
 export const portfolioData = [
   {
-    image: "images/burger2cropped.png",
+    image: "images/showcase/kebab.png",
     title: "Kebab",
     location: "Nesbru, Asker",
     description:
@@ -8,7 +8,7 @@ export const portfolioData = [
     link: "https://www.waerpen.com/",
   },
   {
-    image: "images/nikolai3.png",
+    image: "images/showcase/intro.png",
     title: "Intro",
     location: "SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER.",
     description:

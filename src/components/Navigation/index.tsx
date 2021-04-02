@@ -7,7 +7,7 @@ import { DROPDOWN_OPTIONS, SCROLL_DURATION } from "../../data/consts";
 const SmallTopOfNav = ({ closeNav, navOpen }) => {
   return (
     <div className="px-4 pt-2 flex justify-between">
-      <img src="images/logosmall.png" className="mt-3 w-2/5 md:w-1/4" />
+      <img src="images/logos/logosmall.png" className="mt-3 w-2/5 md:w-1/4" />
       <div className="text-white text-3xl mt-2.5">
         <button onClick={() => closeNav()}>
           {navOpen ? (
@@ -24,7 +24,7 @@ const SmallTopOfNav = ({ closeNav, navOpen }) => {
 const LargeTopOfNav = () => {
   return (
     <div className="px-4 pt-2 flex justify-between">
-      <img src="images/logobig.png" className="mt-3 w-60" />
+      <img src="images/logos/logobig.png" className="mt-3 w-60" />
       <ul className="flex space-x-10 text-white text-lg mt-6 font-light">
         {DROPDOWN_OPTIONS.map((dropDownOption) => {
           return (

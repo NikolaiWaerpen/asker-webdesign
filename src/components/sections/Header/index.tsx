@@ -26,7 +26,7 @@ export default function Header({ screenLarge }) {
 
         {!screenLarge && (
           <img
-            src="images/header3.png"
+            src="images/showcase/header.png"
             alt=""
             className="absolute z-0 top-90/10 md:top-80 md:left-45/10"
           />
@@ -34,7 +34,7 @@ export default function Header({ screenLarge }) {
       </div>
       {screenLarge && (
         <img
-          src="images/header3.png"
+          src="images/showcase/header.png"
           alt=""
           className="absolute z-0 w-4/6 right-8 top-32 xl:top-36 2xl:top-14 xl:w-7/12 xl:right-32"
         />
