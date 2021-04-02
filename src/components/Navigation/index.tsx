@@ -3,12 +3,25 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { Link } from "react-scroll";
 import { DROPDOWN_OPTIONS, SCROLL_DURATION } from "../../data/consts";
+import { motion } from "framer-motion";
+
+const dropdownVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 0.1,
+    },
+  },
+};
 
 const SmallTopOfNav = ({ closeNav, navOpen }) => {
   return (
     <div className="px-4 pt-2 flex justify-between">
       <a href="/">
-        <img src="images/logos/logosmall.png" className="mt-3 w-2/5 " />
+        <img src="images/logos/logosmall.png" className="mt-3 w-36 md:w-48" />
       </a>
       <div className="text-white text-3xl mt-2.5">
         <button onClick={() => closeNav()}>
@@ -20,6 +33,23 @@ const SmallTopOfNav = ({ closeNav, navOpen }) => {
         </button>
       </div>
     </div>
+  );
+};
+
+const DropDownElement = ({ linkLocation, closeNav, title }) => {
+  return (
+    <motion.div variants={dropdownVariants} initial="hidden" animate="visible">
+      <Link
+        to={linkLocation}
+        smooth={true}
+        duration={SCROLL_DURATION}
+        onClick={closeNav}
+      >
+        <li>
+          <a className="font-bold">{title}</a>
+        </li>
+      </Link>
+    </motion.div>
   );
 };
 
@@ -50,23 +80,6 @@ const LargeTopOfNav = () => {
           );
         })}
       </ul>
-    </div>
-  );
-};
-
-const DropDownElement = ({ linkLocation, closeNav, title }) => {
-  return (
-    <div>
-      <Link
-        to={linkLocation}
-        smooth={true}
-        duration={SCROLL_DURATION}
-        onClick={closeNav}
-      >
-        <li>
-          <a className="font-bold">{title}</a>
-        </li>
-      </Link>
     </div>
   );
 };
