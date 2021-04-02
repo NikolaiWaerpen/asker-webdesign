@@ -31,6 +31,6 @@ export const pricingData = [
     subHeader: "",
     price: 1000,
     bulletPoints: ["2 revisjoner", "Alle filformater", "Klar til bruk"],
-    extraComment: "Inkludert i STANDARD & PREMIUM",
+    extraComment: "Inkludert i STANDARD og PREMIUM",
   },
 ];
