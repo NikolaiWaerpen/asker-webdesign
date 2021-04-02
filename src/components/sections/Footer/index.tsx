@@ -7,7 +7,7 @@ import { Link } from "react-scroll";
 
 export default function Footer() {
   return (
-    <div className="bg-gradient-to-tl from-green-500 to-green-800 mt-32 ">
+    <div className="bg-gradient-to-tl from-green-400 to-green-900 mt-32 ">
       <svg
         version="1.1"
         id="Layer_1"

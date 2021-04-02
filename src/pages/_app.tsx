@@ -1,10 +1,8 @@
 import type { AppProps } from "next/app";
 import Navigation from "../components/Navigation";
 import "../styles/globals.css";
-import { Link } from "react-scroll";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
+import Arrow from "../components/Arrow";
 
 export default function App({ Component, pageProps }: AppProps) {
   const [screenLarge, setScreenLarge] = useState(false);
@@ -51,18 +49,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <Component {...pageProps} screenLarge={screenLarge} />
       </div>
 
-      {!screenLarge && scrolledDown && (
-        <Link
-          to="header"
-          smooth={true}
-          duration={1000}
-          className="flex justify-center"
-        >
-          <div className="rounded-full flex justify-center fixed px-2 py-1.5 bg-green-500 bottom-10 right-10 text-white text-3xl z-50">
-            <FontAwesomeIcon icon={faArrowUp} />
-          </div>
-        </Link>
-      )}
+      {!screenLarge && scrolledDown && <Arrow />}
     </div>
   );
 }
