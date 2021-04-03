@@ -50,6 +50,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </div>
 
       {!screenLarge && scrolledDown && <Arrow />}
+      {scrolledDown && <Arrow />}
     </div>
   );
 }

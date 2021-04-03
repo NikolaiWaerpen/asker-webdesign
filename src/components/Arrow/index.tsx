@@ -3,14 +3,28 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 
+// const arrowVariants = {
+//   hidden: {
+//     opacity: 0,
+//     // rotateZ: -180
+//   },
+//   visible: {
+//     opacity: 1,
+//     // rotateZ:
+//     transition: {
+//       delay: 0.1,
+//     },
+//   },
+// };
+
 const arrowVariants = {
-  hidden: {
-    opacity: 0,
-  },
+  hidden: { scale: 0, rotateZ: -280 },
   visible: {
-    opacity: 1,
+    scale: 1,
+    rotateZ: 0,
     transition: {
-      delay: 0.1,
+      type: "tween",
+      duration: 0.6,
     },
   },
 };

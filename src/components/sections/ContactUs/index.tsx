@@ -4,6 +4,31 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { MAIL_TO } from "../../../data/consts";
 import { contactUsData } from "./contactUsData";
 import { EmailSVG } from "./EmailSVG";
+import { motion } from "framer-motion";
+
+const submissionConfirmationVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 0.1,
+    },
+  },
+};
+
+const checkVariants = {
+  hidden: { scale: 0, rotateZ: -180 },
+  visible: {
+    scale: 1,
+    rotateZ: 0,
+    transition: {
+      type: "tween",
+      delay: 0.3,
+    },
+  },
+};
 
 export default function ContactUs() {
   const [state, handleSubmit] = useForm("xjvjvbdb");
@@ -33,15 +58,23 @@ export default function ContactUs() {
           </div>
         </div>
         <div className="relative bg-white p-6 space-y-6 shadow-2xl rounded-md border border-gray-100 border-opacity-95 md:w-3/5 lg:1/2 xl:w-1/3">
-          <div className="absolute left-1/2 top-1/3 z-10">
+          <motion.div
+            className="absolute left-1/2 top-1/3 z-10"
+            variants={submissionConfirmationVariants}
+            initial="hidden"
+            animate="visible"
+          >
             <div className="relative -left-1/2 -top-1/3">
               <div className="flex flex-col  shadow-2xl bg-white border-b-4 pb-3 px-2 border-green-400 rounded-md">
-                <div className="flex justify-center">
+                <motion.div
+                  className="flex justify-center"
+                  variants={checkVariants}
+                >
                   <FontAwesomeIcon
                     icon={faCheck}
                     className="text-green-500 text-9xl"
                   />
-                </div>
+                </motion.div>
                 <div className=" text-center text-md">
                   <span>
                     Vi vil&nbsp;
@@ -51,7 +84,7 @@ export default function ContactUs() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           <div className="flex uppercase font-bold text-3xl lg:text-4xl z-0">
             <h3 className="text-gray-400 font-normal">Kontakt&nbsp;</h3>
