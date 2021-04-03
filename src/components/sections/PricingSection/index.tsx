@@ -32,7 +32,7 @@ export default function PricingSection() {
                   className={`${
                     header === pricingData[1].header
                       ? "bg-green-500"
-                      : "bg-green-300"
+                      : "bg-green-400"
                   }
             font-semibold text-md flex justify-center border-b border-green-400 py-3`}
                 >
