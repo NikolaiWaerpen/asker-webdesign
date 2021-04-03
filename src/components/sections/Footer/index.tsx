@@ -72,6 +72,7 @@ export default function Footer() {
               <br />
             </div>
             <br />
+            <h5>Web Utvikling</h5>
             <h5>Web Design</h5>
             <h5>Nettsidevedlikehold</h5>
             <h5>SEO tjenester</h5>
