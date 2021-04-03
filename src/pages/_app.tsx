@@ -49,8 +49,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <Component {...pageProps} screenLarge={screenLarge} />
       </div>
 
-      {!screenLarge && scrolledDown && <Arrow />}
-      {scrolledDown && <Arrow />}
+      <Arrow scrolledDown={scrolledDown} />
     </div>
   );
 }
