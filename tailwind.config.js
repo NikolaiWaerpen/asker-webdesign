@@ -24,6 +24,7 @@ module.exports = {
         "1/30": "3.34%",
       },
       width: {
+        "32rem": "32rem",
         192: "48rem",
       },
       flexGrow: {
