@@ -1,18 +1,20 @@
 export const portfolioData = [
   {
     image: "images/showcase/kebab.png",
-    title: "Kebab",
-    location: "Nesbru, Asker",
+    title: "Eksempel restaurant nettside",
+    visitTitle: "restaurant",
+    location: "Adresse",
     description:
-      "SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. ",
+      "Eksempel side for typisk restaurant bedrift. Inneholder informasjon om bedriften, meny, åpningstider, kontaktinformasjon, link til facebook side og kart",
     link: "https://www.waerpen.com/",
   },
   {
     image: "images/showcase/intro.png",
     title: "Intro",
-    location: "SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER.",
+    visitTitle: "intro",
+    location: "Eksempel adresse",
     description:
-      "SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. ",
+      "Nettside jeg lagde for å prøve meg på animasjoner og litt mer styling. Ikke en profesjonell nettside, heller et lite hobbyprosjekt",
     link: "https://nikolaithecreator.com",
   },
 ];

@@ -8,11 +8,11 @@ export default function WhoWeAreSection() {
       <NewSection blueText="Hvem" blackText="vi er" icon={faUser}>
         <div className="mx-4 md:mx-12 lg:mx-40 xl:mx-96">
           <p className="flex justify-center text-lg text-gray-500 text-center font-light z-10">
-            SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER. SKJERP DEG OG FINN
-            PÅ NOE Å SMART Å SKRIVE HER.SKJERP DEG OG FINN PÅ NOE Å SMART Å
-            SKRIVE HER.SKJERP DEG OG FINN PÅ NOE Å SMART Å SKRIVE HER.SKJERP DEG
-            OG FINN PÅ NOE Å SMART Å SKRIVE HER.SKJERP DEG OG FINN PÅ NOE Å
-            SMART Å SKRIVE HER.
+            Mitt navn er Nikolai Wærpen, jeg er en webutvikler. Jeg jobber
+            fulltid med utvikling hos et stort norskt IT-selskap og med Waerpen
+            Development på siden. Jeg startet denne bedriften for å lære og
+            teste mine ferdigheter ved å jobbe helt selstendig på egne
+            prosjekter. Jeg er selvlært og har jobbet med utvikling i over 3 år
           </p>
 
           <div className="mt-12 md:mx-20 flex flex-col justify-center">
