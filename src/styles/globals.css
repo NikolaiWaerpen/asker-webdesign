@@ -11,7 +11,7 @@ button:focus {
 @tailwind utilities;
 
 .hover-effect {
-  @apply transform transition duration-300 hover:scale-110;
+  @apply transform transition duration-500 hover:scale-110;
 }
 
 .hover-underline-effect {
