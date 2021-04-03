@@ -57,10 +57,7 @@ const LargeTopOfNav = () => {
   return (
     <div className="mr-4 pt-2 flex justify-between">
       <a href="/">
-        <img
-          src="images/logos/logobig.png"
-          className="mt-3 w-60 transform transition duration-500 hover:scale-110"
-        />
+        <img src="images/logos/logobig.png" className="mt-3 w-60" />
       </a>
       <ul className="flex space-x-10 text-white text-lg mt-6 font-light">
         {DROPDOWN_OPTIONS.map((dropDownOption) => {
