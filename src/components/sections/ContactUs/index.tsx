@@ -46,7 +46,7 @@ export default function ContactUs() {
                   <span>
                     Vi vil&nbsp;
                     <span className="text-green-600">kontakte deg&nbsp;</span>
-                    innen 24 timer!
+                    innen 48 timer!
                   </span>
                 </div>
               </div>
