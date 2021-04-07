@@ -40,6 +40,7 @@ export default function Header({ screenLarge }) {
         />
       )}
       <div className="relative z-0">
+        <div className="bg-white w-full h-1 absolute top-99/100 z-10" />
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1505 800">
           <g id="Layer_2" data-name="Layer 2">
             <g id="Layer_1-2" data-name="Layer 1">
@@ -51,7 +52,6 @@ export default function Header({ screenLarge }) {
             </g>
           </g>
         </svg>
-        <div className="bg-white opacity-10 w-full h-1 absolute top-99/100 z-10" />
       </div>
     </div>
   );
