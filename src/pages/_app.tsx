@@ -24,7 +24,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
     const screenWidthChecker = setTimeout(() => {
       if (window.innerWidth > 1023) setScreenLarge(true);
-    }, 2000);
+    }, 1000);
 
     return () => clearTimeout(screenWidthChecker);
   }, []);

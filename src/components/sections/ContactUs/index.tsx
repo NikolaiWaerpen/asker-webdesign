@@ -25,7 +25,7 @@ const checkVariants = {
     rotateZ: 0,
     transition: {
       type: "tween",
-      delay: 0.3,
+      delay: 0.45,
     },
   },
 };
@@ -43,7 +43,7 @@ export default function ContactUs() {
           </div>
 
           <div className="space-y-4">
-            <div className="border-l-4 pl-4 border-themecolor6 text-lg">
+            <div className="border-l-4 pl-4 border-themecolor5 text-lg">
               <h2 className="font-extrabold text-gray-700">E-post:</h2>
               <h3 className="text-gray-600">
                 <a href={MAIL_TO} className="hover-underline-effect">
@@ -51,7 +51,7 @@ export default function ContactUs() {
                 </a>
               </h3>
             </div>
-            <div className="border-l-4 pl-4 border-themecolor6 text-lg">
+            <div className="border-l-4 pl-4 border-themecolor5 text-lg">
               <h2 className="font-extrabold text-gray-700">Mobilnummer</h2>
               <h3 className="text-gray-600">(+47) 452 93 539</h3>
             </div>
@@ -65,7 +65,7 @@ export default function ContactUs() {
             animate="visible"
           >
             <div className="relative -left-1/2 -top-1/3">
-              <div className="flex flex-col  shadow-2xl bg-white border-b-4 pb-3 px-2 border-themecolor6 rounded-md">
+              <div className="flex flex-col  shadow-2xl bg-white border-b-4 pb-3 px-2 border-themecolor5 rounded-md">
                 <motion.div
                   className="flex justify-center"
                   variants={checkVariants}
@@ -140,7 +140,7 @@ export default function ContactUs() {
         </div>
 
         <div className="space-y-4">
-          <div className="border-l-4 pl-4 border-themecolor6 text-lg">
+          <div className="border-l-4 pl-4 border-themecolor5 text-lg">
             <h2 className="font-extrabold text-gray-700">E-post:</h2>
             <h3 className="text-gray-600">
               <a href={MAIL_TO} className="hover-underline-effect">
@@ -148,7 +148,7 @@ export default function ContactUs() {
               </a>
             </h3>
           </div>
-          <div className="border-l-4 pl-4 border-themecolor6 text-lg">
+          <div className="border-l-4 pl-4 border-themecolor5 text-lg">
             <h2 className="font-extrabold text-gray-700">Mobilnummer:</h2>
             <h3 className="text-gray-600">(+47) 452 93 539</h3>
           </div>

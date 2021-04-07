@@ -6,7 +6,7 @@ import { SavingsSVG } from "./SavingsSVG";
 const BulletPoint = ({ header, content }) => {
   return (
     <div className="flex mt-8 font-light">
-      <FontAwesomeIcon icon={faCheck} className="text-themecolor6 mt-1.5" />
+      <FontAwesomeIcon icon={faCheck} className="text-themecolor5 mt-1.5" />
       <div className="ml-2">
         <h4 className=" font-bold text-lg">{header}</h4>
         <p className="text-gray-500">{content}</p>
@@ -26,9 +26,9 @@ export default function WhatWeCanOfferSection() {
       <div>
         <div className="font-bold text-lg md:text-2xl">
           <div className="flex">
-            <h4 className="text-themecolor6">0,-&nbsp;</h4>
+            <h4 className="text-themecolor5">0,-&nbsp;</h4>
             <h4>depositum,&nbsp;</h4>
-            <h4 className="text-themecolor6">1500,-&nbsp;</h4>
+            <h4 className="text-themecolor5">1500,-&nbsp;</h4>
             <h4 className="">hver måned,</h4>
           </div>
           <h4>Ingen bindingstid</h4>
