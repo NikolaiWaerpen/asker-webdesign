@@ -5,7 +5,7 @@ export default function Header({ screenLarge }) {
   return (
     <div className="bg-gradient-to-tl from-green-400 to-green-900">
       <div className="mx-3 pt-40 relative text-white  md:w-2/3 lg:mx-12 lg:w-2/5 xl:mx-32 xl:w-2/5 flex flex-col md:flex-row ">
-        <div className="space-y-9 relative z-20">
+        <div className="space-y-9 relative z-30">
           <h2 className="text-25xl font-extrabold md:text-5xl">
             Webutvikling og design for småbedrifter
           </h2>
@@ -28,7 +28,7 @@ export default function Header({ screenLarge }) {
           <img
             src="images/showcase/header.png"
             alt=""
-            className="absolute z-0 top-90/10 md:top-80 md:left-45/10"
+            className="absolute z-20 top-90/10 md:top-80 md:left-45/10"
           />
         )}
       </div>
@@ -36,20 +36,23 @@ export default function Header({ screenLarge }) {
         <img
           src="images/showcase/header.png"
           alt=""
-          className="absolute z-0 w-4/6 right-8 top-32 xl:top-36 2xl:top-14 xl:w-7/12 xl:right-32"
+          className="absolute z-20 w-4/6 right-8 top-32 xl:top-36 2xl:top-14 xl:w-7/12 xl:right-32"
         />
       )}
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1505 800">
-        <g id="Layer_2" data-name="Layer 2">
-          <g id="Layer_1-2" data-name="Layer 1">
-            <path
-              transform="translate(1505), scale(-1, 1)"
-              style={{ fill: " #fff" }}
-              d="M1307.89,352c97.61-58.49,160-115.9,197.11-156.93V800H0V0C279.45,146.85,562.08,290.71,773.09,379.11S1131.81,457.52,1307.89,352Z"
-            />
+      <div className="relative z-0">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1505 800">
+          <g id="Layer_2" data-name="Layer 2">
+            <g id="Layer_1-2" data-name="Layer 1">
+              <path
+                transform="translate(1505), scale(-1, 1)"
+                style={{ fill: " #fff" }}
+                d="M1307.89,352c97.61-58.49,160-115.9,197.11-156.93V800H0V0C279.45,146.85,562.08,290.71,773.09,379.11S1131.81,457.52,1307.89,352Z"
+              />
+            </g>
           </g>
-        </g>
-      </svg>
+        </svg>
+        <div className="bg-white w-full h-0.5 absolute top-9995/100 z-10" />
+      </div>
     </div>
   );
 }

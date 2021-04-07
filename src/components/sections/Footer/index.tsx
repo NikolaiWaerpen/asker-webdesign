@@ -8,19 +8,22 @@ import { Link } from "react-scroll";
 export default function Footer() {
   return (
     <div className="bg-gradient-to-tl from-green-400 to-green-900 mt-32 ">
-      <svg
-        version="1.1"
-        id="Layer_1"
-        xmlns="http://www.w3.org/2000/svg"
-        x="0px"
-        y="0px"
-        viewBox="0 0 1505 438.9"
-      >
-        <path
-          style={{ fill: "#FFFFFF" }}
-          d="M0,195.1c37.1,41,99.5,98.4,197.1,156.9c176.1,105.5,323.8,115.5,534.8,27.1S1225.6,146.9,1505,0H0V195.1z"
-        />
-      </svg>
+      <div className="relative">
+        <div className="bg-white w-full h-0.5 absolute bottom-9995/100" />
+        <svg
+          version="1.1"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          viewBox="0 0 1505 438.9"
+        >
+          <path
+            style={{ fill: "#FFFFFF" }}
+            d="M0,195.1c37.1,41,99.5,98.4,197.1,156.9c176.1,105.5,323.8,115.5,534.8,27.1S1225.6,146.9,1505,0H0V195.1z"
+          />
+        </svg>
+      </div>
 
       <div className="text-white space-y-12 px-8 pb-16 pt-12 lg:space-y-10 lg:pt-20 xl:pt-28 md:pb-28 lg:flex lg:justify-between lg:mx-14 xl:mx-48 2xl:mx-96">
         <div className="space-y-12">
