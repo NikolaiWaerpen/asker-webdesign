@@ -8,7 +8,10 @@ const BulletPoint = ({ bulletPoint }) => {
   return (
     <div className="flex space-x-1">
       <div className="flex flex-grow-1 flex-row-reverse">
-        <FontAwesomeIcon icon={faCheckCircle} className="text-green-500 mt-1" />
+        <FontAwesomeIcon
+          icon={faCheckCircle}
+          className="text-themecolor5 mt-1"
+        />
       </div>
       <div className="flex flex-grow-3 w-28">
         <h4 className="text-gray-600 text-md font-light ml-1">{bulletPoint}</h4>
@@ -24,17 +27,17 @@ export default function PricingSection() {
         ({ header, subHeader, price, bulletPoints, extraComment }) => (
           <div
             key={header}
-            className="bg-white border border-green-400 rounded-md overflow-hidden shadow-md lg:w-80 xl:w-96"
+            className="bg-white border border-themecolor6 rounded-md overflow-hidden shadow-md lg:w-80 xl:w-96"
           >
             <div className="lg:h-96">
               <div className="lg:flex lg:flex-col">
                 <h5
                   className={`${
                     header === pricingData[1].header
-                      ? "bg-green-500"
-                      : "bg-green-400"
+                      ? "bg-themecolor5"
+                      : "bg-themecolor6"
                   }
-            font-semibold text-md flex justify-center border-b border-green-400 py-3`}
+            font-semibold text-md flex justify-center border-b border-themecolor6 py-3`}
                 >
                   {header}
                 </h5>
@@ -43,7 +46,7 @@ export default function PricingSection() {
                     <span className="text-gray-500 text-md font-light flex justify-center">
                       {subHeader}
                     </span>
-                    <div className="flex text-green-500 justify-center">
+                    <div className="flex text-themecolor5 justify-center">
                       <h5 className="text-2xl mt-1 mr-1">kr</h5>
                       <h2 className="text-6xl">{price}</h2>
                       {price === pricingData[2].price ? null : (
@@ -73,7 +76,7 @@ export default function PricingSection() {
 
             <div className="flex justify-center pb-5 mt-8 mb-4">
               <Link to="contactUs" smooth={true} duration={SCROLL_DURATION}>
-                <button className="w-32 h-10 text-white bg-gradient-to-l from-green-400 to-green-500 rounded-sm font-bold uppercase text-xs hover-effect">
+                <button className="w-32 h-10 text-white buttonGradient rounded-sm font-bold uppercase text-xs hover-effect">
                   Kontakt oss
                 </button>
               </Link>

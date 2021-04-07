@@ -19,14 +19,14 @@ export default function WhoWeAreSection() {
 
             <div className="mt-12 md:mx-20 flex flex-col justify-center">
               <div className="relative flex justify-center">
-                <div className="w-60 lg:w-64 mx-8 rounded-full overflow-hidden ring-2 ring-green-400  z-10">
+                <div className="w-60 lg:w-64 mx-8 rounded-full overflow-hidden ring-2 ring-themecolor6  z-10">
                   <img
                     src="/images/headshot.png"
                     alt=""
                     className="object-contain"
                   />
                 </div>
-                <div className="absolute z-0 -top-4 lg:-top-8 2xl:-top-10 text-green-400">
+                <div className="absolute z-0 -top-4 lg:-top-8 2xl:-top-10 text-themecolor6">
                   <HeadshotSVG />
                 </div>
               </div>

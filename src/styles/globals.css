@@ -15,5 +15,21 @@ button:focus {
 }
 
 .hover-underline-effect {
-  @apply border-b-2 border-transparent hover:border-green-500 duration-300;
+  @apply border-b-2 border-transparent hover:border-themecolor5 duration-300;
+}
+
+.headerAndFooterGradient {
+  @apply bg-gradient-to-tl to-themecolor2 from-themecolor7;
+}
+
+.buttonGradient {
+  @apply bg-gradient-to-l to-themecolor5 from-themecolor6;
+}
+
+.arrowGradient {
+  @apply bg-gradient-to-br to-themecolor4 from-themecolor6;
+}
+
+.copyrightGradient {
+  @apply bg-gradient-to-br to-themecolor5 from-themecolor3;
 }

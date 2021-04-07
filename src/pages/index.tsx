@@ -53,7 +53,9 @@ export default function HomePage({ screenLarge }) {
           <ContactUs />
         </div>
       </div>
-      <Footer />
+      <div className="mt-32">
+        <Footer />
+      </div>
     </div>
   );
 }

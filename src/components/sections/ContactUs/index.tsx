@@ -43,7 +43,7 @@ export default function ContactUs() {
           </div>
 
           <div className="space-y-4">
-            <div className="border-l-4 pl-4 border-green-400 text-lg">
+            <div className="border-l-4 pl-4 border-themecolor6 text-lg">
               <h2 className="font-extrabold text-gray-700">E-post:</h2>
               <h3 className="text-gray-600">
                 <a href={MAIL_TO} className="hover-underline-effect">
@@ -51,7 +51,7 @@ export default function ContactUs() {
                 </a>
               </h3>
             </div>
-            <div className="border-l-4 pl-4 border-green-400 text-lg">
+            <div className="border-l-4 pl-4 border-themecolor6 text-lg">
               <h2 className="font-extrabold text-gray-700">Mobilnummer</h2>
               <h3 className="text-gray-600">(+47) 452 93 539</h3>
             </div>
@@ -65,20 +65,20 @@ export default function ContactUs() {
             animate="visible"
           >
             <div className="relative -left-1/2 -top-1/3">
-              <div className="flex flex-col  shadow-2xl bg-white border-b-4 pb-3 px-2 border-green-400 rounded-md">
+              <div className="flex flex-col  shadow-2xl bg-white border-b-4 pb-3 px-2 border-themecolor6 rounded-md">
                 <motion.div
                   className="flex justify-center"
                   variants={checkVariants}
                 >
                   <FontAwesomeIcon
                     icon={faCheck}
-                    className="text-green-500 text-9xl"
+                    className="text-themecolor5 text-9xl"
                   />
                 </motion.div>
                 <div className=" text-center text-md">
                   <span>
                     Vi vil&nbsp;
-                    <span className="text-green-600">kontakte deg&nbsp;</span>
+                    <span className="text-themecolor5">kontakte deg&nbsp;</span>
                     innen 48 timer!
                   </span>
                 </div>
@@ -140,7 +140,7 @@ export default function ContactUs() {
         </div>
 
         <div className="space-y-4">
-          <div className="border-l-4 pl-4 border-green-400 text-lg">
+          <div className="border-l-4 pl-4 border-themecolor6 text-lg">
             <h2 className="font-extrabold text-gray-700">E-post:</h2>
             <h3 className="text-gray-600">
               <a href={MAIL_TO} className="hover-underline-effect">
@@ -148,7 +148,7 @@ export default function ContactUs() {
               </a>
             </h3>
           </div>
-          <div className="border-l-4 pl-4 border-green-400 text-lg">
+          <div className="border-l-4 pl-4 border-themecolor6 text-lg">
             <h2 className="font-extrabold text-gray-700">Mobilnummer:</h2>
             <h3 className="text-gray-600">(+47) 452 93 539</h3>
           </div>
@@ -157,7 +157,7 @@ export default function ContactUs() {
 
       <div className="bg-white p-6 space-y-6 shadow-2xl rounded-md border border-gray-100 border-opacity-95 md:w-3/5 lg:1/2 xl:w-1/3">
         <div className="flex uppercase font-bold text-3xl lg:text-4xl">
-          <h3 className="text-green-500 font-normal">Kontakt&nbsp;</h3>
+          <h3 className="text-themecolor5 font-normal">Kontakt&nbsp;</h3>
           <h3>Oss</h3>
         </div>
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -195,7 +195,7 @@ export default function ContactUs() {
               className={`${
                 state.submitting
                   ? "bg-gradient-to-l from-gray-200 to-gray-300 cursor-not-allowed"
-                  : "bg-gradient-to-l from-green-400 to-green-500"
+                  : "buttonGradient"
               } w-32 h-10 text-white rounded-sm font-bold uppercase text-xs hover-effect`}
             >
               Submit

@@ -26,7 +26,7 @@ export default function Arrow({ scrolledDown }) {
       <AnimatePresence>
         {scrolledDown && (
           <motion.div
-            className="bg-gradient-to-tl from-green-400 to-green-600 rounded-full flex justify-center fixed px-2 py-1.5 bottom-10 right-10 text-white text-3xl z-50 shadow-xl"
+            className="arrowGradient rounded-full flex justify-center fixed px-2 py-1.5 bottom-10 right-10 text-white text-3xl z-50 shadow-xl"
             variants={arrowVariants}
             initial="hidden"
             animate="visible"

@@ -3,7 +3,7 @@ import { SCROLL_DURATION } from "../../../data/consts";
 
 export default function Header({ screenLarge }) {
   return (
-    <div className="bg-gradient-to-tl from-green-400 to-green-900">
+    <div className="headerAndFooterGradient">
       <div className="mx-3 pt-40 relative text-white  md:w-2/3 lg:mx-12 lg:w-2/5 xl:mx-32 xl:w-2/5 flex flex-col md:flex-row ">
         <div className="space-y-9 relative z-30">
           <h2 className="text-25xl font-extrabold md:text-5xl">
@@ -40,7 +40,7 @@ export default function Header({ screenLarge }) {
         />
       )}
       <div className="relative z-0">
-        <div className="bg-white w-full h-1 absolute top-99/100 z-10" />
+        <div className="bg-white w-full h-1 absolute top-99/100 z-10f " />
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1505 800">
           <g id="Layer_2" data-name="Layer 2">
             <g id="Layer_1-2" data-name="Layer 1">
