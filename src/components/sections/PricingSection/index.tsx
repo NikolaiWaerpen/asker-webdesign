@@ -34,7 +34,7 @@ export default function PricingSection() {
                 <h5
                   className={`${
                     header === pricingData[1].header
-                      ? "bg-themecolor4"
+                      ? "bg-themecolor6"
                       : "bg-themecolor5"
                   }
             font-semibold text-md flex justify-center border-b border-themecolor6 py-3`}
