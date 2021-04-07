@@ -35,7 +35,7 @@ export default function Footer() {
           >
             <img
               src="images/logos/logosmall.png"
-              className="mt-3 w-40 md:w-64 transform transition duration-500 hover:scale-110"
+              className="mt-3 w-40 md:w-64"
             />
           </Link>
           <div className="text-white text-md space-y-4">
