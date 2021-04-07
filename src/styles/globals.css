@@ -31,5 +31,5 @@ button:focus {
 }
 
 .copyrightGradient {
-  @apply bg-gradient-to-br to-themecolor5 from-themecolor3;
+  @apply bg-gradient-to-br to-themecolor5 from-themecolor4;
 }
