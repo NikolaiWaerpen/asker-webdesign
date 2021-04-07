@@ -51,7 +51,7 @@ export default function Header({ screenLarge }) {
             </g>
           </g>
         </svg>
-        <div className="bg-red-100 opacity-10 w-full h-1 absolute top-99/100 z-10" />
+        <div className="bg-white opacity-10 w-full h-1 absolute top-99/100 z-10" />
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <div className="bg-gradient-to-tl from-green-400 to-green-900 mt-32 ">
       <div className="relative">
-        <div className="bg-white w-full h-1 absolute bottom-9995/100" />
+        <div className="bg-white w-full h-1 absolute bottom-99/100" />
         <svg
           version="1.1"
           id="Layer_1"
