@@ -19,7 +19,11 @@ button:focus {
 }
 
 .headerAndFooterGradient {
-  @apply bg-gradient-to-l to-themecolor2 from-themecolor6;
+  @apply bg-gradient-to-l to-themecolor2 from-themecolor5;
+}
+
+.copyrightGradient {
+  @apply bg-gradient-to-tr to-themecolor4 from-themecolor5;
 }
 
 .buttonGradient {
@@ -28,8 +32,4 @@ button:focus {
 
 .arrowGradient {
   @apply bg-gradient-to-br to-themecolor4 from-themecolor6;
-}
-
-.copyrightGradient {
-  @apply bg-gradient-to-br to-themecolor5 from-themecolor4;
 }

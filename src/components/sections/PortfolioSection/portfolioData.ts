@@ -1,6 +1,6 @@
 export const portfolioData = [
   {
-    image: "images/showcase/kebab.png",
+    image: "images/showcase/restaurant.png",
     title: "Eksempel restaurant nettside",
     visitTitle: "restaurant",
     location: "Adresse",
