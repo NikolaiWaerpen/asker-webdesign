@@ -6,7 +6,6 @@ import WhatWeCanOfferSection from "../components/sections/WhatWeCanOfferSection"
 import PricingSection from "../components/sections/PricingSection";
 import Footer from "../components/sections/Footer";
 import ContactUs from "../components/sections/ContactUs";
-import TestSection from "../components/sections/TestSection";
 
 // TODO LIST:
 // * Standardize colors
