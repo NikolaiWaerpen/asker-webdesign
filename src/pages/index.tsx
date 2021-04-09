@@ -6,6 +6,7 @@ import WhatWeCanOfferSection from "../components/sections/WhatWeCanOfferSection"
 import PricingSection from "../components/sections/PricingSection";
 import Footer from "../components/sections/Footer";
 import ContactUs from "../components/sections/ContactUs";
+import TestSection from "../components/sections/TestSection";
 
 // TODO LIST:
 // * Standardize colors
@@ -30,9 +31,15 @@ export default function HomePage({ screenLarge }) {
       </div>
 
       <div className="space-y-36 md:space-y-40 lg:space-y-48 2xl:space-y-72">
-        <div id="whatWeDo">
+        {/* <div
+          id="whatWeDo"
+          className="mt-32 sm:mt-44 md:mt-0 lg:mt-28rem xl:mt-42rem 2xl:mt-44rem 3xl:mt-48rem"
+        >
           <WhatWeDoSection />
-        </div>
+          
+        </div> */}
+
+        <div />
         <div className="">
           <WhatWeCanOfferSection />
         </div>

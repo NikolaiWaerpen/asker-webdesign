@@ -19,7 +19,7 @@ button:focus {
 }
 
 .headerAndFooterGradient {
-  @apply bg-gradient-to-tl to-themecolor2 from-themecolor7;
+  @apply bg-gradient-to-l to-themecolor2 from-themecolor6;
 }
 
 .buttonGradient {
