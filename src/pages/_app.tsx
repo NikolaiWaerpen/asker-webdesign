@@ -37,7 +37,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <div className="static">
       <head>
-        <title>Waerpen Development | Webutvikling for småbedrifer</title>
+        <title>Waerpen Dev | Webutvikling for småbedrifter</title>
         <link rel="icon" href="images/logos/icon.png"></link>
       </head>
 

@@ -26,8 +26,6 @@ export const SavingsSVG = () => {
           </linearGradient> */}
         </defs>
 
-        <title>Savings</title>
-
         <ellipse
           cx="559"
           cy="734.87374"
