@@ -42,8 +42,8 @@ export default function Header({ screenLarge }) {
             className="absolute z-20 w-4/6 right-8 top-32 xl:top-36 2xl:top-14 xl:w-7/12 xl:right-32"
           />
         )}
-        <div className="relative z-0 lg:absolute lg:top-80 headerAndFooterGradient ">
-          <div className="bg-white w-full h-1 absolute top-995/100 z-10" />
+        <div className="relative z-0 lg:absolute lg:top-80 headerAndFooterGradient w-full">
+          <div className="w-full h-1 absolute top-995/100 z-10" />
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1505 800">
             <g id="Layer_2" data-name="Layer 2">
               <g id="Layer_1-2" data-name="Layer 1">
