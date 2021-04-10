@@ -25,6 +25,13 @@ import ContactUs from "../components/sections/ContactUs";
 export default function HomePage({ screenLarge }) {
   return (
     <div>
+      <head>
+        <title>
+          Webutvikling og design for småbedrifter | Waerpen Development
+        </title>
+        <link rel="icon" href="images/logos/icon.png"></link>
+      </head>
+
       <div id="header">
         <Header screenLarge={screenLarge} />
       </div>
