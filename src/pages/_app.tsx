@@ -3,6 +3,10 @@ import Navigation from "../components/Navigation";
 import "../styles/globals.css";
 import { useEffect, useState } from "react";
 import Arrow from "../components/Arrow";
+import ReactGA from "react-ga";
+
+const TRACKING_ID = "G-LHGJEDWTMK";
+ReactGA.initialize(TRACKING_ID);
 
 export default function App({ Component, pageProps }: AppProps) {
   const [screenLarge, setScreenLarge] = useState(false);
