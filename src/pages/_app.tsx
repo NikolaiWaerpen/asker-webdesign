@@ -4,12 +4,18 @@ import "../styles/globals.css";
 import { useEffect, useState } from "react";
 import Arrow from "../components/Arrow";
 import ReactGA from "react-ga";
-
-const TRACKING_ID = "G-LHGJEDWTMK";
-ReactGA.initialize(TRACKING_ID);
-ReactGA.pageview(window.location.pathname + window.location.search);
+import { MEASUREMENT_ID } from "../data/consts";
 
 export default function App({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    ReactGA.initialize(MEASUREMENT_ID, {
+      gaOptions: {
+        cookieFlags: "SameSite=None;Secure",
+      },
+    });
+    ReactGA.pageview("/");
+  }, []);
+
   const [screenLarge, setScreenLarge] = useState(false);
   const [scrolledDown, setScrolledDown] = useState(false);
 

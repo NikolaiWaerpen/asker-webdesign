@@ -1,6 +1,8 @@
 export const MAIL_TO =
   "mailto:hello@waerpendevelopment.com?subject=Start en uforpliktende samtale!";
 
+export const MEASUREMENT_ID = "G-LHGJEDWTMK";
+
 export const SCROLL_DURATION = 1000;
 
 export const THEMECOLOR1 = "#000201";
