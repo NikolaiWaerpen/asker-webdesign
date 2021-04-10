@@ -1,6 +1,6 @@
 export const portfolioData = [
   {
-    image: "images/showcase/restaurant.png",
+    image: "/images/showcase/restaurant.png",
     title: "Eksempel restaurant nettside",
     visitTitle: "restaurant",
     location: "Adresse",
@@ -9,7 +9,7 @@ export const portfolioData = [
     link: "https://www.waerpen.com/",
   },
   {
-    image: "images/showcase/intro.png",
+    image: "/images/showcase/intro.png",
     title: "Intro",
     visitTitle: "intro",
     location: "Eksempel adresse",
