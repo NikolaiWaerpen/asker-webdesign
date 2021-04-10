@@ -15,7 +15,7 @@ export default function PortfolioSection() {
               <div className="flex justify-center">
                 <img
                   src={image}
-                  alt=""
+                  alt="Image of portfolio website showcase of responsiveness on both MacBook and iPhone"
                   className="flex justify-center object-contain h-52 md:h-60"
                 />
               </div>

@@ -21,7 +21,11 @@ const SmallTopOfNav = ({ closeNav, navOpen }) => {
   return (
     <div className="px-4 pt-2 flex justify-between">
       <a href="/">
-        <img src="images/logos/logosmall.png" className="mt-3 w-36 md:w-48" />
+        <img
+          src="images/logos/logosmall.png"
+          alt="Header Waerpen Development logo for mobile devices"
+          className="mt-3 w-36 md:w-48"
+        />
       </a>
       <div className="text-white text-3xl mt-2.5">
         <button onClick={() => closeNav()}>
@@ -57,7 +61,11 @@ const LargeTopOfNav = () => {
   return (
     <div className="mr-4 pt-2 flex justify-between">
       <a href="/">
-        <img src="images/logos/logobig.png" className="mt-3 w-60" />
+        <img
+          src="images/logos/logobig.png"
+          alt="Header Waerpen Development logo for desktop devices"
+          className="mt-3 w-60"
+        />
       </a>
       <ul className="flex space-x-10 text-white text-lg mt-6 font-light">
         {DROPDOWN_OPTIONS.map((dropDownOption) => {

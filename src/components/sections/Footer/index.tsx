@@ -35,6 +35,7 @@ export default function Footer() {
           >
             <img
               src="images/logos/logosmall.png"
+              alt="Footer Waerpen Development logo"
               className="mt-3 w-40 md:w-64"
             />
           </Link>

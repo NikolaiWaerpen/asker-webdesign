@@ -22,7 +22,7 @@ export default function WhoWeAreSection() {
                 <div className="w-72 mx-8 z-10">
                   <img
                     src="/images/headshotblob.png"
-                    alt=""
+                    alt="Headshot of Nikolai Waerpen, Developer and CEO"
                     className="object-contain"
                   />
                 </div>
