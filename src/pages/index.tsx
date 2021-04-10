@@ -7,7 +7,7 @@ import Footer from "../components/sections/Footer";
 import ContactUs from "../components/sections/ContactUs";
 
 import ReactGA from "react-ga";
-import { MEASUREMENT_ID } from "../data/consts";
+import { TRACKING_ID } from "../data/consts";
 import { useEffect } from "react";
 
 // TODO LIST:
@@ -27,12 +27,13 @@ import { useEffect } from "react";
 
 export default function HomePage({ screenLarge }) {
   useEffect(() => {
-    ReactGA.initialize(MEASUREMENT_ID, {
+    ReactGA.initialize(TRACKING_ID, {
       gaOptions: {
         cookieFlags: "SameSite=None;Secure",
       },
     });
-    ReactGA.pageview("/");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+    console.log("Analytics initialized");
   }, []);
 
   return (
