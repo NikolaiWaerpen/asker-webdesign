@@ -7,6 +7,7 @@ import ReactGA from "react-ga";
 
 const TRACKING_ID = "G-LHGJEDWTMK";
 ReactGA.initialize(TRACKING_ID);
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 export default function App({ Component, pageProps }: AppProps) {
   const [screenLarge, setScreenLarge] = useState(false);
