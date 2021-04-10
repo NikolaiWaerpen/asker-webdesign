@@ -3,19 +3,8 @@ import Navigation from "../components/Navigation";
 import "../styles/globals.css";
 import { useEffect, useState } from "react";
 import Arrow from "../components/Arrow";
-import ReactGA from "react-ga";
-import { MEASUREMENT_ID } from "../data/consts";
 
 export default function App({ Component, pageProps }: AppProps) {
-  useEffect(() => {
-    ReactGA.initialize(MEASUREMENT_ID, {
-      gaOptions: {
-        cookieFlags: "SameSite=None;Secure",
-      },
-    });
-    ReactGA.pageview("/");
-  }, []);
-
   const [screenLarge, setScreenLarge] = useState(false);
   const [scrolledDown, setScrolledDown] = useState(false);
 

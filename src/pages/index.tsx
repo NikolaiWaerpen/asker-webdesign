@@ -6,6 +6,10 @@ import PricingSection from "../components/sections/PricingSection";
 import Footer from "../components/sections/Footer";
 import ContactUs from "../components/sections/ContactUs";
 
+import ReactGA from "react-ga";
+import { MEASUREMENT_ID } from "../data/consts";
+import { useEffect } from "react";
+
 // TODO LIST:
 // * Standardize colors
 // * Standardize fonts
@@ -22,6 +26,15 @@ import ContactUs from "../components/sections/ContactUs";
 // mt-28 standard
 
 export default function HomePage({ screenLarge }) {
+  useEffect(() => {
+    ReactGA.initialize(MEASUREMENT_ID, {
+      gaOptions: {
+        cookieFlags: "SameSite=None;Secure",
+      },
+    });
+    ReactGA.pageview("/");
+  }, []);
+
   return (
     <div>
       <head>
