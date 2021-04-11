@@ -41,7 +41,7 @@ export default function Footer() {
           </Link>
           <div className="text-white text-md space-y-4">
             <a href={MAIL_TO} className="hover-underline-effect">
-              hello@waerpendevelopment.com
+              post@askerwebdesign.no
             </a>
             <h5>(+47) 452 93 539</h5>
           </div>

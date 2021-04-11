@@ -1,5 +1,5 @@
 export const MAIL_TO =
-  "mailto:hello@waerpendevelopment.com?subject=Start en uforpliktende samtale!";
+  "mailto:post@askerwebdesign.no?subject=Start en uforpliktende samtale!";
 
 export const TRACKING_ID = " UA-194250269-1";
 
