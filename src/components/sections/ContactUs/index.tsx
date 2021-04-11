@@ -53,7 +53,9 @@ export default function ContactUs() {
             </div>
             <div className="border-l-4 pl-4 border-themecolor5 text-lg">
               <h2 className="font-extrabold text-gray-700">Mobilnummer</h2>
-              <h3 className="text-gray-600">(+47) 452 93 539</h3>
+              <h3 className="text-gray-600">
+                <a href="tel:+4745293539">(+47) 452 93 539</a>
+              </h3>
             </div>
           </div>
         </div>

@@ -43,7 +43,9 @@ export default function Footer() {
             <a href={MAIL_TO} className="hover-underline-effect">
               post@askerwebdesign.no
             </a>
-            <h5>(+47) 452 93 539</h5>
+            <h5>
+              <a href="tel:+4745293539">(+47) 452 93 539</a>
+            </h5>
           </div>
         </div>
 
