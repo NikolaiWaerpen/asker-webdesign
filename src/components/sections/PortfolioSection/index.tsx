@@ -37,7 +37,7 @@ export default function PortfolioSection() {
                   // target="_blank"
                   className="flex justify-center w-32 h-10 text-white buttonGradient rounded-sm font-bold uppercase text-xs transform transition duration-500 hover:scale-110"
                 >
-                  <span className="flex mt-3">Visit {visitTitle}</span>
+                  <span className="flex mt-3">Besøk {visitTitle}</span>
                 </a>
               </div>
             </div>
