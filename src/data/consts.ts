@@ -1,7 +1,7 @@
 export const MAIL_TO =
   "mailto:post@askerwebdesign.no?subject=Start en uforpliktende samtale!";
 
-export const TRACKING_ID = " UA-194250269-1";
+export const TRACKING_ID = " UA-194250818-1";
 
 export const SCROLL_DURATION = 1000;
 
