@@ -39,9 +39,7 @@ export default function HomePage({ screenLarge }) {
   return (
     <div>
       <head>
-        <title>
-          Webutvikling og design for småbedrifter | Waerpen Development
-        </title>
+        <title>Webutvikling og design for småbedrifter | Asker Webdesign</title>
         <link rel="icon" href="images/logos/favicon.ico"></link>
       </head>
       <div id="header">

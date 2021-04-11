@@ -10,11 +10,11 @@ export default function WhoWeAreSection() {
           <div className="mx-4 md:mx-12 lg:mx-40 xl:mx-96">
             <p className="flex justify-center text-lg text-gray-500 text-center font-light z-10">
               Mitt navn er Nikolai Wærpen, jeg er en webutvikler. Jeg jobber
-              fulltid med utvikling hos et stort norskt IT-selskap og med
-              Waerpen Development på siden. Jeg startet denne bedriften for å
-              lære og teste mine ferdigheter ved å jobbe helt selvstendig på
-              egne prosjekter. Jeg er selvlært og har jobbet med utvikling i
-              over 3 år
+              fulltid med utvikling hos et stort norskt IT-selskap og med Asker
+              Webdesign på siden. Jeg startet denne bedriften for å lære og
+              teste mine ferdigheter ved å jobbe helt selvstendig på egne
+              prosjekter. Jeg er selvlært og har jobbet med utvikling i over 3
+              år
             </p>
 
             <div className="mt-12 md:mx-20 flex flex-col justify-center">

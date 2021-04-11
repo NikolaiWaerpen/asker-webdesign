@@ -22,8 +22,8 @@ const SmallTopOfNav = ({ closeNav, navOpen }) => {
     <div className="px-4 pt-2 flex justify-between">
       <a href="/">
         <img
-          src="images/logos/logosmall.png"
-          alt="Header Waerpen Development logo for mobile devices"
+          src="images/logos/askerwebdesignlogosmall.png"
+          alt="Header Asker Webdesign logo for mobile devices"
           className="mt-3 w-36 md:w-48"
         />
       </a>
@@ -62,8 +62,8 @@ const LargeTopOfNav = () => {
     <div className="mr-4 pt-2 flex justify-between">
       <a href="/">
         <img
-          src="images/logos/logobig.png"
-          alt="Header Waerpen Development logo for desktop devices"
+          src="images/logos/askerwebdesignlogobig.png"
+          alt="Header Asker Webdesign logo for desktop devices"
           className="mt-3 w-60"
         />
       </a>

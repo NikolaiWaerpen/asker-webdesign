@@ -34,8 +34,8 @@ export default function Footer() {
             className="cursor-pointer"
           >
             <img
-              src="images/logos/logosmall.png"
-              alt="Footer Waerpen Development logo"
+              src="images/logos/askerwebdesignlogosmall.png"
+              alt="Footer Asker Webdesign logo"
               className="mt-3 w-40 md:w-64"
             />
           </Link>
@@ -90,7 +90,7 @@ export default function Footer() {
         <div className="flex justify-center">
           <h3 className=" text-gray-200">Copyright © 2021 |&nbsp;</h3>
           <a href="/" className="font-medium">
-            Waerpen Development
+            Asker Webdesign
           </a>
         </div>
         <h3 className="flex justify-center text-gray-200">
