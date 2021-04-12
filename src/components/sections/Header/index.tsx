@@ -44,7 +44,7 @@ export default function Header({ screenLarge }) {
         )}
         <div className="relative z-0 lg:absolute lg:top-80 headerAndFooterGradient w-full">
           {!screenLarge && (
-            <div className="w-full h-1 absolute top-995/100 z-10" />
+            <div className="w-full h-1 absolute top-995/100 z-10 bg-white" />
           )}
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1505 800">
             <g id="Layer_2" data-name="Layer 2">
