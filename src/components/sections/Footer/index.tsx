@@ -5,7 +5,7 @@ import {
 } from "../../../data/consts";
 import { Link } from "react-scroll";
 
-export default function Footer() {
+export default function Footer({ screenLarge }) {
   return (
     <div className="headerAndFooterGradient">
       <div className="relative">
@@ -44,7 +44,11 @@ export default function Footer() {
               post@askerwebdesign.no
             </a>
             <h5>
-              <a href="tel:+4745293539">(+47) 452 93 539</a>
+              {screenLarge ? (
+                "(+47) 452 93 539"
+              ) : (
+                <a href="tel:+4745293539">(+47) 452 93 539</a>
+              )}
             </h5>
           </div>
         </div>

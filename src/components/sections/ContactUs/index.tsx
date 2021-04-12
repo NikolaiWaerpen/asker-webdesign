@@ -30,7 +30,7 @@ const checkVariants = {
   },
 };
 
-export default function ContactUs() {
+export default function ContactUs({ screenLarge }) {
   const [state, handleSubmit] = useForm("mjvjvldq");
   if (state.succeeded) {
     return (
@@ -54,7 +54,11 @@ export default function ContactUs() {
             <div className="border-l-4 pl-4 border-themecolor5 text-lg">
               <h2 className="font-extrabold text-gray-700">Mobilnummer</h2>
               <h3 className="text-gray-600">
-                <a href="tel:+4745293539">(+47) 452 93 539</a>
+                {screenLarge ? (
+                  "(+47) 452 93 539"
+                ) : (
+                  <a href="tel:+4745293539">(+47) 452 93 539</a>
+                )}
               </h3>
             </div>
           </div>
@@ -153,7 +157,11 @@ export default function ContactUs() {
           <div className="border-l-4 pl-4 border-themecolor5 text-lg">
             <h2 className="font-extrabold text-gray-700">Mobilnummer:</h2>
             <h3 className="text-gray-600">
-              <a href="tel:+4745293539">(+47) 452 93 539</a>
+              {screenLarge ? (
+                "(+47) 452 93 539"
+              ) : (
+                <a href="tel:+4745293539">(+47) 452 93 539</a>
+              )}
             </h3>
           </div>
         </div>

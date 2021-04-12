@@ -65,11 +65,11 @@ export default function HomePage({ screenLarge }) {
         </div>
 
         <div id="contactUs" className="pt-4 ">
-          <ContactUs />
+          <ContactUs screenLarge={screenLarge} />
         </div>
       </div>
       <div className="mt-32">
-        <Footer />
+        <Footer screenLarge={screenLarge} />
       </div>
     </div>
   );
