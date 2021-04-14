@@ -41,7 +41,7 @@ export default function Footer({ screenLarge }) {
           </Link>
           <div className="text-white text-md space-y-4">
             <a href={MAIL_TO} className="hover-underline-effect">
-              post@askerwebdesign.no
+              hei@askerwebdesign.no
             </a>
             <h5>
               {screenLarge ? (

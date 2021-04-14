@@ -1,9 +1,9 @@
 export const portfolioData = [
   {
     image: "/images/showcase/restaurant.png",
-    title: "Eksempel restaurant nettside",
-    visitTitle: "restaurant",
-    location: "Eksempeladresse 123",
+    title: "Eksempel restaurant side",
+    visitTitle: "eksempel",
+    location: "Eksempel",
     description:
       "Eksempel side for typisk restaurant bedrift. Inneholder informasjon om bedriften, meny, åpningstider, kontaktinformasjon, link til facebook side og kart",
     link: "https://www.waerpen.com/",
@@ -12,7 +12,7 @@ export const portfolioData = [
     image: "/images/showcase/intro.png",
     title: "Intro",
     visitTitle: "intro",
-    location: "Adresse 456",
+    location: "Eksempel",
     description:
       "Nettside jeg lagde for å prøve meg på animasjoner og litt mer styling. Ikke en profesjonell nettside, heller et lite hobbyprosjekt",
     link: "https://nikolaithecreator.com",
