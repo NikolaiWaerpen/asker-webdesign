@@ -34,7 +34,7 @@ export default function PortfolioSection() {
               <div className="flex pb-8">
                 <a
                   href={link}
-                  // target="_blank"
+                  target="_blank"
                   className="flex justify-center w-32 h-10 text-white buttonGradient rounded-sm font-bold uppercase text-xs transform transition duration-500 hover:scale-110"
                 >
                   <span className="flex mt-3">Besøk {visitTitle}</span>
