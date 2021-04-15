@@ -14,8 +14,8 @@ export default function Header({ screenLarge }) {
             </h1>
             <div className="xl:w-2/3 space-y-9">
               <p className="font-light">
-                Ingen sidebyggere eller WordPress - Vi tilbyr 100% håndkodede
-                nettsteder som gir overlegne resultater fra kr 1500 pr. måned
+                Ingen sidebyggere eller WordPress. Vi tilbyr 100% håndkodede
+                nettsteder som gir overlegne resultater fra kr 1500 pr. måned.
               </p>
               <div>
                 <Link to="contactUs" smooth={true} duration={SCROLL_DURATION}>

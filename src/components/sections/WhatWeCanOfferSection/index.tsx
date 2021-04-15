@@ -38,11 +38,11 @@ export default function WhatWeCanOfferSection() {
         <p className="text-gray-500 font-light">
           0,- depositum for en standard nettside for små bedrifter på 5 sider.
           Hvis dere har et større behov, tilpasser vi priser basert på omfanget
-          av arbeidet
+          av arbeidet.
           <br />
           <br />
           Du eier domenet, innholdet, oppføringen og profilene dine. Avbryt når
-          som helst uten avgifter eller problemer
+          som helst uten avgifter eller problemer.
         </p>
 
         <div className="md:grid md:grid-cols-2">

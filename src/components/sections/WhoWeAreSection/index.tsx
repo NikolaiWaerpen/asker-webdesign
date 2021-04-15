@@ -14,7 +14,7 @@ export default function WhoWeAreSection() {
               selvstartet firma som jeg bruker til å dele mine design- og
               utviklingsferdigheter på et mer personlig nivå. Alt jeg kan er
               selvlært, og jeg har jobbet med utvikling både privat og
-              profesjonelt i flere år
+              profesjonelt i flere år.
             </p>
 
             <div className="mt-12 md:mx-20 flex flex-col justify-center">

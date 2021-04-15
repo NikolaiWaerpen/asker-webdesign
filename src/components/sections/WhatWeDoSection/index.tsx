@@ -22,7 +22,7 @@ export default function WhatWeDoSection() {
             Vi er spesialister på småbedrifter webdesign og utvikling for kunder
             hvor som helst i Norge. Hver kodelinje er skrevet for hånd for å
             sikre den beste ytelsen, som hjelper med å få flere kunder til
-            nettstedet ditt og gi mer inntekter til virksomheten din
+            nettstedet ditt og gi mer inntekter til virksomheten din.
           </p>
         </NewSection>
       </div>

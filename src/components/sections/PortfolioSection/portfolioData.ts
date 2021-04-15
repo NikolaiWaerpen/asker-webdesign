@@ -5,7 +5,7 @@ export const portfolioData = [
     visitTitle: "eksempel",
     location: "Eksempel",
     description:
-      "Eksempel side for typisk restaurant bedrift. Inneholder informasjon om bedriften, meny, åpningstider, kontaktinformasjon, link til facebook side og kart",
+      "Eksempel side for typisk restaurant bedrift. Inneholder informasjon om bedriften, meny, åpningstider, kontaktinformasjon, link til facebook side og kart.",
     link: "https://www.waerpen.com/",
   },
   {
@@ -14,7 +14,7 @@ export const portfolioData = [
     visitTitle: "intro",
     location: "Eksempel",
     description:
-      "Nettside jeg lagde for å prøve meg på animasjoner og litt mer styling. Ikke en profesjonell nettside, heller et lite hobbyprosjekt",
+      "Nettside jeg lagde for å prøve meg på animasjoner og litt mer styling. Ikke en profesjonell nettside, heller et lite hobbyprosjekt.",
     link: "https://nikolaithecreator.com",
   },
 ];
