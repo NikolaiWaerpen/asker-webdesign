@@ -127,7 +127,7 @@ export default function ContactUs({ screenLarge }) {
                 disabled={true}
                 className="w-32 h-10 text-white bg-gradient-to-l from-gray-200 to-gray-300 rounded-sm font-bold uppercase text-xs cursor-not-allowed"
               >
-                Submit
+                Send
               </button>
             </div>
           </form>
@@ -210,7 +210,7 @@ export default function ContactUs({ screenLarge }) {
                   : "buttonGradient"
               } w-32 h-10 text-white rounded-sm font-bold uppercase text-xs hover-effect`}
             >
-              Submit
+              Send
             </button>
           </div>
         </form>

@@ -7,7 +7,7 @@ export default function WhoWeAreSection() {
     <div>
       <div className="flex flex-col">
         <NewSection blueText="Hvem" blackText="vi er" icon={faUser}>
-          <div className="mx-4 md:mx-12 lg:mx-40 xl:mx-34rem">
+          <div className="mx-4 md:mx-12 lg:mx-40 xl:mx-24rem 2xl:mx-34rem">
             <p className="flex justify-center text-lg text-gray-500 text-center font-light z-10">
               Mitt navn er Nikolai Wærpen og jeg er en webutvikler. Jeg jobber
               fulltid med utvikling hos Intility. Asker Webdesign er et
