@@ -16,7 +16,7 @@ const SVG = ({ headerText }) => {
 export default function WhatWeDoSection() {
   return (
     <div id="whatWeDo">
-      <div className="flex flex-col mx-3 lg:mx-28 xl:mx-56 2xl:mx-96">
+      <div className="flex flex-col mx-3 lg:mx-28 xl:mx-72 2xl:mx-34rem">
         <NewSection blueText="Hva" blackText="vi gjør" icon={faMobileAlt}>
           <p className="flex justify-center text-lg text-gray-500 text-center font-light">
             Vi er spesialister på småbedrifter webdesign og utvikling for kunder

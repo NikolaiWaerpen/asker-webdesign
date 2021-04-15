@@ -43,9 +43,7 @@ export default function Header({ screenLarge }) {
           />
         )}
         <div className="relative z-0 lg:absolute lg:top-80 headerAndFooterGradient w-full">
-          {!screenLarge && (
-            <div className="w-full h-1 absolute top-995/100 z-10 bg-white" />
-          )}
+          <div className="w-full h-1 absolute top-995/100 z-10 bg-white" />
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1505 800">
             <g id="Layer_2" data-name="Layer 2">
               <g id="Layer_1-2" data-name="Layer 1">
@@ -61,7 +59,7 @@ export default function Header({ screenLarge }) {
       </div>
 
       {/* ------------------------------------- WHAT WE DO ------------------------------------- */}
-      <div className="mt-32 sm:mt-44 md:mt-0 lg:mt-23rem xl:mt-28rem 2xl:mt-32rem z-50 relative bg-white">
+      <div className="mt-32 sm:mt-44 md:mt-0 lg:mt-28rem xl:mt-34rem 2xl:mt-40rem z-50 relative bg-white">
         <WhatWeDoSection />
       </div>
     </div>
