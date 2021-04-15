@@ -22,12 +22,12 @@ const BulletPoint = ({ bulletPoint }) => {
 
 export default function PricingSection() {
   return (
-    <div className="mx-4 mb-12 space-y-12 lg:space-y-0 md:mx-40 lg:mx-24 lg:flex lg:justify-center lg:space-x-12">
+    <div className="mx-4 mb-12 space-y-12 lg:space-y-0 sm:mx-48 md:mx-60 lg:mx-20 xl:mx-48 2xl:mx-80 lg:flex lg:justify-center lg:space-x-12">
       {pricingData.map(
         ({ header, subHeader, price, bulletPoints, extraComment }) => (
           <div
             key={header}
-            className="bg-white border border-themecolor6 rounded-md overflow-hidden shadow-md lg:w-80 xl:w-96"
+            className="bg-white border border-themecolor6 rounded-md overflow-hidden shadow-lg lg:w-80 xl:w-96"
           >
             <div className="lg:h-96">
               <div className="lg:flex lg:flex-col">

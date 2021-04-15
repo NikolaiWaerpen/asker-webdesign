@@ -14,10 +14,12 @@ const BulletPoint = ({ header, content }) => {
     </div>
   );
 };
-
+{
+  /* <div className="mx-4 space-y-16 md:mx-36 lg:mx-48 xl:mx-72 2xl:mx-80 lg:space-y-0 lg:grid lg:grid-cols-2"></div> */
+}
 export default function WhatWeCanOfferSection() {
   return (
-    <div className="space-y-3 mx-5 text-lg md:mx-32 xl:space-y-0 xl:mx-36 xl:flex">
+    <div className="space-y-3 mx-5 text-lg md:mx-32 xl:space-y-0 xl:mx-44 2xl:mx-64 xl:flex">
       <div className="flex xl:flex-col justify-center">
         <div className="w-11/12 lg:w-9/12 xl:w-32rem xl:mr-8">
           <SavingsSVG />
