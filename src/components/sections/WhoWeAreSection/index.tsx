@@ -35,7 +35,7 @@ export default function WhoWeAreSection() {
                   Nikolai Wærpen
                 </h3>
                 <h4 className="flex justify-center text-gray-500 text-lg font-light">
-                  Utvikler & adm. direktør
+                  Designer & utvikler
                 </h4>
               </div>
             </div>
