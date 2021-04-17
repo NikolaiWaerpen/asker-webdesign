@@ -24,8 +24,7 @@ export default function Footer({ screenLarge }) {
           />
         </svg>
       </div>
-
-      <div className="text-white space-y-12 px-8 pb-16 pt-12 lg:space-y-10 lg:pt-20 xl:pt-28 md:pb-28 lg:flex lg:justify-between lg:mx-14 xl:mx-48 2xl:mx-96">
+      <div className="text-white space-y-12 px-8 pb-16 pt-12 lg:space-y-10 lg:pt-20 xl:pt-28 md:pb-28 lg:flex lg:justify-between lg:mx-12 xl:mx-48 2xl:mx-56">
         <div className="space-y-12">
           <Link
             to="header"
