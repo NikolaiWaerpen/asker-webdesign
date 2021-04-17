@@ -7,7 +7,7 @@ export default function Header({ screenLarge }) {
   return (
     <div>
       <div className="headerAndFooterGradient">
-        <div className="mx-3 pt-40 relative text-white  md:w-2/3 lg:mx-12 lg:w-2/5 xl:mx-32 xl:w-2/5 flex flex-col md:flex-row ">
+        <div className="mx-3 pt-40 relative text-white  md:w-2/3 lg:mx-12 lg:w-2/5 xl:mx-32 xl:w-2/5 2xl:mx-56 flex flex-col md:flex-row ">
           <div className="space-y-9 relative z-30">
             <h1 className="text-25xl font-extrabold md:text-5xl tracking-wide">
               Webutvikling og design for småbedrifter
@@ -39,7 +39,7 @@ export default function Header({ screenLarge }) {
           <img
             src="images/showcase/header.png"
             alt="Header image of website responsiveness on the newest iMac, iPad and iPhone"
-            className="absolute z-20 w-4/6 right-8 top-32 xl:top-36 2xl:top-14 xl:w-7/12 xl:right-32"
+            className="absolute z-20 w-4/6 right-8 top-32 xl:top-36 2xl:top-20 xl:w-7/12 xl:right-32 2xl:right-60"
           />
         )}
         <div className="relative z-0 lg:absolute lg:top-80 headerAndFooterGradient w-full">

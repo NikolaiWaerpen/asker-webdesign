@@ -97,7 +97,7 @@ export default function Navigation({ screenLarge }) {
   };
 
   return (
-    <div className="lg:mx-10 xl:mx-32 relative z-50">
+    <div className="lg:mx-10 xl:mx-32 2xl:mx-56 relative z-50">
       {screenLarge ? (
         <LargeTopOfNav />
       ) : navOpen ? (
