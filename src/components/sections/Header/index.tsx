@@ -59,7 +59,7 @@ export default function Header({ screenLarge }) {
       </div>
 
       {/* ------------------------------------- WHAT WE DO ------------------------------------- */}
-      <div className="mt-48 sm:mt-44 md:mt-0 lg:mt-28rem xl:mt-34rem 2xl:mt-54rem z-50 relative bg-white">
+      <div className="mt-48 sm:mt-44 md:mt-0 lg:mt-28rem xl:mt-34rem 2xl:mt-46rem 3xl:mt-54rem 4xl:mt-66rem z-50 relative bg-white">
         <WhatWeDoSection />
       </div>
     </div>
