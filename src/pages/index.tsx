@@ -39,7 +39,7 @@ export default function HomePage({ screenLarge }) {
   return (
     <div>
       <head>
-        <title>Webutvikling og design for småbedrifter | Asker Webdesign</title>
+        <title>IT-Konsulenttjenester | M*A*S*H IT</title>
         <link rel="icon" href="images/logos/favicon.ico"></link>
       </head>
       <div id="header">

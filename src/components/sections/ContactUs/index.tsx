@@ -47,7 +47,7 @@ export default function ContactUs({ screenLarge }) {
               <h2 className="font-extrabold text-gray-700">E-post:</h2>
               <h3 className="text-gray-600">
                 <a href={MAIL_TO} className="hover-underline-effect">
-                  hei@askerwebdesign.no
+                  hei@mashit.no
                 </a>
               </h3>
             </div>
@@ -150,7 +150,7 @@ export default function ContactUs({ screenLarge }) {
             <h2 className="font-extrabold text-gray-700">E-post:</h2>
             <h3 className="text-gray-600">
               <a href={MAIL_TO} className="hover-underline-effect">
-                hei@askerwebdesign.no
+                hei@mashit.no
               </a>
             </h3>
           </div>

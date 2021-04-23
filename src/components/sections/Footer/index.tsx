@@ -34,13 +34,13 @@ export default function Footer({ screenLarge }) {
           >
             <img
               src="images/logos/askerwebdesignlogosmall.png"
-              alt="Footer Asker Webdesign logo"
+              alt="Footer M*A*S*H IT logo"
               className="mt-3 w-40 md:w-64"
             />
           </Link>
           <div className="text-white text-md space-y-4">
             <a href={MAIL_TO} className="hover-underline-effect">
-              hei@askerwebdesign.no
+              hei@mashit.no
             </a>
             <h5>
               {screenLarge ? (
@@ -95,7 +95,7 @@ export default function Footer({ screenLarge }) {
         <div className="flex justify-center">
           <h3 className=" text-gray-200">Copyright © 2021 |&nbsp;</h3>
           <a href="/" className="font-medium">
-            Asker Webdesign
+            M*A*S*H IT
           </a>
         </div>
         <h3 className="flex justify-center text-gray-200">

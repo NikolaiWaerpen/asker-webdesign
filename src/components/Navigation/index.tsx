@@ -23,7 +23,7 @@ const SmallTopOfNav = ({ closeNav, navOpen }) => {
       <a href="/">
         <img
           src="images/logos/askerwebdesignlogosmall.png"
-          alt="Header Asker Webdesign logo for mobile devices"
+          alt="Header M*A*S*H IT logo for mobile devices"
           className="mt-3 w-36 md:w-48"
         />
       </a>
@@ -63,7 +63,7 @@ const LargeTopOfNav = () => {
       <a href="/">
         <img
           src="images/logos/askerwebdesignlogobig.png"
-          alt="Header Asker Webdesign logo for desktop devices"
+          alt="Header M*A*S*H IT logo for desktop devices"
           className="mt-3 w-60"
         />
       </a>
