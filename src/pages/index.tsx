@@ -9,6 +9,7 @@ import ContactUs from "../components/sections/ContactUs";
 import ReactGA from "react-ga";
 import { TRACKING_ID } from "../data/consts";
 import { useEffect } from "react";
+import CustomHead from "../components/CustomHead";
 
 // TODO LIST:
 // * Standardize colors
@@ -33,15 +34,15 @@ export default function HomePage({ screenLarge }) {
       },
     });
     ReactGA.pageview(window.location.pathname + window.location.search);
-    console.log("Analytics initialized");
   }, []);
 
   return (
     <div>
-      <head>
-        <title>Webutvikling og design for småbedrifter | Asker Webdesign</title>
-        <link rel="icon" href="images/logos/favicon.ico"></link>
-      </head>
+      {/* Meta stuff */}
+      <div>
+        <CustomHead />
+      </div>
+
       <div id="header">
         <Header screenLarge={screenLarge} />
       </div>
