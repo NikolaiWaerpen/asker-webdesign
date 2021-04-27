@@ -39,9 +39,7 @@ export default function HomePage({ screenLarge }) {
   return (
     <div>
       {/* Meta stuff */}
-      <div>
-        <CustomHead />
-      </div>
+      <CustomHead />
 
       <div id="header">
         <Header screenLarge={screenLarge} />
