@@ -29,7 +29,7 @@ export default function Header({ screenLarge }) {
 
           {!screenLarge && (
             <img
-              src="images/showcase/header.png"
+              src="images/showcase/burgerheader.png"
               alt="Header image of website responsiveness on the newest iMac, iPad and iPhone"
               className="absolute z-20 top-90/10 md:top-80 md:left-45/10"
             />
@@ -37,7 +37,7 @@ export default function Header({ screenLarge }) {
         </div>
         {screenLarge && (
           <img
-            src="images/showcase/header.png"
+            src="images/showcase/burgerheader.png"
             alt="Header image of website responsiveness on the newest iMac, iPad and iPhone"
             className="absolute z-20 w-4/6 right-8 top-32 xl:top-36 2xl:top-20 xl:w-7/12 xl:right-32 2xl:right-60"
           />
