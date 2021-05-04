@@ -21,7 +21,7 @@ export default function WhoWeAreSection() {
               <div className="relative flex justify-center">
                 <div className="w-72 mx-8 z-10">
                   <img
-                    src="/images/headshotblob.png"
+                    src="/images/HEADSHOT.png"
                     alt="Headshot of Nikolai Waerpen, Developer and CEO"
                     className="object-contain"
                   />
