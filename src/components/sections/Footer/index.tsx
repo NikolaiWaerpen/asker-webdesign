@@ -33,7 +33,7 @@ export default function Footer({ screenLarge }) {
             className="cursor-pointer"
           >
             <img
-              src="images/logos/askerwebdesignlogosmall.png"
+              src="images/logos/AWTRANSPARENT.png"
               alt="Footer Asker Webdesign logo"
               className="mt-3 w-40 md:w-64"
             />

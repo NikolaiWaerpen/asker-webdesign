@@ -22,7 +22,7 @@ const SmallTopOfNav = ({ closeNav, navOpen }) => {
     <div className="px-4 pt-2 flex justify-between">
       <a href="/">
         <img
-          src="images/logos/askerwebdesignlogosmall.png"
+          src="images/logos/AWTRANSPARENT.png"
           alt="Header Asker Webdesign logo for mobile devices"
           className="mt-3 w-36 md:w-48"
         />
@@ -62,7 +62,7 @@ const LargeTopOfNav = () => {
     <div className="mr-4 pt-2 flex justify-between">
       <a href="/">
         <img
-          src="images/logos/askerwebdesignlogobig.png"
+          src="images/logos/AWTRANSPARENT.png"
           alt="Header Asker Webdesign logo for desktop devices"
           className="mt-3 w-60"
         />

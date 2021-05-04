@@ -35,6 +35,7 @@ export default function Header({ screenLarge }) {
             />
           )}
         </div>
+        {/* h2.text-black.text-4xl.bg-red-600{Whoa emmet is cool} */}
         {screenLarge && (
           <img
             src="images/showcase/burgerheader.png"
