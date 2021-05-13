@@ -3,10 +3,34 @@ import Head from "next/head";
 export default function CustomHead() {
   return (
     <head>
-      <link rel="shortcut icon" href="../../../public/favicon.ico" />
+      <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="theme-color" content="#000000" />
-      <meta name="description" content="Asker Webdesign" />
+      <meta
+        name="description"
+        content="Webdesign og utvikling for småbedrifter | Asker Webdesign"
+      />
+      <meta name="keywords" content="webdesign, webutvikling" />
+      <meta name="author" content="Nikolai Wærpen" />
+
+      <meta name="msapplication-TileColor" content="#da532c" />
+      <meta name="theme-color" content="#ffffff" />
+
+      {/* FaceBook */}
+      <meta
+        property="og:title"
+        content="Webdesign og utvikling for småbedrifter | Asker Webdesign"
+      />
+      <meta
+        property="og:description"
+        content="Ingen sidebyggere eller WordPress. Vi tilbyr 100% håndkodede nettsteder som gir overlegne resultater fra kr 1500 pr. måned"
+      />
+      <meta
+        property="og:image"
+        content="../../../public/images/logos/AWGREENBORDER.png"
+      />
+
+      <link rel="shortcut icon" href="../../../public/favicon.ico" />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
@@ -26,8 +50,6 @@ export default function CustomHead() {
       />
       <link rel="manifest" href="../../../public/site.webmanifest" />
       {/* <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" /> */}
-      <meta name="msapplication-TileColor" content="#da532c" />
-      <meta name="theme-color" content="#ffffff" />
       {/* <!--
         manifest.json provides metadata used when your web app is installed on a
         user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -43,7 +65,7 @@ export default function CustomHead() {
         Learn how to configure a non-root public URL by running `npm run build`.
       --> */}
       {/* <link ref="author" href="humans.txt" /> */}
-      <title>Asker Webdesign | Webutvikling og design for småbedrifter</title>
+      <title>Asker Webdesign | Webdesign og utvikling for småbedrifter</title>
     </head>
   );
 }

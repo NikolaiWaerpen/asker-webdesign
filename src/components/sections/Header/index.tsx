@@ -10,7 +10,7 @@ export default function Header({ screenLarge }) {
         <div className="mx-3 pt-40 relative text-white  md:w-2/3 lg:mx-12 lg:w-2/5 xl:mx-32 xl:w-2/5 2xl:mx-56 flex flex-col md:flex-row ">
           <div className="space-y-9 relative z-30">
             <h1 className="text-25xl font-extrabold md:text-5xl tracking-wide">
-              Webutvikling og design for småbedrifter
+              Webdesign og utvikling for småbedrifter
             </h1>
             <div className="xl:w-2/3 space-y-9">
               <p className="font-light">
