@@ -2,9 +2,13 @@ import Head from "next/head";
 
 export default function CustomHead() {
   return (
-    <head>
+    <Head>
       <meta charSet="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+        key=""
+      />
       <meta name="theme-color" content="#000000" />
       <meta
         name="description"
@@ -16,7 +20,7 @@ export default function CustomHead() {
       <meta name="msapplication-TileColor" content="#da532c" />
       <meta name="theme-color" content="#ffffff" />
 
-      {/* FaceBook */}
+      {/* Facebook */}
       <meta
         property="og:title"
         content="Webdesign og utvikling for småbedrifter | Asker Webdesign"
@@ -66,6 +70,6 @@ export default function CustomHead() {
       --> */}
       {/* <link ref="author" href="humans.txt" /> */}
       <title>Asker Webdesign | Webdesign og utvikling for småbedrifter</title>
-    </head>
+    </Head>
   );
 }

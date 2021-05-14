@@ -3,6 +3,7 @@ import Navigation from "../components/Navigation";
 import "../styles/globals.css";
 import { useEffect, useState } from "react";
 import Arrow from "../components/Arrow";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   const [screenLarge, setScreenLarge] = useState(false);
