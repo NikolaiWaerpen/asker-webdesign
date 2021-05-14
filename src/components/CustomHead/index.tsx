@@ -16,24 +16,23 @@ export default function CustomHead() {
       />
       <meta name="keywords" content="webdesign, webutvikling" />
       <meta name="author" content="Nikolai Wærpen" />
-
       <meta name="msapplication-TileColor" content="#da532c" />
       <meta name="theme-color" content="#ffffff" />
-
       {/* Facebook */}
       <meta
         property="og:title"
         content="Webdesign og utvikling for småbedrifter | Asker Webdesign"
       />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://www.askerwebdesign.no/" />
       <meta
         property="og:description"
         content="Ingen sidebyggere eller WordPress. Vi tilbyr 100% håndkodede nettsteder som gir overlegne resultater fra kr 1500 pr. måned"
       />
       <meta
         property="og:image"
-        content="../../../public/images/logos/AWGREENBORDER.png"
+        content="https://i.postimg.cc/q77S6gpJ/AWUNCUTPNG.png"
       />
-
       <link rel="shortcut icon" href="../../../public/favicon.ico" />
       <link
         rel="apple-touch-icon"
