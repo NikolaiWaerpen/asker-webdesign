@@ -31,7 +31,8 @@ export default function CustomHead() {
       />
       <meta
         property="og:image"
-        content="https://i.postimg.cc/q77S6gpJ/AWUNCUTPNG.png"
+        // content="https://i.postimg.cc/q77S6gpJ/AWUNCUTPNG.png"
+        content="https://i.postimg.cc/3JL7WMTH/AWGREENBORDER.png"
       />
       <link rel="shortcut icon" href="../../../public/favicon.ico" />
       <link
