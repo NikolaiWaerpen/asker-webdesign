@@ -14,7 +14,7 @@ export const whatWeCanOfferData = [
   },
   {
     header: "Nettdesign og utvikling",
-    content: "Inkluderer over 80 timer med design, utvikling og testing",
+    content: "Inkluderer over 100 timer med design, utvikling og testing",
   },
   {
     header: "Sitater og oppføringer ",
