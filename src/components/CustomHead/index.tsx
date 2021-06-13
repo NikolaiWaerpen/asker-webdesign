@@ -27,7 +27,7 @@ export default function CustomHead() {
       <meta property="og:url" content="https://www.askerwebdesign.no/" />
       <meta
         property="og:description"
-        content="Ingen sidebyggere eller WordPress. Vi tilbyr 100% håndkodede nettsteder som gir overlegne resultater fra kr 1500 pr. måned"
+        content="Ingen sidebyggere eller WordPress. Vi tilbyr 100% håndkodede nettsteder som gir overlegne resultater."
       />
       <meta
         property="og:image"
