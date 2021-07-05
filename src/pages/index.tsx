@@ -59,9 +59,9 @@ export default function HomePage({ screenLarge }) {
           <WhoWeAreSection />
         </div>
 
-        <div className="">
+        {/* <div className="">
           <PricingSection />
-        </div>
+        </div> */}
 
         <div id="contactUs" className="pt-4 ">
           <ContactUs screenLarge={screenLarge} />
