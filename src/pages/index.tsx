@@ -6,9 +6,9 @@ import PricingSection from "../components/sections/PricingSection";
 import Footer from "../components/sections/Footer";
 import ContactUs from "../components/sections/ContactUs";
 
-import ReactGA from "react-ga";
-import { TRACKING_ID } from "../data/consts";
-import { useEffect } from "react";
+// import ReactGA from "react-ga";
+// import { TRACKING_ID } from "../data/consts";
+// import { useEffect } from "react";
 import CustomHead from "../components/CustomHead";
 
 // TODO LIST:
@@ -27,14 +27,14 @@ import CustomHead from "../components/CustomHead";
 // mt-28 standard
 
 export default function HomePage({ screenLarge }) {
-  useEffect(() => {
-    ReactGA.initialize(TRACKING_ID, {
-      gaOptions: {
-        cookieFlags: "SameSite=None;Secure",
-      },
-    });
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
+  // useEffect(() => {
+  //   ReactGA.initialize(TRACKING_ID, {
+  //     gaOptions: {
+  //       cookieFlags: "SameSite=None;Secure",
+  //     },
+  //   });
+  //   ReactGA.pageview(window.location.pathname + window.location.search);
+  // }, []);
 
   return (
     <div>
