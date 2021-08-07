@@ -6,7 +6,8 @@ export const pricingData = [
     bulletPoints: [
       "Søkeordanalyse",
       "Skrevet av en SEO-spesialist",
-      "Hjelper med å øke SEO ",
+      "Hjelper med å øke SEO",
+      "Livstidsoppdateringer",
       "Ubegrensede redigeringer ",
       "Inkluderer hosting",
       "24/7 kundeservice",
