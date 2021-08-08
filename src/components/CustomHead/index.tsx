@@ -9,15 +9,12 @@ export default function CustomHead() {
         content="width=device-width, initial-scale=1"
         key=""
       />
-      <meta name="theme-color" content="#000000" />
       <meta
         name="description"
         content="Webdesign og utvikling for småbedrifter | Asker Webdesign"
       />
       <meta name="keywords" content="webdesign, webutvikling" />
       <meta name="author" content="Nikolai Wærpen" />
-      <meta name="msapplication-TileColor" content="#da532c" />
-      <meta name="theme-color" content="#ffffff" />
       {/* Facebook */}
       <meta
         property="og:title"
@@ -34,25 +31,29 @@ export default function CustomHead() {
         content="https://i.postimg.cc/q77S6gpJ/AWUNCUTPNG.png"
         // content="https://i.postimg.cc/3JL7WMTH/AWGREENBORDER.png"
       />
-      <link rel="shortcut icon" href="../../../public/favicon.ico" />
+
       <link
         rel="apple-touch-icon"
         sizes="180x180"
-        href="../../../public/apple-touch-icon.png"
+        href="/apple-touch-icon.png"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="32x32"
-        href="../../../public/favicon-32x32.png"
+        href="/favicon-32x32.png"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="16x16"
-        href="../../../public/favicon-16x16.png"
+        href="/favicon-16x16.png"
       />
-      <link rel="manifest" href="../../../public/site.webmanifest" />
+      <link rel="manifest" href="/site.webmanifest" />
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#204925" />
+      <meta name="msapplication-TileColor" content="#204925" />
+      <meta name="theme-color" content="#204925" />
+
       {/* <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" /> */}
       {/* <!--
         manifest.json provides metadata used when your web app is installed on a
