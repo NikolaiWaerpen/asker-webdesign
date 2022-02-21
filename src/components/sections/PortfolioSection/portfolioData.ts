@@ -7,7 +7,7 @@ export const portfolioData = [
     location: "Oslo og Holmestrand",
     description:
       "CleanBil tilbyr en miljøvennlig bilrengjøring ved bruk at damp. Ingen bruk av såper og kun 2 liter vann benyttes per bil. En ordinær bilvask kan bruke over 450 liter vann per vask, samt forurensende kjemikalier.",
-    link: "https://www.cleanbil.no/",
+    link: "https://cleanbil.vercel.app/",
   },
   {
     image: "/images/showcase/intro.png",
